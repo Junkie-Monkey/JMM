@@ -787,7 +787,6 @@ const materialsToUnify = [
     'obsidian',
     'ender',
     'fluix',
-    'saltpeter',
     'fluorite',
     'invar',
     'signalum',
