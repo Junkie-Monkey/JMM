@@ -1,0 +1,8 @@
+{
+    "packmenu.jmm.singleplayer": "Hra pro jednoho hráče",
+    "packmenu.jmm.multiplayer": "Hra pro více hráčů",
+    "packmenu.jmm.server": "Join Server",
+    "packmenu.jmm.options": "Možnosti",
+    "packmenu.jmm.mods": "Modifikace",
+    "packmenu.jmm.quit": "Ukončit aplikaci"
+}

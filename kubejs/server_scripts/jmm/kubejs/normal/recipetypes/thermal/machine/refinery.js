@@ -1,0 +1,14 @@
+onEvent('recipes', (event) => {
+
+    const id_prefix = 'jmm:normal/thermal/refinery/';
+    const recipes = [
+        {
+            outputs: [Item.of('industrialforegoing:dryrubber', 1)],
+            input: fluid.of('industrialforegoing:latex', 900),
+            id: `${id_prefix}dryrubber`
+        }
+    ];
+    recipes.forEach((recipe) => {
+        event.recipes.thermal.refinery(recipe.outputs, recipe.input).id(recipe.id);
+    });
+});

@@ -76,7 +76,7 @@
 				type: "command"
 				title: "Sorcerer's Delight"
 				icon: "kubejs:sorcerers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_sorcerers_delight"
 				player_command: false
 			}]
 		}
@@ -162,7 +162,7 @@
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_scavengers_delight"
 				player_command: false
 			}]
 		}
@@ -195,7 +195,7 @@
 				type: "command"
 				title: "Miner's Delight"
 				icon: "kubejs:miners_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_miners_delight"
 				player_command: false
 			}]
 		}
@@ -287,7 +287,7 @@
 				type: "command"
 				title: "Farmer's Delight"
 				icon: "kubejs:farmers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_farmers_delight"
 				player_command: false
 			}]
 		}
@@ -326,7 +326,7 @@
 				type: "command"
 				title: "Sorcerer's Delight"
 				icon: "kubejs:sorcerers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_sorcerers_delight"
 				player_command: false
 			}]
 		}
@@ -351,7 +351,7 @@
 				type: "command"
 				title: "Sorcerer's Delight"
 				icon: "kubejs:sorcerers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_sorcerers_delight"
 				player_command: false
 			}]
 		}
@@ -467,7 +467,7 @@
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_scavengers_delight"
 				player_command: false
 			}]
 		}
@@ -566,7 +566,7 @@
 				type: "command"
 				title: "Farmer's Delight"
 				icon: "kubejs:farmers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_farmers_delight"
 				player_command: false
 			}]
 		}
@@ -636,7 +636,7 @@
 				type: "command"
 				title: "Sorcerer's Delight"
 				icon: "kubejs:sorcerers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_sorcerers_delight"
 				player_command: false
 			}]
 		}
@@ -665,7 +665,7 @@
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_scavengers_delight"
 				player_command: false
 			}]
 		}
@@ -720,7 +720,7 @@
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_scavengers_delight"
 				player_command: false
 			}]
 		}
@@ -746,7 +746,7 @@
 				type: "command"
 				title: "Farmer's Delight"
 				icon: "kubejs:farmers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_farmers_delight"
 				player_command: false
 			}]
 		}
@@ -1684,7 +1684,7 @@
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_scavengers_delight"
 				player_command: false
 			}]
 		}
@@ -1708,7 +1708,7 @@
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_scavengers_delight"
 				player_command: false
 			}]
 		}
@@ -1754,7 +1754,7 @@
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_scavengers_delight"
 				player_command: false
 			}]
 		}
@@ -1778,7 +1778,7 @@
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_scavengers_delight"
 				player_command: false
 			}]
 		}
@@ -1802,7 +1802,7 @@
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_scavengers_delight"
 				player_command: false
 			}]
 		}
@@ -1864,7 +1864,7 @@
 				type: "command"
 				title: "Alchemist's Delight"
 				icon: "kubejs:alchemists_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_alchemists_delight"
 				player_command: false
 			}]
 		}
@@ -1899,7 +1899,7 @@
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_scavengers_delight"
 				player_command: false
 			}]
 		}
@@ -1923,7 +1923,7 @@
 				type: "command"
 				title: "Alchemist's Delight"
 				icon: "kubejs:alchemists_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_alchemists_delight"
 				player_command: false
 			}]
 		}
@@ -1949,7 +1949,7 @@
 				type: "command"
 				title: "Miner's Delight"
 				icon: "kubejs:miners_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_miners_delight"
 				player_command: false
 			}]
 		}
@@ -1988,7 +1988,7 @@
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_scavengers_delight"
 				player_command: false
 			}]
 		}
@@ -2024,7 +2024,7 @@
 				type: "command"
 				title: "Alchemist's Delight"
 				icon: "kubejs:alchemists_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_alchemists_delight"
 				player_command: false
 			}]
 		}
@@ -2059,7 +2059,7 @@
 				type: "command"
 				title: "Sorcerer's Delight"
 				icon: "kubejs:sorcerers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_sorcerers_delight"
 				player_command: false
 			}]
 		}
@@ -2087,7 +2087,7 @@
 				type: "command"
 				title: "Miner's Delight"
 				icon: "kubejs:miners_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_miners_delight"
 				player_command: false
 			}]
 		}
@@ -2111,7 +2111,7 @@
 				type: "command"
 				title: "Alchemist's Delight"
 				icon: "kubejs:alchemists_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_alchemists_delight"
 				player_command: false
 			}]
 		}
@@ -2150,7 +2150,7 @@
 				type: "command"
 				title: "Sorcerer's Delight"
 				icon: "kubejs:sorcerers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_sorcerers_delight"
 				player_command: false
 			}]
 		}
@@ -2195,7 +2195,7 @@
 				type: "command"
 				title: "Sorcerer's Delight"
 				icon: "kubejs:sorcerers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_sorcerers_delight"
 				player_command: false
 			}]
 		}
@@ -2318,7 +2318,7 @@
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_scavengers_delight"
 				player_command: false
 			}]
 		}
@@ -2359,7 +2359,7 @@
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_scavengers_delight"
 				player_command: false
 			}]
 		}
@@ -2379,7 +2379,7 @@
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_scavengers_delight"
 				player_command: false
 			}]
 		}
@@ -2454,7 +2454,7 @@
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_scavengers_delight"
 				player_command: false
 			}]
 		}
@@ -2474,7 +2474,7 @@
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_scavengers_delight"
 				player_command: false
 			}]
 		}
@@ -2826,7 +2826,7 @@
 				type: "command"
 				title: "Sorcerer's Delight"
 				icon: "kubejs:sorcerers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_sorcerers_delight"
 				player_command: false
 			}]
 		}
@@ -2846,7 +2846,7 @@
 				type: "command"
 				title: "Sorcerer's Delight"
 				icon: "kubejs:sorcerers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_sorcerers_delight"
 				player_command: false
 			}]
 		}
@@ -2866,7 +2866,7 @@
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_scavengers_delight"
 				player_command: false
 			}]
 		}
@@ -2938,7 +2938,7 @@
 				type: "command"
 				title: "Farmer's Delight"
 				icon: "kubejs:farmers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_farmers_delight"
 				player_command: false
 			}]
 		}

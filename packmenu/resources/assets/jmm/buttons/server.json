@@ -1,0 +1,19 @@
+{
+    "x": 0,
+    "y": 120,
+    "width": 175,
+    "height": 20,
+    "langKey": "packmenu.jmm.server",
+    "action": "CONNECT_TO_SERVER",
+    "data": "play.kurykat.dev",
+    "u": 0,
+    "v": 0,
+    "hoverU": 0,
+    "hoverV": 20,
+    "texWidth": 175,
+    "texHeight": 40,
+    "texture": "jmm:textures/server.png",
+    "fontColor": 16777215,
+    "hoverFontColor": 10861513,
+    "anchor": "TOP_LEFT"
+}

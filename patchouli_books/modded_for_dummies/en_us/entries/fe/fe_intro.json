@@ -1,6 +1,6 @@
 {
     "name": "Power!",
-    "icon": "enigmatica:textures/power2.png",
+    "icon": "jmm:textures/power2.png",
     "category": "patchouli:fe",
     "sortnum": 0,
     "pages": [

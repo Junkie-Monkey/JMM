@@ -2,7 +2,7 @@
 
 onEvent('ponder.registry', (event) => {
     event
-        .create('enigmatica:nori_sheet_press', [
+        .create('jmm:nori_sheet_press', [
             'sushigocrafting:nori_sheets',
             'sushigocrafting:dried_seaweed_block',
             'sushigocrafting:dried_seaweed',
@@ -12,7 +12,7 @@ onEvent('ponder.registry', (event) => {
         .scene(
             'growing_seaweed',
             'Seaweed - Kelp But Tasty',
-            'enigmatica:sushigocrafting/nori_sheets/seaweed',
+            'jmm:sushigocrafting/nori_sheets/seaweed',
             (scene, util) => {
                 scene.showBasePlate();
 
@@ -58,7 +58,7 @@ onEvent('ponder.registry', (event) => {
         .scene(
             'dried_seaweed_blocks',
             'Dried Seaweed Blocks - Extra Flakey',
-            'enigmatica:enigmatica/bases/3x3',
+            'jmm:jmm/bases/3x3',
             (scene, util) => {
                 scene.showBasePlate();
                 scene.world().showSection(util.select().layer(1), Facing.south);
@@ -146,7 +146,7 @@ onEvent('ponder.registry', (event) => {
         .scene(
             'nori_sheet_press',
             'Nori Sheet Press - Seaweed Plate Crafting',
-            'enigmatica:sushigocrafting/nori_sheets/nori_press',
+            'jmm:sushigocrafting/nori_sheets/nori_press',
             (scene, util) => {
                 scene.showBasePlate();
 

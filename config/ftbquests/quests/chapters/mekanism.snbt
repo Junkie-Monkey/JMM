@@ -160,7 +160,7 @@
 					type: "command"
 					title: "Rare Mekanism Loot Box"
 					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_rare"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_mekanism_loot_rare"
 					player_command: false
 				}
 				{
@@ -179,7 +179,7 @@
 			description: [
 				"The Gas-Burning Generator primarily burns Ethylene to produce energy, however it can also be used to burn excess Hydrogen. Hydrogen itself produces no net gain in power, instead serving as a useful energy storage medium."
 				""
-				"Warning: Enigmatica 6 has reduced the efficiency of Ethylene. It is slower and more costly to produce, leading to a more balanced total power gain. Ethylene retains its high energy density and burn rate, however, so it makes an excellent burst source of power."
+				"Warning: Junkie Monkey has reduced the efficiency of Ethylene. It is slower and more costly to produce, leading to a more balanced total power gain. Ethylene retains its high energy density and burn rate, however, so it makes an excellent burst source of power."
 			]
 			dependencies: [
 				"00000000000006B1"
@@ -250,7 +250,7 @@
 					type: "command"
 					title: "Epic Mekanism Loot Box"
 					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_mekanism_loot_epic"
 					player_command: false
 				}
 			]
@@ -335,7 +335,7 @@
 					type: "command"
 					title: "Rare Mekanism Loot Box"
 					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_rare"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_mekanism_loot_rare"
 					player_command: false
 				}
 				{
@@ -400,7 +400,7 @@
 					type: "command"
 					title: "Rare Mekanism Loot Box"
 					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_rare"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_mekanism_loot_rare"
 					player_command: false
 				}
 				{
@@ -465,7 +465,7 @@
 					type: "command"
 					title: "Rare Mekanism Loot Box"
 					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_rare"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_mekanism_loot_rare"
 					player_command: false
 				}
 				{
@@ -497,7 +497,7 @@
 				type: "command"
 				title: "Rare Mekanism Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_mekanism_loot_rare"
 				player_command: false
 			}]
 		}
@@ -556,7 +556,7 @@
 					type: "command"
 					title: "Rare Mekanism Loot Box"
 					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_rare"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_mekanism_loot_rare"
 					player_command: false
 				}
 				{
@@ -582,7 +582,7 @@
 				""
 				"Water or other fluids may then be piped in to one of the other Valves. As the Water heats, it will be converted to Brine which may then be piped out of the third Valve. "
 				""
-				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
+				"Note: Building Gadgets Patterns and Create Schematics are available in your Junkie Monkey instance folder to assist with this multiblock."
 			]
 			dependencies: ["00000000000006A7"]
 			id: "00000000000006C7"
@@ -670,7 +670,7 @@
 					type: "command"
 					title: "Rare Mekanism Loot Box"
 					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_rare"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_mekanism_loot_rare"
 					player_command: false
 				}
 			]
@@ -931,7 +931,7 @@
 					type: "command"
 					title: "Epic Mekanism Loot Box"
 					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_mekanism_loot_epic"
 					player_command: false
 				}
 			]
@@ -1436,7 +1436,7 @@
 					type: "command"
 					title: "Farmer's Delight"
 					icon: "kubejs:farmers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_farmers_delight"
 					player_command: false
 				}
 			]
@@ -1466,7 +1466,7 @@
 				type: "command"
 				title: "Epic Mekanism Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_mekanism_loot_epic"
 				player_command: false
 			}]
 		}
@@ -1486,7 +1486,7 @@
 				"Tip: Place an Input Valve near the top of the structure, in line with the vents for the turbine, to allow for simpler routing of Mechanical Pipes. "
 				"Similarly, the Coolant Output is best placed lower in the structure, again in line with the Turbine's Input Valve, to simplify routing of Pressurized Tubes. "
 				""
-				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock. This will automatically configure the ports when pasted."
+				"Note: Building Gadgets Patterns and Create Schematics are available in your Junkie Monkey instance folder to assist with this multiblock. This will automatically configure the ports when pasted."
 			]
 			dependencies: ["000000000000079A"]
 			min_width: 250
@@ -1510,7 +1510,7 @@
 				type: "command"
 				title: "Epic Mekanism Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_mekanism_loot_epic"
 				player_command: false
 			}]
 		}
@@ -1556,7 +1556,7 @@
 				type: "command"
 				title: "Epic Mekanism Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_mekanism_loot_epic"
 				player_command: false
 			}]
 		}
@@ -1574,7 +1574,7 @@
 				""
 				"The reactor may go super-critical and explode if it overheats, the leading cause of which is that it has run out of coolant. Therefore, the circuit breaker should trigger on High Temperature. It may also be prudent to build a second circuit breaker for Excess Waste to prevent venting radiation into the surrounding environment."
 				""
-				"Warning: Enigmatica 6 has tweaked Steam Production rates, so do not assume your reactor is safe. Test rigorously!"
+				"Warning: Junkie Monkey has tweaked Steam Production rates, so do not assume your reactor is safe. Test rigorously!"
 			]
 			dependencies: ["0000000000000795"]
 			min_width: 255
@@ -1721,7 +1721,7 @@
 				type: "command"
 				title: "Epic Mekanism Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_mekanism_loot_epic"
 				player_command: false
 			}]
 		}
@@ -1761,7 +1761,7 @@
 				type: "command"
 				title: "Epic Mekanism Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_mekanism_loot_epic"
 				player_command: false
 			}]
 		}
@@ -1783,7 +1783,7 @@
 				type: "command"
 				title: "Epic Mekanism Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_mekanism_loot_epic"
 				player_command: false
 			}]
 		}
@@ -1800,7 +1800,7 @@
 				""
 				"Adding more Ports with Supercharged Ports attached to them will allow the machine to run faster, assuming of course that sufficient power and waste can be supplied. "
 				""
-				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
+				"Note: Building Gadgets Patterns and Create Schematics are available in your Junkie Monkey instance folder to assist with this multiblock."
 			]
 			dependencies: [
 				"00000000000007A7"
@@ -1847,7 +1847,7 @@
 					type: "command"
 					title: "Legendary Mekanism Loot Box"
 					icon: "kubejs:legendary_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_mekanism_loot_legendary"
 					player_command: false
 				}
 			]
@@ -1873,7 +1873,7 @@
 				""
 				"● Connecting the Fusion Reactor to a Thermoelectric Boiler is another great way of boosting the total steam production, and therefore power production."
 				""
-				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
+				"Note: Building Gadgets Patterns and Create Schematics are available in your Junkie Monkey instance folder to assist with this multiblock."
 			]
 			dependencies: ["00000000000007A9"]
 			min_width: 300
@@ -1913,7 +1913,7 @@
 				type: "command"
 				title: "Legendary Mekanism Loot Box"
 				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_mekanism_loot_legendary"
 				player_command: false
 			}]
 		}
@@ -1934,7 +1934,7 @@
 				""
 				"WARNING: If the Turbine's power buffer fills up it will stop running, steam and water flow will halt, and the attached Reactor's heat will rapidly rise to dangerous levels resulting in a potential meltdown situation. "
 				""
-				"Note: Building Gadget's Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock. It will not place the blades for you but does come configured to sit nicely next to the Fission Reactor Schematic."
+				"Note: Building Gadget's Patterns and Create Schematics are available in your Junkie Monkey instance folder to assist with this multiblock. It will not place the blades for you but does come configured to sit nicely next to the Fission Reactor Schematic."
 				""
 			]
 			dependencies: ["0000000000000793"]
@@ -2006,7 +2006,7 @@
 				type: "command"
 				title: "Epic Mekanism Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_mekanism_loot_epic"
 				player_command: false
 			}]
 		}
@@ -2027,7 +2027,7 @@
 				type: "command"
 				title: "Legendary Mekanism Loot Box"
 				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_mekanism_loot_legendary"
 				player_command: false
 			}]
 		}
@@ -2052,7 +2052,7 @@
 				type: "command"
 				title: "Legendary Mekanism Loot Box"
 				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_mekanism_loot_legendary"
 				player_command: false
 			}]
 		}
@@ -2073,7 +2073,7 @@
 				type: "command"
 				title: "Legendary Mekanism Loot Box"
 				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_mekanism_loot_legendary"
 				player_command: false
 			}]
 		}
@@ -2094,7 +2094,7 @@
 				type: "command"
 				title: "Legendary Mekanism Loot Box"
 				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_mekanism_loot_legendary"
 				player_command: false
 			}]
 		}
@@ -2123,7 +2123,7 @@
 				type: "command"
 				title: "Legendary Mekanism Loot Box"
 				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_mekanism_loot_legendary"
 				player_command: false
 			}]
 		}
@@ -2144,7 +2144,7 @@
 				type: "command"
 				title: "Legendary Mekanism Loot Box"
 				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_mekanism_loot_legendary"
 				player_command: false
 			}]
 		}
@@ -2165,7 +2165,7 @@
 				type: "command"
 				title: "Legendary Mekanism Loot Box"
 				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_mekanism_loot_legendary"
 				player_command: false
 			}]
 		}
@@ -2212,7 +2212,7 @@
 					type: "command"
 					title: "Legendary Mekanism Loot Box"
 					icon: "kubejs:legendary_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_mekanism_loot_legendary"
 					player_command: false
 				}
 				{
@@ -2283,7 +2283,7 @@
 				""
 				"The Boiler itself may be nearly any size, up to 18x18x18, however a small one is very capable of dissipating a lot of heat. The quest requires materials for a 5x9x5 boiler. When scaling up, it’s more likely that the Turbine will need to be expanded than the Boiler. "
 				""
-				"Note: Building Gadgets and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock. This will automatically configure the ports when pasted and comes pre-configured to fit nicely between the Fission Reactor and Turbine Schematics."
+				"Note: Building Gadgets and Create Schematics are available in your Junkie Monkey instance folder to assist with this multiblock. This will automatically configure the ports when pasted and comes pre-configured to fit nicely between the Fission Reactor and Turbine Schematics."
 				""
 			]
 			dependencies: ["00000000000007B8"]
@@ -2326,7 +2326,7 @@
 				type: "command"
 				title: "Epic Mekanism Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_mekanism_loot_epic"
 				player_command: false
 			}]
 		}
@@ -2353,7 +2353,7 @@
 				type: "command"
 				title: "Rare Mekanism Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_mekanism_loot_rare"
 				player_command: false
 			}]
 		}
@@ -2402,7 +2402,7 @@
 				type: "command"
 				title: "Rare Mekanism Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_mekanism_loot_rare"
 				player_command: false
 			}]
 		}
@@ -2515,7 +2515,7 @@
 				type: "command"
 				title: "Epic Mekanism Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_mekanism_loot_epic"
 				player_command: false
 			}]
 		}
@@ -2625,7 +2625,7 @@
 				type: "command"
 				title: "Legendary Mekanism Loot Box"
 				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_mekanism_loot_legendary"
 				player_command: false
 			}]
 		}
@@ -2719,7 +2719,7 @@
 				type: "command"
 				title: "Rare Mekanism Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_mekanism_loot_rare"
 				player_command: false
 			}]
 		}
@@ -2753,7 +2753,7 @@
 				type: "command"
 				title: "Rare Mekanism Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_mekanism_loot_rare"
 				player_command: false
 			}]
 		}
@@ -2806,7 +2806,7 @@
 					type: "command"
 					title: "Legendary Mekanism Loot Box"
 					icon: "kubejs:legendary_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_mekanism_loot_legendary"
 					player_command: false
 				}
 				{
@@ -2814,7 +2814,7 @@
 					type: "command"
 					title: "Legendary Mekanism Loot Box"
 					icon: "kubejs:legendary_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_mekanism_loot_legendary"
 					player_command: false
 				}
 				{

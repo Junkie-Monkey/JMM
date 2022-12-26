@@ -2,21 +2,21 @@
 
 const categories = [
     {
-        id: 'enigmatica:basics',
+        id: 'jmm:basics',
         category_item_id: 'minecraft:cobblestone',
         title: 'Basic Mechanics',
         description: 'Learn about some basic (sometimes vanilla!) mechanics that will come in handy.',
         items: ['minecraft:cobblestone', 'minecraft:stone', 'minecraft:end_crystal']
     },
     {
-        id: 'enigmatica:portals',
+        id: 'jmm:portals',
         category_item_id: 'undergarden:catalyst',
         title: 'Thinking with Portals',
-        description: 'Learn how to construct some of the key portals in Enigmatica.',
+        description: 'Learn how to construct some of the key portals in Junkie Monkey.',
         items: ['undergarden:catalyst', 'atum:scarab']
     },
     {
-        id: 'enigmatica:tech',
+        id: 'jmm:tech',
         category_item_id: 'industrialforegoing:latex_processing_unit',
         title: 'Better Living through SCIENCE!',
         description: 'Technolgy can mold the world around you - learn to harness it today!',
@@ -27,14 +27,14 @@ const categories = [
         ]
     },
     {
-        id: 'enigmatica:magic',
+        id: 'jmm:magic',
         category_item_id: 'resourcefulbees:t1_beehive',
         title: 'Harnessing the Mystical Forces',
         description: "Magic is just technology we don't understand yet.",
         items: ['resourcefulbees:iron_bee_spawn_egg']
     },
     {
-        id: 'enigmatica:tools',
+        id: 'jmm:tools',
         category_item_id: 'tetra:hammer_base',
         title: 'Tools of the Trade',
         description: 'Better tools = better survivability.',

@@ -6795,88 +6795,254 @@
         ]
     ],
     "legend": {
-        ")": { "block": "decorative_blocks:rocky_dirt" },
-        "*": { "block": "minecraft:andesite" },
-        "+": { "block": "botania:dry_grass" },
-        ",": { "block": "botania:livingwood_planks" },
-        "-": { "block": "quark:turf" },
-        ".": { "block": "botania:vivid_grass" },
-        "/": { "tag": "rsgauges:soils" },
-        "0": { "block": "minecraft:podzol" },
-        "1": { "block": "botania:dreamwood_planks" },
-        "2": { "block": "botania:mossy_livingrock_bricks" },
-        "3": { "block": "quark:turf_slab" },
-        "4": { "block": "botania:livingrock" },
-        "5": { "block": "botania:livingrock_bricks" },
-        "6": { "block": "botania:root" },
-        "7": { "block": "botania:shimmerwood_planks" },
-        "8": { "block": "minecraft:dirt" },
-        "9": { "block": "botania:livingwood" },
-        ":": { "block": "botania:livingwood_stairs" },
-        ";": { "block": "botania:glimmering_livingwood" },
-        "<": { "block": "botania:livingrock_bricks_slab" },
-        "=": { "block": "botania:dreamwood_planks_stairs" },
-        ">": { "block": "botania:dreamwood_stairs" },
-        "?": { "block": "botania:dreamwood_planks_slab" },
-        "@": { "block": "botania:livingwood_slab" },
-        "A": { "block": "botania:livingrock_bricks_stairs" },
-        "B": { "block": "minecraft:lapis_block" },
-        "D": { "block": "botania:cracked_livingrock_bricks" },
-        "E": { "tag": "enigmatica:tree_of_life/dark_oak_wood" },
-        "F": { "block": "masterfulmachinery:enigmatic_tree_of_life_fluid_port_fluids_input" },
-        "G": { "block": "botania:livingrock_bricks_wall" },
-        "H": { "block": "botania:pattern_framed_dreamwood" },
-        "I": { "block": "botania:livingrock_wall" },
-        "J": { "block": "botania:terrasteel_block" },
-        "K": { "block": "botania:mossy_livingrock_bricks_wall" },
-        "L": { "block": "masterfulmachinery:enigmatic_tree_of_life_mana_port_botania_mana_input" },
-        "M": { "block": "chipped:soul_lantern_1" },
-        "N": { "block": "quark:rope" },
-        "O": { "block": "quark:waxed_green_crystal" },
-        "P": { "block": "chipped:dried_kelp_block_12" },
-        "Q": { "block": "botania:bifrost_perm" },
-        "R": { "tag": "enigmatica:tree_of_life/oak" },
-        "S": { "block": "environmental:white_hanging_wisteria_leaves" },
-        "T": { "block": "masterfulmachinery:enigmatic_tree_of_life_item_port_items_input" },
-        "U": { "block": "masterfulmachinery:enigmatic_tree_of_life_item_port_items_output" },
-        "V": { "block": "chipped:soul_lantern_2" },
-        "W": { "block": "minecraft:chain" },
-        "X": { "block": "minecraft:cobblestone_wall" },
-        "Y": { "block": "botania:elf_glass" },
-        "Z": { "block": "minecraft:stone" },
-        "[": { "block": "minecraft:mossy_cobblestone_wall" },
-        "\\": { "block": "minecraft:cobblestone" },
-        "]": { "block": "minecraft:gravel" },
-        "^": { "block": "minecraft:cobblestone_stairs" },
-        "_": { "block": "minecraft:stone_stairs" },
-        "`": { "block": "minecraft:coarse_dirt" },
-        "a": { "block": "environmental:duckweed_thatch" },
-        "b": { "block": "minecraft:mossy_cobblestone" },
-        "c": { "block": "decorative_blocks:warped_beam" },
-        "d": { "block": "botania:dreamwood" },
-        "e": { "block": "botania:glimmering_dreamwood" },
-        "f": { "block": "minecraft:mushroom_stem" },
-        "g": { "block": "create:mossy_scoria" },
-        "h": { "block": "minecraft:dark_oak_slab" },
-        "i": { "block": "decorative_blocks_abnormals:willow_palisade" },
-        "j": { "block": "environmental:duckweed_thatch_stairs" },
-        "k": { "block": "minecraft:dark_oak_stairs" },
-        "l": { "block": "byg:green_enchanted_door" },
-        "m": { "block": "minecraft:dark_oak_fence" },
-        "n": { "block": "chipped:brown_mushroom_block_2" },
-        "o": { "block": "chipped:brown_mushroom_block_12" },
-        "p": { "block": "chipped:brown_mushroom_block_9" },
-        "q": { "block": "decorative_blocks:warped_support" },
-        "r": { "block": "chipped:red_mushroom_block_11" },
-        "s": { "block": "chipped:red_mushroom_block_15" },
-        "t": { "block": "quark:green_crystal_cluster" },
-        "u": { "block": "quark:lime_framed_glass" },
-        "v": { "block": "quark:cyan_framed_glass" },
-        "w": { "block": "chipped:red_mushroom_block_14" },
-        "x": { "block": "architects_palette:algal_lamp" },
-        "y": { "block": "dustrial_decor:large_soul_lantern" },
-        "z": { "block": "chipped:special_soul_lantern_1" },
-        "{": { "block": "decorative_blocks:chain" },
-        "|": { "tag": "enigmatica:tree_of_life/palo_verde" }
+        ")": {
+            "block": "decorative_blocks:rocky_dirt"
+        },
+        "*": {
+            "block": "minecraft:andesite"
+        },
+        "+": {
+            "block": "botania:dry_grass"
+        },
+        ",": {
+            "block": "botania:livingwood_planks"
+        },
+        "-": {
+            "block": "quark:turf"
+        },
+        ".": {
+            "block": "botania:vivid_grass"
+        },
+        "/": {
+            "tag": "rsgauges:soils"
+        },
+        "0": {
+            "block": "minecraft:podzol"
+        },
+        "1": {
+            "block": "botania:dreamwood_planks"
+        },
+        "2": {
+            "block": "botania:mossy_livingrock_bricks"
+        },
+        "3": {
+            "block": "quark:turf_slab"
+        },
+        "4": {
+            "block": "botania:livingrock"
+        },
+        "5": {
+            "block": "botania:livingrock_bricks"
+        },
+        "6": {
+            "block": "botania:root"
+        },
+        "7": {
+            "block": "botania:shimmerwood_planks"
+        },
+        "8": {
+            "block": "minecraft:dirt"
+        },
+        "9": {
+            "block": "botania:livingwood"
+        },
+        ":": {
+            "block": "botania:livingwood_stairs"
+        },
+        ";": {
+            "block": "botania:glimmering_livingwood"
+        },
+        "<": {
+            "block": "botania:livingrock_bricks_slab"
+        },
+        "=": {
+            "block": "botania:dreamwood_planks_stairs"
+        },
+        ">": {
+            "block": "botania:dreamwood_stairs"
+        },
+        "?": {
+            "block": "botania:dreamwood_planks_slab"
+        },
+        "@": {
+            "block": "botania:livingwood_slab"
+        },
+        "A": {
+            "block": "botania:livingrock_bricks_stairs"
+        },
+        "B": {
+            "block": "minecraft:lapis_block"
+        },
+        "D": {
+            "block": "botania:cracked_livingrock_bricks"
+        },
+        "E": {
+            "tag": "jmm:tree_of_life/dark_oak_wood"
+        },
+        "F": {
+            "block": "masterfulmachinery:enigmatic_tree_of_life_fluid_port_fluids_input"
+        },
+        "G": {
+            "block": "botania:livingrock_bricks_wall"
+        },
+        "H": {
+            "block": "botania:pattern_framed_dreamwood"
+        },
+        "I": {
+            "block": "botania:livingrock_wall"
+        },
+        "J": {
+            "block": "botania:terrasteel_block"
+        },
+        "K": {
+            "block": "botania:mossy_livingrock_bricks_wall"
+        },
+        "L": {
+            "block": "masterfulmachinery:enigmatic_tree_of_life_mana_port_botania_mana_input"
+        },
+        "M": {
+            "block": "chipped:soul_lantern_1"
+        },
+        "N": {
+            "block": "quark:rope"
+        },
+        "O": {
+            "block": "quark:waxed_green_crystal"
+        },
+        "P": {
+            "block": "chipped:dried_kelp_block_12"
+        },
+        "Q": {
+            "block": "botania:bifrost_perm"
+        },
+        "R": {
+            "tag": "jmm:tree_of_life/oak"
+        },
+        "S": {
+            "block": "environmental:white_hanging_wisteria_leaves"
+        },
+        "T": {
+            "block": "masterfulmachinery:enigmatic_tree_of_life_item_port_items_input"
+        },
+        "U": {
+            "block": "masterfulmachinery:enigmatic_tree_of_life_item_port_items_output"
+        },
+        "V": {
+            "block": "chipped:soul_lantern_2"
+        },
+        "W": {
+            "block": "minecraft:chain"
+        },
+        "X": {
+            "block": "minecraft:cobblestone_wall"
+        },
+        "Y": {
+            "block": "botania:elf_glass"
+        },
+        "Z": {
+            "block": "minecraft:stone"
+        },
+        "[": {
+            "block": "minecraft:mossy_cobblestone_wall"
+        },
+        "\\": {
+            "block": "minecraft:cobblestone"
+        },
+        "]": {
+            "block": "minecraft:gravel"
+        },
+        "^": {
+            "block": "minecraft:cobblestone_stairs"
+        },
+        "_": {
+            "block": "minecraft:stone_stairs"
+        },
+        "`": {
+            "block": "minecraft:coarse_dirt"
+        },
+        "a": {
+            "block": "environmental:duckweed_thatch"
+        },
+        "b": {
+            "block": "minecraft:mossy_cobblestone"
+        },
+        "c": {
+            "block": "decorative_blocks:warped_beam"
+        },
+        "d": {
+            "block": "botania:dreamwood"
+        },
+        "e": {
+            "block": "botania:glimmering_dreamwood"
+        },
+        "f": {
+            "block": "minecraft:mushroom_stem"
+        },
+        "g": {
+            "block": "create:mossy_scoria"
+        },
+        "h": {
+            "block": "minecraft:dark_oak_slab"
+        },
+        "i": {
+            "block": "decorative_blocks_abnormals:willow_palisade"
+        },
+        "j": {
+            "block": "environmental:duckweed_thatch_stairs"
+        },
+        "k": {
+            "block": "minecraft:dark_oak_stairs"
+        },
+        "l": {
+            "block": "byg:green_enchanted_door"
+        },
+        "m": {
+            "block": "minecraft:dark_oak_fence"
+        },
+        "n": {
+            "block": "chipped:brown_mushroom_block_2"
+        },
+        "o": {
+            "block": "chipped:brown_mushroom_block_12"
+        },
+        "p": {
+            "block": "chipped:brown_mushroom_block_9"
+        },
+        "q": {
+            "block": "decorative_blocks:warped_support"
+        },
+        "r": {
+            "block": "chipped:red_mushroom_block_11"
+        },
+        "s": {
+            "block": "chipped:red_mushroom_block_15"
+        },
+        "t": {
+            "block": "quark:green_crystal_cluster"
+        },
+        "u": {
+            "block": "quark:lime_framed_glass"
+        },
+        "v": {
+            "block": "quark:cyan_framed_glass"
+        },
+        "w": {
+            "block": "chipped:red_mushroom_block_14"
+        },
+        "x": {
+            "block": "architects_palette:algal_lamp"
+        },
+        "y": {
+            "block": "dustrial_decor:large_soul_lantern"
+        },
+        "z": {
+            "block": "chipped:special_soul_lantern_1"
+        },
+        "{": {
+            "block": "decorative_blocks:chain"
+        },
+        "|": {
+            "tag": "jmm:tree_of_life/palo_verde"
+        }
     }
 }

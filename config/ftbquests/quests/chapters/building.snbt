@@ -302,7 +302,7 @@
 				type: "command"
 				title: "Farmer's Delight"
 				icon: "kubejs:farmers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_farmers_delight"
 				player_command: false
 			}]
 		}
@@ -332,7 +332,7 @@
 				type: "command"
 				title: "Alchemist's Delight"
 				icon: "kubejs:alchemists_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_alchemists_delight"
 				player_command: false
 			}]
 		}
@@ -367,7 +367,7 @@
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_scavengers_delight"
 				player_command: false
 			}]
 		}
@@ -504,7 +504,7 @@
 				type: "command"
 				title: "Miner's Delight"
 				icon: "kubejs:miners_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_miners_delight"
 				player_command: false
 			}]
 		}
@@ -686,7 +686,7 @@
 				type: "command"
 				title: "Sorcerer's Delight"
 				icon: "kubejs:sorcerers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_sorcerers_delight"
 				player_command: false
 			}]
 		}
@@ -750,7 +750,7 @@
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_scavengers_delight"
 				player_command: false
 			}]
 		}
@@ -1033,7 +1033,7 @@
 			description: [
 				"A powerful tool that allows copying large areas and rebuilding them instantly elsewhere, making short work of repeating large sections of a build, such as a repeating wall pattern, or sprucing up an area with a few different prefab homes."
 				""
-				"It’s possible to import and export patterns for the Copy/Paste gadget as well, and Enigmatica 6 comes with a variety of patterns that include many multiblocks from mods like Immersive Engineering and Astral Sorcery, to make working with those mods easier. Full instructions and templates can be located in your instance folder under “building_gadgets_patterns”."
+				"It’s possible to import and export patterns for the Copy/Paste gadget as well, and Junkie Monkey comes with a variety of patterns that include many multiblocks from mods like Immersive Engineering and Astral Sorcery, to make working with those mods easier. Full instructions and templates can be located in your instance folder under “building_gadgets_patterns”."
 				""
 				"Sneak Right Click on a block to set the block it’ll build with. Use the Building Gadgets Settings Menu key [default: g] to access advanced features. "
 			]
@@ -1241,7 +1241,7 @@
 				type: "command"
 				title: "Rare Botania Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_botania_loot_rare"
 				player_command: false
 			}]
 		}
@@ -1264,7 +1264,7 @@
 				type: "command"
 				title: "Rare Botania Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_botania_loot_rare"
 				player_command: false
 			}]
 		}
@@ -1287,7 +1287,7 @@
 				type: "command"
 				title: "Rare Botania Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_botania_loot_rare"
 				player_command: false
 			}]
 		}
@@ -1310,7 +1310,7 @@
 				type: "command"
 				title: "Legendary Botania Loot Box"
 				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_botania_loot_legendary"
 				player_command: false
 			}]
 		}
@@ -1371,7 +1371,7 @@
 				type: "command"
 				title: "Rare Astral Sorcery Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_astral_sorcery_loot_rare"
 				player_command: false
 			}]
 		}
@@ -1410,7 +1410,7 @@
 				type: "command"
 				title: "Rare Astral Sorcery Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_astral_sorcery_loot_rare"
 				player_command: false
 			}]
 		}
@@ -1477,7 +1477,7 @@
 				type: "command"
 				title: "Rare Create Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_create_loot_rare"
 				player_command: false
 			}]
 		}
@@ -1506,7 +1506,7 @@
 				type: "command"
 				title: "Legendary Create Loot Box"
 				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_legendary"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_create_loot_legendary"
 				player_command: false
 			}]
 		}
@@ -1572,7 +1572,7 @@
 				type: "command"
 				title: "Legendary Botania Loot Box"
 				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_botania_loot_legendary"
 				player_command: false
 			}]
 		}
@@ -1618,7 +1618,7 @@
 				type: "command"
 				title: "Legendary Botania Loot Box"
 				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_botania_loot_legendary"
 				player_command: false
 			}]
 		}
@@ -1640,7 +1640,7 @@
 				type: "command"
 				title: "Rare Botania Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_botania_loot_rare"
 				player_command: false
 			}]
 		}
@@ -1675,7 +1675,7 @@
 				type: "command"
 				title: "Legendary Botania Loot Box"
 				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_botania_loot_legendary"
 				player_command: false
 			}]
 		}

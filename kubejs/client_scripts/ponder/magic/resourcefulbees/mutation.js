@@ -2,7 +2,7 @@
 
 onEvent('ponder.registry', (event) => {
     event
-        .create('enigmatica:mutation', [
+        .create('jmm:mutation', [
             'resourcefulbees:t1_beehive',
             'resourcefulbees:t2_beehive',
             'resourcefulbees:t3_beehive',
@@ -85,7 +85,7 @@ onEvent('ponder.registry', (event) => {
         .scene(
             'pollen_mechanics',
             'Bee Pollen - Practically Dripping with Function',
-            'enigmatica:enigmatica/bases/3x3',
+            'jmm:jmm/bases/3x3',
             (scene, util) => {
                 scene.showBasePlate();
                 scene.world().showSection(util.select().layer(1), Facing.south);
@@ -137,7 +137,7 @@ onEvent('ponder.registry', (event) => {
                 }
             }
         )
-        .scene('entity_mutation', 'Pollen as Mutagen', 'enigmatica:enigmatica/bases/3x3', (scene, util) => {
+        .scene('entity_mutation', 'Pollen as Mutagen', 'jmm:jmm/bases/3x3', (scene, util) => {
             scene.showBasePlate();
             scene.world().showSection(util.select().layer(1), Facing.south);
 
@@ -336,7 +336,7 @@ onEvent('ponder.registry', (event) => {
         .scene(
             'mutation_chamber',
             'Mutating Bees the Easy Way',
-            'enigmatica:resourcefulbees/mutation/mutation_chamber',
+            'jmm:resourcefulbees/mutation/mutation_chamber',
             (scene, util) => {
                 scene.showBasePlate();
 

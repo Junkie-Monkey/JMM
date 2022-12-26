@@ -43,11 +43,11 @@ onEvent('item.tooltip', (event) => {
         },
         {
             items: ['kubejs:altered_recipe_indicator'],
-            text: [Text.of('Recipe altered for Enigmatica 6: Expert. Refer to JEI.').gold()]
+            text: [Text.of('Recipe altered. Refer to JEI.').gold()]
         },
         {
             items: ['kubejs:disabled_recipe_indicator'],
-            text: [Text.of('Recipe disabled for Enigmatica 6').gold()]
+            text: [Text.of('Recipe disabled for Junkie Monkey').gold()]
         },
         {
             items: ['tconstruct:crafting_station', 'tconstruct:part_builder', 'tconstruct:tinker_station'],
@@ -132,7 +132,7 @@ onEvent('item.tooltip', (event) => {
             text: [Text.of('Grants additional projectile velocity on Bows and Crossbows').color('#7e24b3')]
         },
         {
-            items: ['#enigmatica:burning_hot'],
+            items: ['#jmm:burning_hot'],
             text: [Text.of('Extremely hot!').darkRed()]
         },
         {

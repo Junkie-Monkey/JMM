@@ -111,7 +111,7 @@
 				type: "command"
 				title: "Rare Pedestals Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_pedestals_loot_rare"
 				player_command: false
 			}]
 		}
@@ -136,7 +136,7 @@
 				type: "command"
 				title: "Legendary Pedestals Loot Box"
 				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_legendary"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_pedestals_loot_legendary"
 				player_command: false
 			}]
 		}
@@ -172,7 +172,7 @@
 				type: "command"
 				title: "Rare Pedestals Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_pedestals_loot_rare"
 				player_command: false
 			}]
 		}
@@ -218,7 +218,7 @@
 				type: "command"
 				title: "Legendary Pedestals Loot Box"
 				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_legendary"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_pedestals_loot_legendary"
 				player_command: false
 			}]
 		}
@@ -322,7 +322,7 @@
 				type: "command"
 				title: "Legendary Pedestals Loot Box"
 				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_legendary"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_pedestals_loot_legendary"
 				player_command: false
 			}]
 		}
@@ -391,7 +391,7 @@
 					type: "command"
 					title: "Epic Pedestals Loot Box"
 					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_epic"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_pedestals_loot_epic"
 					player_command: false
 				}
 			]
@@ -444,7 +444,7 @@
 					type: "command"
 					title: "Sorcerer's Delight"
 					icon: "kubejs:sorcerers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_sorcerers_delight"
 					player_command: false
 				}
 			]
@@ -489,7 +489,7 @@
 					type: "command"
 					title: "Epic Pedestals Loot Box"
 					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_epic"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_pedestals_loot_epic"
 					player_command: false
 				}
 				{
@@ -522,7 +522,7 @@
 					type: "command"
 					title: "Legendary Pedestals Loot Box"
 					icon: "kubejs:legendary_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_legendary"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_pedestals_loot_legendary"
 					player_command: false
 				}
 				{
@@ -562,7 +562,7 @@
 					type: "command"
 					title: "Legendary Pedestals Loot Box"
 					icon: "kubejs:legendary_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_legendary"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_pedestals_loot_legendary"
 					player_command: false
 				}
 				{
@@ -570,7 +570,7 @@
 					type: "command"
 					title: "Sorcerer's Delight"
 					icon: "kubejs:sorcerers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_sorcerers_delight"
 					player_command: false
 				}
 			]
@@ -604,7 +604,7 @@
 				type: "command"
 				title: "Rare Pedestals Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_pedestals_loot_rare"
 				player_command: false
 			}]
 		}
@@ -634,7 +634,7 @@
 				type: "command"
 				title: "Pedestals Legendary Loot Box"
 				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_legendary"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_pedestals_loot_legendary"
 				player_command: false
 			}]
 		}
@@ -704,7 +704,7 @@
 				type: "command"
 				title: "Rare Pedestals Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_pedestals_loot_rare"
 				player_command: false
 			}]
 		}
@@ -748,7 +748,7 @@
 				type: "command"
 				title: "Miner's Delight"
 				icon: "kubejs:miners_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_miners_delight"
 				player_command: false
 			}]
 		}
@@ -793,7 +793,7 @@
 				type: "command"
 				title: "Miner's Delight"
 				icon: "kubejs:miners_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_miners_delight"
 				player_command: false
 			}]
 		}
@@ -847,7 +847,7 @@
 					type: "command"
 					title: "Rare Pedestals Loot Box"
 					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_rare"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_pedestals_loot_rare"
 					player_command: false
 				}
 			]
@@ -878,7 +878,7 @@
 				type: "command"
 				title: "Epic Pedestals Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_pedestals_loot_epic"
 				player_command: false
 			}]
 		}
@@ -1036,7 +1036,7 @@
 				type: "command"
 				title: "Legendary Pedestals Loot Box"
 				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_legendary"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_pedestals_loot_legendary"
 				player_command: false
 			}]
 		}
@@ -1135,7 +1135,7 @@
 				type: "command"
 				title: "Rare Pedestals Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_pedestals_loot_rare"
 				player_command: false
 			}]
 		}
@@ -1171,7 +1171,7 @@
 					type: "command"
 					title: "Rare Pedestals Loot Box"
 					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_rare"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_pedestals_loot_rare"
 					player_command: false
 				}
 			]
@@ -1273,7 +1273,7 @@
 				type: "command"
 				title: "Epic Pedestals Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_pedestals_loot_epic"
 				player_command: false
 			}]
 		}
@@ -1323,7 +1323,7 @@
 				type: "command"
 				title: "Epic Pedestals Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_pedestals_loot_epic"
 				player_command: false
 			}]
 		}
@@ -1372,7 +1372,7 @@
 				type: "command"
 				title: "Epic Pedestals Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_pedestals_loot_epic"
 				player_command: false
 			}]
 		}
@@ -1417,7 +1417,7 @@
 				type: "command"
 				title: "Rare Pedestals Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_pedestals_loot_rare"
 				player_command: false
 			}]
 		}
@@ -1467,7 +1467,7 @@
 				type: "command"
 				title: "Rare Pedestals Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_pedestals_loot_rare"
 				player_command: false
 			}]
 		}
@@ -1512,7 +1512,7 @@
 				type: "command"
 				title: "Rare Pedestals Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_pedestals_loot_rare"
 				player_command: false
 			}]
 		}
@@ -1563,7 +1563,7 @@
 				type: "command"
 				title: "Epic Pedestals Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_pedestals_loot_epic"
 				player_command: false
 			}]
 		}

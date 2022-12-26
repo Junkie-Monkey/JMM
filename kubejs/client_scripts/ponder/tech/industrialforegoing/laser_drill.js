@@ -14,7 +14,7 @@ onEvent('ponder.registry', (event) => {
     ]);
 
     event
-        .create('enigmatica:laser_drill', [
+        .create('jmm:laser_drill', [
             'industrialforegoing:ore_laser_base',
             'industrialforegoing:fluid_laser_base',
             'industrialforegoing:laser_drill',
@@ -37,11 +37,11 @@ onEvent('ponder.registry', (event) => {
             'industrialforegoing:laser_lens15',
             'industrialforegoing:ether_gas_bucket'
         ])
-        //.tag('enigmatica:industrial_foregoing')
+        //.tag('jmm:industrial_foregoing')
         .scene(
             'introduction',
             'How to use the Laser Drill',
-            'enigmatica:industrial_foregoing/laser_drill/example_setup',
+            'jmm:industrial_foregoing/laser_drill/example_setup',
             (scene, util) => {
                 scene.showBasePlate();
 
@@ -177,7 +177,7 @@ onEvent('ponder.registry', (event) => {
         .scene(
             'lenses',
             'Using Lenses to improve your chances',
-            'enigmatica:industrial_foregoing/laser_drill/example_setup',
+            'jmm:industrial_foregoing/laser_drill/example_setup',
             (scene, util) => {
                 scene.showBasePlate();
 
@@ -191,7 +191,7 @@ onEvent('ponder.registry', (event) => {
                     .colored(PonderPalette.WHITE)
                     .text(
                         'As you could see, the resources the Ore Laser drills up are random,' +
-                            ' so how can we make sure we actually get our precious rare ores rather than ten different kinds of copper?'
+                        ' so how can we make sure we actually get our precious rare ores rather than ten different kinds of copper?'
                     )
                     .placeNearTarget()
                     .pointAt([3.5, 4, 3.5]);
@@ -208,7 +208,7 @@ onEvent('ponder.registry', (event) => {
                     .colored(PonderPalette.WHITE)
                     .text(
                         `That's what lenses are for: By adding them into the Ore Laser Base,` +
-                            ` we can skew the odds of getting ores that have a certain colour in our favour.`
+                        ` we can skew the odds of getting ores that have a certain colour in our favour.`
                     )
                     .independent(20);
 
@@ -301,7 +301,7 @@ onEvent('ponder.registry', (event) => {
         .scene(
             'fluid_drill',
             'Using Lenses in the Fluid Laser',
-            'enigmatica:industrial_foregoing/laser_drill/example_setup',
+            'jmm:industrial_foregoing/laser_drill/example_setup',
             (scene, util) => {
                 scene.showBasePlate();
 
@@ -354,8 +354,8 @@ onEvent('ponder.registry', (event) => {
                     .attachKeyFrame()
                     .text(
                         'Fundamentally, the Fluid Laser is quite similar to its Ore counterpart,' +
-                            ' but it requires a Lens to function, and different recipes can' +
-                            ' have special requirements you may have to watch out for.'
+                        ' but it requires a Lens to function, and different recipes can' +
+                        ' have special requirements you may have to watch out for.'
                     )
                     .independent(30);
 
@@ -457,7 +457,7 @@ onEvent('ponder.registry', (event) => {
         .scene(
             'ether_gas',
             'Getting Ether Gas',
-            'enigmatica:industrial_foregoing/laser_drill/wither_milker',
+            'jmm:industrial_foregoing/laser_drill/wither_milker',
             (scene, util) => {
                 scene.showBasePlate();
 
@@ -471,7 +471,7 @@ onEvent('ponder.registry', (event) => {
                     .colored(PonderPalette.INPUT)
                     .text(
                         `Welcome... to the Wither Milker (patent pending)!` +
-                            ` You'll see why it's called that in a bit, but for now, let's go over the individual parts.`
+                        ` You'll see why it's called that in a bit, but for now, let's go over the individual parts.`
                     )
                     .independent(30);
 
@@ -503,7 +503,7 @@ onEvent('ponder.registry', (event) => {
                     .colored(PonderPalette.INPUT)
                     .text(
                         `First, we have our typical Fluid Laser Drill setup, with the Laser Base containing a Purple Lens.` +
-                            ` I've also left out the energy input here because you should know that the Drills need energy by now.`
+                        ` I've also left out the energy input here because you should know that the Drills need energy by now.`
                     )
                     .independent(30);
 
@@ -532,8 +532,8 @@ onEvent('ponder.registry', (event) => {
                     .colored(PonderPalette.GREEN)
                     .text(
                         `Next, we need to place down a stasis chamber. This puppy, when provided with power,` +
-                            ` will prevent any entities within its working area (blue), including players,` +
-                            ` from moving or interacting with the world in any way, hence the name.`
+                        ` will prevent any entities within its working area (blue), including players,` +
+                        ` from moving or interacting with the world in any way, hence the name.`
                     )
                     .placeNearTarget()
                     .pointAt([3.5, 1.5, 3.5]);
@@ -632,7 +632,7 @@ onEvent('ponder.registry', (event) => {
                     .colored(PonderPalette.WHITE)
                     .text(
                         `Now that dear Bartholomew over here is trapped by the Stasis Chamber and cannot wreck our stuff,` +
-                            ` we can use the Fluid Laser to... milk him. (Seriously, Buuz? This is a kids' game!)`
+                        ` we can use the Fluid Laser to... milk him. (Seriously, Buuz? This is a kids' game!)`
                     )
                     .placeNearTarget()
                     .pointAt([3.5, 4, 3.5]);
@@ -658,7 +658,7 @@ onEvent('ponder.registry', (event) => {
                     .colored(PonderPalette.WHITE)
                     .text(
                         `And that's about it for the basics of the Industrial Foregoing Laser Drill!` +
-                            ` There's more stuff we haven't covered in this tutorial, so we recommend you just give it a try yourself!`
+                        ` There's more stuff we haven't covered in this tutorial, so we recommend you just give it a try yourself!`
                     )
                     .independent(30);
 

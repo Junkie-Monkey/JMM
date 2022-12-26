@@ -14,11 +14,11 @@
 			x: 0.0d
 			y: -6.0d
 			description: [
-				" Welcome to Enigmatica 6, we're glad to have you :D"
+				" Welcome to Junkie Monkey, we're glad to have you :D"
 				" "
 				"Quests are divided into 3 types:"
 				""
-				"- Exploring Enigmatica"
+				"- Exploring Junkie Monkey"
 				"- Learning Mods"
 				"- Challenges"
 				""
@@ -38,7 +38,7 @@
 				type: "command"
 				title: "Farmer's Delight"
 				icon: "kubejs:farmers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_farmers_delight"
 				player_command: false
 			}]
 		}
@@ -60,7 +60,7 @@
 			tasks: [{
 				id: "00000000000002AD"
 				type: "checkmark"
-				title: "Exploring Enigmatica"
+				title: "Exploring Junkie Monkey"
 				icon: "minecraft:compass"
 			}]
 			rewards: [{
@@ -150,32 +150,6 @@
 						"patchouli:book": "patchouli:modded_for_dummies"
 					}
 				}
-			}]
-		}
-		{
-			title: "Expert Mode"
-			x: 0.0d
-			y: -8.0d
-			description: [
-				"Enigmatica has two modes: Normal and Expert"
-				""
-				"You can toggle between them using the commands \"/mode normal\" and \"/mode expert\""
-				""
-				"This will trigger a reload which changes configs and recipes."
-				""
-				"A few config changes require a full restart to take effect, but in most cases there's no need to restart now, as those changes will load when you launch the game next time."
-			]
-			dependencies: [
-				"0000000000000FEB"
-				"0000000000000045"
-			]
-			hide: true
-			optional: true
-			id: "0000000000000FE9"
-			tasks: [{
-				id: "0000000000000FEA"
-				type: "item"
-				item: "mekanism:robit"
 			}]
 		}
 		{

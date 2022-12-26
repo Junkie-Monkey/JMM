@@ -1,6 +1,6 @@
 {
     "name": "Waypoints",
-    "icon": "enigmatica:textures/pin.png",
+    "icon": "jmm:textures/pin.png",
     "category": "patchouli:ftbchunks",
     "sortnum": 2,
     "pages": [

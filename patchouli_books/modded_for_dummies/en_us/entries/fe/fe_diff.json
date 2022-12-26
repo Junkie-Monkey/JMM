@@ -1,6 +1,6 @@
 {
     "name": "So what's the difference?",
-    "icon": "enigmatica:textures/power3.png",
+    "icon": "jmm:textures/power3.png",
     "category": "patchouli:fe",
     "sortnum": 1,
     "pages": [

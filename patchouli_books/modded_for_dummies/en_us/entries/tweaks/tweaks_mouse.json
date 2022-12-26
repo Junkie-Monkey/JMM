@@ -1,6 +1,6 @@
 {
     "name": "Mouse Tweaks",
-    "icon": "enigmatica:textures/mouse_tweaks.png",
+    "icon": "jmm:textures/mouse_tweaks.png",
     "category": "patchouli:tweaks",
     "pages": [
         {

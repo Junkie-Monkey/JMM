@@ -1,0 +1,8 @@
+{
+    "packmenu.jmm.singleplayer": "Singleplayer",
+    "packmenu.jmm.multiplayer": "Multiplayer",
+    "packmenu.jmm.server": "Join Server",
+    "packmenu.jmm.options": "Options",
+    "packmenu.jmm.mods": "Mods",
+    "packmenu.jmm.quit": "Quit"
+}

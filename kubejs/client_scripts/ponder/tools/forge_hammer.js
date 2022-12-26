@@ -2,7 +2,7 @@
 
 onEvent('ponder.registry', (event) => {
     event
-        .create('enigmatica:forge_hammer', [
+        .create('jmm:forge_hammer', [
             'tetra:hammer_base',
             'tetra:basic_workbench',
             'tetra:magmatic_cell',
@@ -16,7 +16,7 @@ onEvent('ponder.registry', (event) => {
         .scene(
             'forge_hammer',
             'Tetra Forge Hammer - Building Better Tools',
-            'enigmatica:tetra/forge_hammer/forge_hammer',
+            'jmm:tetra/forge_hammer/forge_hammer',
             (scene, util) => {
                 scene.showBasePlate();
 

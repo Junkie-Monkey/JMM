@@ -1,6 +1,6 @@
 {
     "name": "Claiming and Allies",
-    "icon": "enigmatica:textures/friends.png",
+    "icon": "jmm:textures/friends.png",
     "category": "patchouli:ftbchunks",
     "sortnum": 4,
     "pages": [
@@ -19,7 +19,6 @@
         {
             "type": "text",
             "text": "$(l)If you hold shift and interact with chunks you already claimed you can also force them to be loaded at all times $(reset) (see $(l:ftbchunks/ftbchunks_chunkloading)here$(reset) for more). As always, shift left click will force load chunks and shift right click will remove the force load from chunks."
-
         }
     ]
 }

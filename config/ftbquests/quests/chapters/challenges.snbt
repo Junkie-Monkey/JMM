@@ -772,7 +772,7 @@
 				type: "advancement"
 				title: "Tame all tameable animals"
 				icon: "farmersdelight:horse_feed"
-				advancement: "enigmatica:husbandry/tame_all_animals"
+				advancement: "jmm:husbandry/tame_all_animals"
 				criterion: ""
 			}]
 			rewards: [{

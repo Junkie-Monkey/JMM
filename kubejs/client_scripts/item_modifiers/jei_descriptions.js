@@ -475,7 +475,7 @@ onEvent('jei.information', (event) => {
         {
             items: [/masterfulmachinery:\w+_controller/],
             text: [
-                `Use the included Building Gadgets patterns found in the "building_gadgets_patterns" folder of Enigmatica 6 instance folder.`,
+                `Use the included Building Gadgets patterns found in the "building_gadgets_patterns" folder of Junkie Monkey instance folder.`,
                 ` `,
                 'May be rotated, but not mirrored.'
             ]
@@ -605,7 +605,7 @@ onEvent('jei.information', (event) => {
     disabledItems.forEach((item) => {
         event.add(
             item,
-            "This item has been disabled, if you managed to obtain it please report it on Enigmatica 6's issue tracker: https://github.com/EnigmaticaModpacks/Enigmatica6/issues"
+            "This item has been disabled, if you managed to obtain it please report it on Junkie Monkey's issue tracker: https://github.com/KuryKat/JMM/issues"
         );
     });
 

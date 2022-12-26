@@ -4,7 +4,7 @@ onEvent('ponder.registry', (event) => {
     event
         .create('portals:atum', 'atum:scarab')
 
-        .scene('atum_portal', `Atum's Portal - not a Stargate.`, 'enigmatica:portals/atum/portal', (scene, util) => {
+        .scene('atum_portal', `Atum's Portal - not a Stargate.`, 'jmm:portals/atum/portal', (scene, util) => {
             scene.showBasePlate();
 
             scene.idle(20);

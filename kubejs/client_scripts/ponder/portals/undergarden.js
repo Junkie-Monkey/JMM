@@ -7,7 +7,7 @@ onEvent('ponder.registry', (event) => {
         .scene(
             'undergarden_portal',
             `Undergarden's Portal - this won't take you to Narnia.`,
-            'enigmatica:portals/undergarden/portal',
+            'jmm:portals/undergarden/portal',
             (scene, util) => {
                 scene.showBasePlate();
 

@@ -2,7 +2,7 @@
 
 onEvent('ponder.registry', (event) => {
     event
-        .create('enigmatica:latex', [
+        .create('jmm:latex', [
             'industrialforegoing:latex_processing_unit',
             'industrialforegoing:fluid_extractor',
             'industrialforegoing:tinydryrubber',
@@ -10,11 +10,11 @@ onEvent('ponder.registry', (event) => {
             'industrialforegoing:plastic',
             'industrialforegoing:latex_bucket'
         ])
-        //.tag('enigmatica:industrial_foregoing')
+        //.tag('jmm:industrial_foregoing')
         .scene(
             'extracting_fluids',
             'Gathering Latex From Trees',
-            'enigmatica:industrial_foregoing/latex/extracting_fluids',
+            'jmm:industrial_foregoing/latex/extracting_fluids',
             (scene, util) => {
                 scene.showBasePlate();
 
@@ -165,7 +165,7 @@ onEvent('ponder.registry', (event) => {
         .scene(
             'processing_latex',
             'Processing Latex into Rubber and Plastic',
-            'enigmatica:industrial_foregoing/latex/processing_latex',
+            'jmm:industrial_foregoing/latex/processing_latex',
             (scene, util) => {
                 scene.showBasePlate();
 

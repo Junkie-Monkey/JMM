@@ -77,7 +77,7 @@
 					type: "command"
 					title: "Scavenger's Delight"
 					icon: "kubejs:scavengers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_scavengers_delight"
 					player_command: false
 				}
 			]
@@ -97,7 +97,7 @@
 				""
 				"They may be further augmented by attuning the crystal a second time to a Faint constellation. Refer to the Astral Tome for more information on this process and the effects each constellation has. "
 				""
-				"Note: Building Gadget's Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock. "
+				"Note: Building Gadget's Patterns and Create Schematics are available in your Junkie Monkey instance folder to assist with this multiblock. "
 			]
 			dependencies: ["0000000000000B8E"]
 			id: "0000000000000B70"
@@ -136,7 +136,7 @@
 				type: "command"
 				title: "Epic Astral Sorcery Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_astral_sorcery_loot_epic"
 				player_command: false
 			}]
 		}
@@ -188,7 +188,7 @@
 					type: "command"
 					title: "Scavenger's Delight"
 					icon: "kubejs:scavengers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_scavengers_delight"
 					player_command: false
 				}
 			]
@@ -223,7 +223,7 @@
 				type: "command"
 				title: "Rare Astral Sorcery Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_astral_sorcery_loot_rare"
 				player_command: false
 			}]
 		}
@@ -236,7 +236,7 @@
 				""
 				"Upgraded crafters are also capable of crafting everything that the previous tiers could craft."
 				""
-				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
+				"Note: Building Gadgets Patterns and Create Schematics are available in your Junkie Monkey instance folder to assist with this multiblock."
 			]
 			dependencies: ["0000000000000B6E"]
 			id: "0000000000000B79"
@@ -282,7 +282,7 @@
 				type: "command"
 				title: "Rare Astral Sorcery Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_astral_sorcery_loot_rare"
 				player_command: false
 			}]
 		}
@@ -293,7 +293,7 @@
 			description: [
 				"The next tier of crafting altar. Many of these resources may be re-used from the previous altar."
 				""
-				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
+				"Note: Building Gadgets Patterns and Create Schematics are available in your Junkie Monkey instance folder to assist with this multiblock."
 			]
 			dependencies: ["0000000000000B79"]
 			id: "0000000000000B7B"
@@ -345,7 +345,7 @@
 				type: "command"
 				title: "Epic Astral Sorcery Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_astral_sorcery_loot_epic"
 				player_command: false
 			}]
 		}
@@ -358,7 +358,7 @@
 				""
 				"A properly attuned crystal is also required in the extra slot of the crafting table itself to align it to that constellation."
 				""
-				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
+				"Note: Building Gadgets Patterns and Create Schematics are available in your Junkie Monkey instance folder to assist with this multiblock."
 			]
 			dependencies: ["0000000000000B7B"]
 			id: "0000000000000B7D"
@@ -404,7 +404,7 @@
 				type: "command"
 				title: "Legendary Astral Sorcery Loot Box"
 				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_legendary"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_astral_sorcery_loot_legendary"
 				player_command: false
 			}]
 		}
@@ -420,7 +420,7 @@
 				""
 				"Placing one of these structures to each side of the altar is an excellent way to boost early starlight. Ideally, they should be spaced far apart to prevent interference between Relays."
 				""
-				"Note: Building Gadget's Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock. "
+				"Note: Building Gadget's Patterns and Create Schematics are available in your Junkie Monkey instance folder to assist with this multiblock. "
 			]
 			dependencies: ["0000000000000B9F"]
 			id: "0000000000000B7F"
@@ -453,7 +453,7 @@
 				type: "command"
 				title: "Rare Astral Sorcery Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_astral_sorcery_loot_rare"
 				player_command: false
 			}]
 		}
@@ -523,7 +523,7 @@
 				type: "command"
 				title: "Rare Astral Sorcery Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_astral_sorcery_loot_rare"
 				player_command: false
 			}]
 		}
@@ -551,7 +551,7 @@
 				type: "command"
 				title: "Legendary Astral Sorcery Loot Box"
 				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_legendary"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_astral_sorcery_loot_legendary"
 				player_command: false
 			}]
 		}
@@ -572,7 +572,7 @@
 				""
 				"Attunement is also required to begin tracing Dim Constellations."
 				""
-				"Note: Building Gadget's Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock. "
+				"Note: Building Gadget's Patterns and Create Schematics are available in your Junkie Monkey instance folder to assist with this multiblock. "
 			]
 			dependencies: ["0000000000000B8A"]
 			min_width: 300
@@ -587,7 +587,7 @@
 				type: "command"
 				title: "Epic Astral Sorcery Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_astral_sorcery_loot_epic"
 				player_command: false
 			}]
 		}
@@ -677,7 +677,7 @@
 				""
 				"Certain attunements are more susceptible to this than others. "
 				""
-				"Note: Building Gadget's Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock. "
+				"Note: Building Gadget's Patterns and Create Schematics are available in your Junkie Monkey instance folder to assist with this multiblock. "
 			]
 			dependencies: [
 				"0000000000000B70"
@@ -732,7 +732,7 @@
 				type: "command"
 				title: "Legendary Astral Sorcery Loot Box"
 				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_legendary"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_astral_sorcery_loot_legendary"
 				player_command: false
 			}]
 		}
@@ -775,7 +775,7 @@
 				type: "command"
 				title: "Rare Astral Sorcery Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_astral_sorcery_loot_rare"
 				player_command: false
 			}]
 		}
@@ -818,7 +818,7 @@
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_scavengers_delight"
 				player_command: false
 			}]
 		}
@@ -851,7 +851,7 @@
 				type: "command"
 				title: "Epic Astral Sorcery Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_astral_sorcery_loot_epic"
 				player_command: false
 			}]
 		}
@@ -867,7 +867,7 @@
 				""
 				"Right-Click an item into the Infuser and then Right-Click again with a Resonating Wand to begin the craft. Each craft has a small chance of consuming Liquid Starlight. "
 				""
-				"Note: Building Gadget's Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock. "
+				"Note: Building Gadget's Patterns and Create Schematics are available in your Junkie Monkey instance folder to assist with this multiblock. "
 			]
 			dependencies: ["0000000000000B7B"]
 			id: "0000000000000BA7"
@@ -912,7 +912,7 @@
 				type: "command"
 				title: "Epic Astral Sorcery Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_astral_sorcery_loot_epic"
 				player_command: false
 			}]
 		}
@@ -985,7 +985,7 @@
 				type: "command"
 				title: "Rare Astral Sorcery Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_astral_sorcery_loot_rare"
 				player_command: false
 			}]
 		}
@@ -1016,7 +1016,7 @@
 				type: "command"
 				title: "Rare Astral Sorcery Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_astral_sorcery_loot_rare"
 				player_command: false
 			}]
 		}
@@ -1040,7 +1040,7 @@
 				type: "command"
 				title: "Legendary Astral Sorcery Loot Box"
 				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_legendary"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_astral_sorcery_loot_legendary"
 				player_command: false
 			}]
 		}
@@ -1071,7 +1071,7 @@
 				type: "command"
 				title: "Epic Astral Sorcery Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_astral_sorcery_loot_epic"
 				player_command: false
 			}]
 		}
@@ -1105,7 +1105,7 @@
 				type: "command"
 				title: "Epic Astral Sorcery Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_astral_sorcery_loot_epic"
 				player_command: false
 			}]
 		}
@@ -1148,7 +1148,7 @@
 				type: "command"
 				title: "Rare Astral Sorcery Loot Box"
 				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_rare"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_astral_sorcery_loot_rare"
 				player_command: false
 			}]
 		}
@@ -1214,7 +1214,7 @@
 				type: "command"
 				title: "Epic Astral Sorcery Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_astral_sorcery_loot_epic"
 				player_command: false
 			}]
 		}
@@ -1252,7 +1252,7 @@
 				type: "command"
 				title: "Legendary Astral Sorcery Loot Box"
 				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_legendary"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_astral_sorcery_loot_legendary"
 				player_command: false
 			}]
 		}
@@ -1299,7 +1299,7 @@
 				type: "command"
 				title: "Scavenger's Delight"
 				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_scavengers_delight"
 				player_command: false
 			}]
 		}
@@ -1327,7 +1327,7 @@
 				""
 				"Build two or more of these structures to begin creating a network of gates. These have no distance limitations and work cross dimensionally."
 				""
-				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
+				"Note: Building Gadgets Patterns and Create Schematics are available in your Junkie Monkey instance folder to assist with this multiblock."
 			]
 			dependencies: ["0000000000000B8A"]
 			id: "0000000000000BD3"
@@ -1386,7 +1386,7 @@
 					type: "command"
 					title: "Scavenger's Delight"
 					icon: "kubejs:scavengers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_scavengers_delight"
 					player_command: false
 				}
 			]
@@ -1430,7 +1430,7 @@
 					type: "command"
 					title: "Epic Astral Sorcery Loot Box"
 					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_epic"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_astral_sorcery_loot_epic"
 					player_command: false
 				}
 			]
@@ -1476,7 +1476,7 @@
 				type: "command"
 				title: "Epic Astral Sorcery Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_astral_sorcery_loot_epic"
 				player_command: false
 			}]
 		}
@@ -1507,7 +1507,7 @@
 				type: "command"
 				title: "Epic Astral Sorcery Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_epic"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_astral_sorcery_loot_epic"
 				player_command: false
 			}]
 		}
@@ -1555,7 +1555,7 @@
 					type: "command"
 					title: "Legendary Astral Sorcery Loot Box"
 					icon: "kubejs:legendary_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_legendary"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_astral_sorcery_loot_legendary"
 					player_command: false
 				}
 			]
@@ -1588,7 +1588,7 @@
 				type: "command"
 				title: "Legendary Astral Sorcery Loot Box"
 				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_legendary"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_astral_sorcery_loot_legendary"
 				player_command: false
 			}]
 		}

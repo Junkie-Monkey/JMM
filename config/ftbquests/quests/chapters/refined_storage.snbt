@@ -170,7 +170,7 @@
 					type: "command"
 					title: "Refined Storage Loot Box"
 					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_refined_storage_loot"
 					player_command: false
 				}
 				{
@@ -252,7 +252,7 @@
 				type: "command"
 				title: "Refined Storage Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_refined_storage_loot"
 				player_command: false
 			}]
 		}
@@ -365,7 +365,7 @@
 				type: "command"
 				title: "Refined Storage Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_refined_storage_loot"
 				player_command: false
 			}]
 		}
@@ -399,7 +399,7 @@
 				type: "command"
 				title: "Refined Storage Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_refined_storage_loot"
 				player_command: false
 			}]
 		}
@@ -455,7 +455,7 @@
 				type: "command"
 				title: "Refined Storage Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_refined_storage_loot"
 				player_command: false
 			}]
 		}
@@ -488,7 +488,7 @@
 					type: "command"
 					title: "Refined Storage Loot Box"
 					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_refined_storage_loot"
 					player_command: false
 				}
 				{
@@ -496,7 +496,7 @@
 					type: "command"
 					title: "Refined Storage Loot Box"
 					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_refined_storage_loot"
 					player_command: false
 				}
 			]
@@ -538,7 +538,7 @@
 				type: "command"
 				title: "Refined Storage Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_refined_storage_loot"
 				player_command: false
 			}]
 		}
@@ -563,7 +563,7 @@
 				type: "command"
 				title: "Refined Storage Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_refined_storage_loot"
 				player_command: false
 			}]
 		}
@@ -628,7 +628,7 @@
 					type: "command"
 					title: "Refined Storage Loot Box"
 					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_refined_storage_loot"
 					player_command: false
 				}
 				{
@@ -636,7 +636,7 @@
 					type: "command"
 					title: "Refined Storage Loot Box"
 					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_refined_storage_loot"
 					player_command: false
 				}
 			]
@@ -670,7 +670,7 @@
 				type: "command"
 				title: "Refined Storage Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_refined_storage_loot"
 				player_command: false
 			}]
 		}
@@ -695,7 +695,7 @@
 				type: "command"
 				title: "Refined Storage Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_refined_storage_loot"
 				player_command: false
 			}]
 		}
@@ -717,7 +717,7 @@
 				type: "command"
 				title: "Refined Storage Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_refined_storage_loot"
 				player_command: false
 			}]
 		}
@@ -765,7 +765,7 @@
 				type: "command"
 				title: "Refined Storage Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_refined_storage_loot"
 				player_command: false
 			}]
 		}
@@ -790,7 +790,7 @@
 				type: "command"
 				title: "Refined Storage Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_refined_storage_loot"
 				player_command: false
 			}]
 		}
@@ -811,7 +811,7 @@
 				type: "command"
 				title: "Refined Storage Loot Box"
 				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_refined_storage_loot"
 				player_command: false
 			}]
 		}

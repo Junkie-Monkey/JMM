@@ -1,0 +1,8 @@
+{
+    "packmenu.jmm.singleplayer": "싱글플레이어",
+    "packmenu.jmm.multiplayer": "멀티플레이어",
+    "packmenu.jmm.server": "Join Server",
+    "packmenu.jmm.options": "설정",
+    "packmenu.jmm.mods": "모드",
+    "packmenu.jmm.quit": "종료"
+}

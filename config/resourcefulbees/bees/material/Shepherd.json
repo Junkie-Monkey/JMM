@@ -4,7 +4,9 @@
     "loreColor": "#00AAAA",
     "maxTimeInHive": 4800,
     "sizeModifier": 1,
-    "traits": ["can_swim"],
+    "traits": [
+        "can_swim"
+    ],
     "hasHoneycomb": true,
     "baseLayerTexture": "other/shepherd",
     "ColorData": {
@@ -22,40 +24,68 @@
             {
                 "type": "ENTITY",
                 "inputID": "entity:minecraft:cow",
-                "outputs": [{ "outputID": "entity:minecraft:cow", "weight": 50, "nbtData": {"Age":0} }]
+                "outputs": [
+                    {
+                        "outputID": "entity:minecraft:cow",
+                        "weight": 50,
+                        "nbtData": {
+                            "Age": 0
+                        }
+                    }
+                ]
             },
             {
                 "type": "ENTITY",
                 "inputID": "entity:minecraft:chicken",
-                "outputs": [{ "outputID": "entity:minecraft:chicken", "weight": 50, "nbtData": {"Age":0} }]
+                "outputs": [
+                    {
+                        "outputID": "entity:minecraft:chicken",
+                        "weight": 50,
+                        "nbtData": {
+                            "Age": 0
+                        }
+                    }
+                ]
             },
             {
                 "type": "ENTITY",
                 "inputID": "entity:minecraft:pig",
-                "outputs": [{ "outputID": "entity:minecraft:pig", "weight": 50, "nbtData": {"Age":0} }]
+                "outputs": [
+                    {
+                        "outputID": "entity:minecraft:pig",
+                        "weight": 50,
+                        "nbtData": {
+                            "Age": 0
+                        }
+                    }
+                ]
             },
             {
                 "type": "ENTITY",
                 "inputID": "entity:minecraft:sheep",
-                "outputs": [{ "outputID": "entity:minecraft:sheep", "weight": 50, "nbtData": {"Age":0} }]
+                "outputs": [
+                    {
+                        "outputID": "entity:minecraft:sheep",
+                        "weight": 50,
+                        "nbtData": {
+                            "Age": 0
+                        }
+                    }
+                ]
             }
         ]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
-
         "mainOutput": "minecraft:mutton",
         "mainOutputWeight": 0.5,
         "mainOutputCount": 1,
-
         "secondaryOutput": "resourcefulbees:wax",
         "secondaryOutputWeight": 0.5,
         "secondaryOutputCount": 3,
-
         "bottleOutput": "minecraft:honey_bottle",
         "bottleOutputWeight": 0.5,
         "bottleOutputCount": 1,
-
         "mainInputCount": 1
     },
     "SpawnData": {
@@ -65,7 +95,7 @@
         "isBreedable": true,
         "parent1": "rgbee",
         "parent2": "water",
-        "feedItem": "tag:enigmatica:meats",
+        "feedItem": "tag:jmm:meats",
         "feedAmount": 3,
         "childGrowthDelay": -24000,
         "breedDelay": 6000
