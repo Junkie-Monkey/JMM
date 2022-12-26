@@ -88,6 +88,7 @@ start-automated-server.bat
 start-automated-server.sh
 server-setup-config.yaml
 server.properties
+imgui.ini
 settings.cfg
 update-server.bat
 update-server.ps1
