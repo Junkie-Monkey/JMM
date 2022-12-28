@@ -95,5 +95,9 @@
     "bountiful.decree.demolisher.name": "Demolisher",
     "bountiful.decree.witch.name": "Witch",
     "bountiful.decree.druid.name": "Druid",
+    "enchantment.draconicevolution.reaper_enchantment.desc": "Killing mobs has a chance to drop the corresponding Mob Soul.",
+    "enchantment.create.capacity.desc": "Increases the air capacity of a Copper Backtank.",
+    "enchantment.create.potato_recovery.desc": "Potato Cannon ammo has a chance to drop as an item on hit.",
+    "enchantment.mythicbotany.hammer_mobility.desc": "Increases Mjöllnir attack speed.",
     "": ""
 }
