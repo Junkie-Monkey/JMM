@@ -521,4 +521,12 @@ onEvent('item.registry', (event) => {
             food.hunger(8).saturation(0.5).effect('upgrade_aquatic:vibing', 2400, 1, 1.0);
         })
         .displayName('Meat Ingot');
+
+    // Custom Special Items (JMM)
+    event
+        .create('jmm:junkie_monkey')
+        .group('KubeJS')
+        .displayName('§6§lSupreme §2§lJunkie §5§lMonkey')
+        .tooltip('§3Only the most maniac players have this item....')
+        .unstackable()
 });
