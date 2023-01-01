@@ -225,3 +225,5 @@ config/configswapper.json
 config/betterendforge/client.json
 config/Mekanism/tiers.toml
 pregen/supporters.json
+# Too many hats XD
+config/ichunutil
