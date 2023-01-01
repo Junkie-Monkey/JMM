@@ -22,7 +22,7 @@
 	#The Asset ID/URL of the image to display as the large image
 	largeImageKey = ["logo"]
 	#The text that gets displayed when the large image is hovered
-	largeImageText = "Minecraft %mcver%"
+	largeImageText = "%formattedVersion%"
 	#The Asset ID/URL of the image to display as the small image
 	smallImageKey = ["loading"]
 	#The text that gets displayed when the small image is hovered
@@ -40,7 +40,7 @@
 	#The Asset ID/URL of the image to display as the large image
 	largeImageKey = ["logo"]
 	#The text that gets displayed when the large image is hovered
-	largeImageText = "Minecraft %mcver%"
+	largeImageText = "%formattedVersion%"
 	#The Asset ID/URL of the image to display as the small image
 	smallImageKey = []
 	#The text that gets displayed when the small image is hovered
@@ -58,7 +58,7 @@
 	#The Asset ID/URL of the image to display as the large image
 	largeImageKey = ["logo"]
 	#The text that gets displayed when the large image is hovered
-	largeImageText = "Minecraft %mcver%"
+	largeImageText = "%formattedVersion%"
 	#The Asset ID/URL of the image to display as the small image
 	smallImageKey = []
 	#The text that gets displayed when the small image is hovered
@@ -76,7 +76,7 @@
 	#The Asset ID/URL of the image to display as the large image
 	largeImageKey = ["logo"]
 	#The text that gets displayed when the large image is hovered
-	largeImageText = "Minecraft %mcver%"
+	largeImageText = "%formattedVersion%"
 	#The Asset ID/URL of the image to display as the small image
 	smallImageKey = []
 	#The text that gets displayed when the small image is hovered
@@ -94,7 +94,7 @@
 	#The Asset ID/URL of the image to display as the large image
 	largeImageKey = ["logo"]
 	#The text that gets displayed when the large image is hovered
-	largeImageText = "Minecraft %mcver%"
+	largeImageText = "%formattedVersion%"
 	#The Asset ID/URL of the image to display as the small image
 	smallImageKey = ["loading"]
 	#The text that gets displayed when the small image is hovered
@@ -112,7 +112,7 @@
 	#The Asset ID/URL of the image to display as the large image
 	largeImageKey = ["logo"]
 	#The text that gets displayed when the large image is hovered
-	largeImageText = "Minecraft %mcver%"
+	largeImageText = "%formattedVersion%"
 	#The Asset ID/URL of the image to display as the small image
 	smallImageKey = ["mclogo"]
 	#The text that gets displayed when the small image is hovered
@@ -130,7 +130,7 @@
 	#The Asset ID/URL of the image to display as the large image
 	largeImageKey = ["logo"]
 	#The text that gets displayed when the large image is hovered
-	largeImageText = "Minecraft %mcver%"
+	largeImageText = "%formattedVersion%"
 	#The Asset ID/URL of the image to display as the small image
 	smallImageKey = ["mclogo"]
 	#The text that gets displayed when the small image is hovered
@@ -148,7 +148,7 @@
 	#The Asset ID/URL of the image to display as the large image
 	largeImageKey = ["logo"]
 	#The text that gets displayed when the large image is hovered
-	largeImageText = "Minecraft %mcver%"
+	largeImageText = "%formattedVersion%"
 	#The Asset ID/URL of the image to display as the small image
 	smallImageKey = ["mclogo"]
 	#The text that gets displayed when the small image is hovered
@@ -164,7 +164,7 @@
 	#The Asset ID/URL of the image to display as the large image
 	largeImageKey = ["logo"]
 	#The text that gets displayed when the large image is hovered
-	largeImageText = "Minecraft %mcver%"
+	largeImageText = "%formattedVersion%"
 	#The Asset ID/URL of the image to display as the small image
 	smallImageKey = []
 	#The text that gets displayed when the small image is hovered
@@ -176,7 +176,9 @@
 	#Must these variables be parsed along with other variables
 	enabled = true
 	#Your custom variables to add
-	variables = []
+    [[custom.variables]]
+        name = "formattedVersion"
+        value = "Minecraft %mcver%"
 
 [dimension_overrides]
 	enabled = true
@@ -185,8 +187,8 @@
 		name = "overworld"
 		description = "In The Overworld"
 		state = ""
-		largeImageKey = ["logo"]
-		largeImageText = "Minecraft %mcver%"
+		largeImageKey = []
+		largeImageText = ""
 		smallImageKey = ["overworld"]
 		smallImageText = "%mods% mods installed"
 		buttons = []
@@ -195,8 +197,8 @@
 		name = "the_nether"
 		description = "In The Nether"
 		state = ""
-		largeImageKey = ["logo"]
-		largeImageText = "Minecraft %mcver%"
+		largeImageKey = []
+		largeImageText = ""
 		smallImageKey = ["nether"]
 		smallImageText = "%mods% mods installed"
 		buttons = []
@@ -205,8 +207,8 @@
 		name = "the_end"
 		description = "In The End"
 		state = ""
-		largeImageKey = ["logo"]
-		largeImageText = "Minecraft %mcver%"
+		largeImageKey = []
+		largeImageText = ""
 		smallImageKey = ["end"]
 		smallImageText = "%mods% mods installed"
 		buttons = []
