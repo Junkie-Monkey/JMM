@@ -35,7 +35,7 @@ const clearLag = (server) => {
 
     server.tell([
         Text.lightPurple('[ClearLag]'),
-        ` Removed ${lastClearResult.totalCount / 3} items from the ground.`
+        ` Removed ${lastClearResult.totalCount} items from the ground.`
     ])
 }
 
