@@ -3,8 +3,9 @@
 	group: "72A9465344128AF9"
 	order_index: 8
 	filename: "draconic_evolution"
-	title: "Draconic Evolution"
+	title: "Draconic Evolution [WIP]"
 	icon: "draconicevolution:dragon_heart"
+	always_invisible: true
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -21,6 +22,7 @@
 				""
 				"That being said, good luck exploring this universe"
 			]
+			dependencies: ["5E04A855EE71D54E"]
 			size: 2.0d
 			optional: true
 			id: "6D9AC0DEBB23BFCE"
@@ -52,6 +54,7 @@
 			x: 0.0d
 			y: -1.5d
 			description: ["The Chaos Guardian is one of the most powerful bosses, if not the most powerful, in Junkie Monkey, if you really dare to try this Challenge, you better be really geared up with the best of the best weapon and equipment."]
+			dependencies: ["5E04A855EE71D54E"]
 			id: "428280A41C5FC298"
 			tasks: [{
 				id: "0A44C35753272B6D"
@@ -255,10 +258,9 @@
 		}
 		{
 			title: "The Draconic Reactor"
-			x: -5.5d
-			y: 0.0d
+			x: 13.5d
+			y: -4.0d
 			subtitle: "Be careful... it might... *explodes*"
-			hide_dependency_lines: true
 			dependencies: ["166EDD32982C3BFF"]
 			id: "7D629BE61CCFD5CC"
 			tasks: [{
@@ -666,6 +668,17 @@
 					}
 				}
 				count: 2
+			}]
+		}
+		{
+			x: -3.0d
+			y: -1.5d
+			subtitle: "THIS QUESTLINE IS STILL WIP"
+			id: "5E04A855EE71D54E"
+			tasks: [{
+				id: "531C29D541E0F5DE"
+				type: "checkmark"
+				title: "WIP"
 			}]
 		}
 	]
