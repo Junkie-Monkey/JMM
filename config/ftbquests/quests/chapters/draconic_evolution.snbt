@@ -316,7 +316,13 @@
 			tasks: [{
 				id: "04710D50D012F1DA"
 				type: "item"
-				item: "draconicevolution:draconium_block"
+				item: "draconicevolution:energy_core_stabilizer"
+				count: 4L
+			}]
+			rewards: [{
+				id: "4ECABC68901D0BD3"
+				type: "xp"
+				xp: 100
 			}]
 		}
 		{
@@ -329,11 +335,33 @@
 				"5AD1E795E2F748F3"
 			]
 			id: "0D424617D639F49A"
-			tasks: [{
-				id: "202B418BFBD2DF0E"
-				type: "item"
-				item: "draconicevolution:draconium_block"
-			}]
+			tasks: [
+				{
+					id: "202B418BFBD2DF0E"
+					type: "item"
+					item: "draconicevolution:draconium_block"
+					count: 6L
+				}
+				{
+					id: "0F60397C110F5690"
+					type: "item"
+					item: "draconicevolution:energy_core_stabilizer"
+					count: 4L
+				}
+			]
+			rewards: [
+				{
+					id: "522D77C197F9CBB2"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "459A28248F5EAF41"
+					type: "item"
+					item: "draconicevolution:draconium_block"
+					count: 5
+				}
+			]
 		}
 		{
 			title: "Tier 3"
@@ -345,11 +373,34 @@
 				"5AD1E795E2F748F3"
 			]
 			id: "3DB6CEFF8E2DBA3F"
-			tasks: [{
-				id: "3EFE8FEABC371F05"
-				type: "item"
-				item: "draconicevolution:draconium_block"
-			}]
+			tasks: [
+				{
+					id: "3EFE8FEABC371F05"
+					type: "item"
+					item: "draconicevolution:draconium_block"
+					count: 26L
+				}
+				{
+					id: "072A382E1EFA2324"
+					type: "item"
+					item: "draconicevolution:energy_core_stabilizer"
+					count: 4L
+				}
+			]
+			rewards: [
+				{
+					id: "56A634417DB4DCF2"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "56252083D79D3A44"
+					type: "item"
+					item: "draconicevolution:draconium_block"
+					count: 5
+					random_bonus: 5
+				}
+			]
 		}
 		{
 			title: "Tier 4"
@@ -361,11 +412,40 @@
 				"5AD1E795E2F748F3"
 			]
 			id: "30810C4610A2DBFC"
-			tasks: [{
-				id: "60D964B0B96316CF"
-				type: "item"
-				item: "draconicevolution:draconium_block"
-			}]
+			tasks: [
+				{
+					id: "60D964B0B96316CF"
+					type: "item"
+					item: "draconicevolution:draconium_block"
+					count: 54L
+				}
+				{
+					id: "545B6D127CADF3A4"
+					type: "item"
+					item: "minecraft:redstone_block"
+					count: 26L
+				}
+				{
+					id: "54101009E2F560E5"
+					type: "item"
+					item: "draconicevolution:energy_core_stabilizer"
+					count: 4L
+				}
+			]
+			rewards: [
+				{
+					id: "355DC296790DB336"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "073981C1B08C2C61"
+					type: "item"
+					item: "draconicevolution:draconium_block"
+					count: 5
+					random_bonus: 10
+				}
+			]
 		}
 		{
 			title: "Tier 5"
@@ -377,11 +457,40 @@
 				"5AD1E795E2F748F3"
 			]
 			id: "312DA42290ED2BBD"
-			tasks: [{
-				id: "78E44B8029ED2071"
-				type: "item"
-				item: "draconicevolution:draconium_block"
-			}]
+			tasks: [
+				{
+					id: "78E44B8029ED2071"
+					type: "item"
+					item: "draconicevolution:draconium_block"
+					count: 90L
+				}
+				{
+					id: "480F9D4A2CEC91A9"
+					type: "item"
+					item: "minecraft:redstone_block"
+					count: 80L
+				}
+				{
+					id: "6FE55E5336F8CA4D"
+					type: "item"
+					item: "draconicevolution:energy_core_stabilizer"
+					count: 36L
+				}
+			]
+			rewards: [
+				{
+					id: "6894635C3C1A017A"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "212278F97278B85C"
+					type: "item"
+					item: "draconicevolution:draconium_block"
+					count: 10
+					random_bonus: 10
+				}
+			]
 		}
 		{
 			title: "Tier 6"
@@ -393,11 +502,40 @@
 				"5AD1E795E2F748F3"
 			]
 			id: "28A673D466A5F5FD"
-			tasks: [{
-				id: "3713CB1593208B43"
-				type: "item"
-				item: "draconicevolution:draconium_block"
-			}]
+			tasks: [
+				{
+					id: "3713CB1593208B43"
+					type: "item"
+					item: "draconicevolution:draconium_block"
+					count: 150L
+				}
+				{
+					id: "38AB9856DA686E06"
+					type: "item"
+					item: "minecraft:redstone_block"
+					count: 178L
+				}
+				{
+					id: "19FBD01B76B11EF3"
+					type: "item"
+					item: "draconicevolution:energy_core_stabilizer"
+					count: 36L
+				}
+			]
+			rewards: [
+				{
+					id: "73BBAB05E025A7CF"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "74C20E84447C6844"
+					type: "item"
+					item: "draconicevolution:draconium_block"
+					count: 10
+					random_bonus: 15
+				}
+			]
 		}
 		{
 			title: "Tier 7"
@@ -409,11 +547,40 @@
 				"5AD1E795E2F748F3"
 			]
 			id: "6EFC18E139E230CB"
-			tasks: [{
-				id: "1652F1970006B4BA"
-				type: "item"
-				item: "draconicevolution:draconium_block"
-			}]
+			tasks: [
+				{
+					id: "1652F1970006B4BA"
+					type: "item"
+					item: "draconicevolution:draconium_block"
+					count: 210L
+				}
+				{
+					id: "753C7E4C80F03F57"
+					type: "item"
+					item: "minecraft:redstone_block"
+					count: 328L
+				}
+				{
+					id: "416B8DADC55BC6B9"
+					type: "item"
+					item: "draconicevolution:energy_core_stabilizer"
+					count: 36L
+				}
+			]
+			rewards: [
+				{
+					id: "382659B4248A4298"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "3C00E53513EAB0F7"
+					type: "item"
+					item: "draconicevolution:draconium_block"
+					count: 25
+					random_bonus: 25
+				}
+			]
 		}
 		{
 			title: "Tier 8"
@@ -426,11 +593,45 @@
 				"5AD1E795E2F748F3"
 			]
 			id: "7B8693EC45EEF4FC"
-			tasks: [{
-				id: "7F3A98A67B6A720B"
-				type: "item"
-				item: "draconicevolution:draconium_block"
-			}]
+			tasks: [
+				{
+					id: "7F3A98A67B6A720B"
+					type: "item"
+					item: "draconicevolution:draconium_block"
+					count: 786L
+				}
+				{
+					id: "26C4A98A06DFF7AC"
+					type: "item"
+					item: "draconicevolution:awakened_draconium_block"
+					count: 378L
+				}
+				{
+					id: "42D889503D5E78D4"
+					type: "item"
+					item: "draconicevolution:energy_core_stabilizer"
+					count: 36L
+				}
+			]
+			rewards: [
+				{
+					id: "486144CEBFEAC901"
+					type: "xp"
+					xp: 250
+				}
+				{
+					id: "3A3F2F567F7170DB"
+					type: "item"
+					item: "draconicevolution:draconium_block"
+					count: 50
+				}
+				{
+					id: "577EAF912D23618C"
+					type: "item"
+					item: "draconicevolution:awakened_draconium_block"
+					count: 5
+				}
+			]
 		}
 		{
 			title: "Transfering Energy!"
