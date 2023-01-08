@@ -1,0 +1,471 @@
+{
+	id: "08EE239451373069"
+	group: "72A9465344128AF9"
+	order_index: 8
+	filename: "draconic_evolution"
+	title: "Draconic Evolution"
+	icon: "draconicevolution:dragon_heart"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "The Beggining of the End"
+			x: 0.0d
+			y: 0.0d
+			shape: "octagon"
+			subtitle: "Now the real challenge begins >:D"
+			description: [
+				"Now that you have freed The End... You gonna be entering the end-game content, good luck my fellow monkey!"
+				""
+				"Draconic Evolution is a very challenging mod for those who seek the most powerful high-tier equipment and tools"
+				""
+				"That being said, good luck exploring this universe"
+			]
+			size: 2.0d
+			optional: true
+			id: "6D9AC0DEBB23BFCE"
+			tasks: [{
+				id: "7C5C5CD6639AA8CA"
+				type: "advancement"
+				title: "Kill the Ender Dragon"
+				icon: "minecraft:dragon_head"
+				advancement: "minecraft:end/kill_dragon"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "096477A2F3C5ECD7"
+					type: "item"
+					item: "draconicevolution:draconium_dust"
+					count: 5
+					random_bonus: 10
+				}
+				{
+					id: "2CACF429D4B89422"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "The Final Boss"
+			x: 0.0d
+			y: -1.5d
+			description: ["The Chaos Guardian is one of the most powerful bosses, if not the most powerful, in Junkie Monkey, if you really dare to try this Challenge, you better be really geared up with the best of the best weapon and equipment."]
+			id: "428280A41C5FC298"
+			tasks: [{
+				id: "0A44C35753272B6D"
+				type: "kill"
+				icon: "draconicevolution:dragon_heart"
+				entity: "draconicevolution:draconic_guardian"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "64A3B0CFC5CA427E"
+					type: "xp"
+					xp: 250
+				}
+				{
+					id: "74BD2935DFEC75AF"
+					type: "item"
+					item: "draconicevolution:dragon_heart"
+				}
+				{
+					id: "4E91BEE55C7F51AF"
+					type: "item"
+					item: "draconicevolution:small_chaos_frag"
+					random_bonus: 4
+				}
+			]
+		}
+		{
+			title: "Draconium"
+			x: 2.5d
+			y: 0.0d
+			subtitle: "You gonna need more of those"
+			description: [
+				"The base ore for this mod with no doubt."
+				""
+				"Draconium can be found underground and when broken will give you Draconium Dust."
+				""
+				"Draconium dust can be smelted to yield one draconium ingot."
+			]
+			dependencies: ["6D9AC0DEBB23BFCE"]
+			id: "3FD924A82FDEA88E"
+			tasks: [
+				{
+					id: "344AEA38B9D577CB"
+					type: "item"
+					item: "draconicevolution:draconium_ingot"
+					count: 64L
+				}
+				{
+					id: "05C6137E942BEFE1"
+					type: "item"
+					item: "draconicevolution:draconium_block"
+					count: 32L
+				}
+			]
+			rewards: [
+				{
+					id: "70506E24635530C8"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "5A3592AAE42C4048"
+					type: "item"
+					item: "draconicevolution:draconium_dust"
+					count: 64
+					random_bonus: 32
+				}
+			]
+		}
+		{
+			title: "The Draconic Battery"
+			x: 4.5d
+			y: 4.0d
+			subtitle: "That's a big mama"
+			description: [
+				"The Draconic Battery, AKA Energy Core, can store massive amounts of energy (RF/FE)"
+				""
+				"With 8 Different Tiers, the bigger, the better."
+				""
+				"On its last tier, it can store up to 9,223,372,036,854,775,807 RF"
+				""
+				"You need an imense amount of Draconium Blocks and Redstone Blocks to build up to the 7th tier, for the 8th tier you'll also need Awakened Draconium Blocks"
+			]
+			dependencies: ["166EDD32982C3BFF"]
+			id: "20EFD1FB3CB538D2"
+			tasks: [{
+				id: "707733DD9772C9B3"
+				type: "item"
+				item: "draconicevolution:energy_core"
+			}]
+			rewards: [{
+				id: "667ACB578A88320C"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "The Basic Items"
+			x: 4.5d
+			y: 0.0d
+			description: [
+				"As of every mod in this universe, Draconic has some base items that are going to be used several times."
+				""
+				"That being said, I would recommend you making some automations to make the crafting process faster for those bad boys."
+				""
+				"Those base items are the Cores and the Energy Controllers"
+			]
+			dependencies: ["3FD924A82FDEA88E"]
+			id: "166EDD32982C3BFF"
+			tasks: [
+				{
+					id: "157BA56207A620AB"
+					type: "item"
+					item: "draconicevolution:draconium_core"
+				}
+				{
+					id: "0EAA06575D14383E"
+					type: "item"
+					item: "draconicevolution:wyvern_core"
+				}
+				{
+					id: "19823CBAC1B4CA25"
+					type: "item"
+					item: "draconicevolution:wyvern_energy_core"
+				}
+			]
+			rewards: [
+				{
+					id: "6BC278CB8842EA88"
+					type: "item"
+					item: "draconicevolution:draconium_core"
+					random_bonus: 4
+				}
+				{
+					id: "2880E1325397684E"
+					type: "item"
+					item: "draconicevolution:wyvern_core"
+					random_bonus: 4
+				}
+			]
+		}
+		{
+			title: "Wyvern Tier"
+			x: 4.5d
+			y: -3.0d
+			dependencies: ["4273B051149902BA"]
+			id: "1F86576F6E291B99"
+			tasks: [{
+				id: "6BC09119F10D7522"
+				type: "item"
+				item: "draconicevolution:wyvern_core"
+			}]
+		}
+		{
+			title: "Draconium Tier"
+			icon: "draconicevolution:draconium_core"
+			x: 4.5d
+			y: -1.5d
+			description: [
+				"Draconic has a tier system that increases the power and strength of items depending on the base-tier of the item and its modules."
+				""
+				"The tiers are: Draconium -> Wyvern --"
+				"-> Draconic -> Chaotic"
+			]
+			dependencies: ["166EDD32982C3BFF"]
+			id: "4273B051149902BA"
+			tasks: [{
+				id: "2EB0BC7A134C1BF5"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "18D1172A004FE737"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Draconic Tier"
+			x: 4.5d
+			y: -4.5d
+			dependencies: ["1F86576F6E291B99"]
+			id: "1E081E22603EEBD4"
+			tasks: [{
+				id: "43564101AC8EBC68"
+				type: "item"
+				item: "draconicevolution:awakened_core"
+			}]
+		}
+		{
+			title: "Chaotic Tier"
+			x: 4.5d
+			y: -6.0d
+			dependencies: ["1E081E22603EEBD4"]
+			id: "4550414130677000"
+			tasks: [{
+				id: "6B0FAABFF02BDEC4"
+				type: "item"
+				item: "draconicevolution:chaotic_core"
+			}]
+		}
+		{
+			title: "The Draconic Reactor"
+			x: -5.5d
+			y: 0.0d
+			subtitle: "Be careful... it might... *explodes*"
+			hide_dependency_lines: true
+			dependencies: ["166EDD32982C3BFF"]
+			id: "7D629BE61CCFD5CC"
+			tasks: [{
+				id: "3018AE808BCFE7C6"
+				type: "item"
+				item: "draconicevolution:reactor_core"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 4.0d
+			subtitle: "You'll need a few of those"
+			description: [
+				"In order to make your battery, you'll need these stabilizers"
+				""
+				"It all depends on the tier you'll build. Which tier you'll do depends on the amount of the energy you have, produce, and want to store."
+				""
+				"For example, if you are still generating only a few thousands of RF per tick I would say that a tier 3 would be enough, but if you are already generating millions of RF per tick I would recommend a tier 6/7 since they store billions/trillions of RF"
+				""
+				"If you building up to the tier 4 you will need only 4 of these, after the tier 5 you will need 36 of these."
+			]
+			dependencies: ["20EFD1FB3CB538D2"]
+			id: "3828762D991800AB"
+			tasks: [{
+				id: "62A41B6EFE293650"
+				type: "item"
+				item: "draconicevolution:energy_core_stabilizer"
+			}]
+			rewards: [
+				{
+					id: "73A1D467D05D4A1C"
+					type: "item"
+					item: "draconicevolution:draconium_ingot"
+					count: 32
+					random_bonus: 32
+				}
+				{
+					id: "5C317FD38DBFB08F"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Tier 1"
+			x: 7.5d
+			y: 2.5d
+			description: [
+				"I wouldn't recommend doing this one, but if you want..."
+				""
+				"The Tier 1 Energy Core can store up to 45,500,000 RF"
+			]
+			dependencies: ["5AD1E795E2F748F3"]
+			id: "19758BC22D70323B"
+			tasks: [{
+				id: "04710D50D012F1DA"
+				type: "item"
+				item: "draconicevolution:draconium_block"
+			}]
+		}
+		{
+			title: "Tier 2"
+			x: 8.5d
+			y: 2.0d
+			description: ["The Tier 2 Energy Core can store up to 273,000,000 RF"]
+			dependencies: [
+				"19758BC22D70323B"
+				"5AD1E795E2F748F3"
+			]
+			id: "0D424617D639F49A"
+			tasks: [{
+				id: "202B418BFBD2DF0E"
+				type: "item"
+				item: "draconicevolution:draconium_block"
+			}]
+		}
+		{
+			title: "Tier 3"
+			x: 9.5d
+			y: 2.5d
+			description: ["The Tier 3 Energy Core can store up to 1,640,000,000 RF"]
+			dependencies: [
+				"0D424617D639F49A"
+				"5AD1E795E2F748F3"
+			]
+			id: "3DB6CEFF8E2DBA3F"
+			tasks: [{
+				id: "3EFE8FEABC371F05"
+				type: "item"
+				item: "draconicevolution:draconium_block"
+			}]
+		}
+		{
+			title: "Tier 4"
+			x: 10.0d
+			y: 3.5d
+			description: ["The Tier 4 Energy Core can store up to 9,880,000,000 RF"]
+			dependencies: [
+				"3DB6CEFF8E2DBA3F"
+				"5AD1E795E2F748F3"
+			]
+			id: "30810C4610A2DBFC"
+			tasks: [{
+				id: "60D964B0B96316CF"
+				type: "item"
+				item: "draconicevolution:draconium_block"
+			}]
+		}
+		{
+			title: "Tier 5"
+			x: 10.0d
+			y: 4.5d
+			description: ["The Tier 5 Energy Core can store up to 59,300,000,000 RF"]
+			dependencies: [
+				"30810C4610A2DBFC"
+				"5AD1E795E2F748F3"
+			]
+			id: "312DA42290ED2BBD"
+			tasks: [{
+				id: "78E44B8029ED2071"
+				type: "item"
+				item: "draconicevolution:draconium_block"
+			}]
+		}
+		{
+			title: "Tier 6"
+			x: 9.5d
+			y: 5.5d
+			description: ["The Tier 6 Energy Core can store up to 356,000,000,000 RF"]
+			dependencies: [
+				"312DA42290ED2BBD"
+				"5AD1E795E2F748F3"
+			]
+			id: "28A673D466A5F5FD"
+			tasks: [{
+				id: "3713CB1593208B43"
+				type: "item"
+				item: "draconicevolution:draconium_block"
+			}]
+		}
+		{
+			title: "Tier 7"
+			x: 8.5d
+			y: 6.0d
+			description: ["The Tier 7 Energy Core can store up to 2,140,000,000,000 RF"]
+			dependencies: [
+				"28A673D466A5F5FD"
+				"5AD1E795E2F748F3"
+			]
+			id: "6EFC18E139E230CB"
+			tasks: [{
+				id: "1652F1970006B4BA"
+				type: "item"
+				item: "draconicevolution:draconium_block"
+			}]
+		}
+		{
+			title: "Tier 8"
+			x: 7.5d
+			y: 5.5d
+			subtitle: "Are you sure you need this much? :flushed:"
+			description: ["The Tier 8 Energy Core can store up to 9,223,372,036,854,775,807 RF"]
+			dependencies: [
+				"6EFC18E139E230CB"
+				"5AD1E795E2F748F3"
+			]
+			id: "7B8693EC45EEF4FC"
+			tasks: [{
+				id: "7F3A98A67B6A720B"
+				type: "item"
+				item: "draconicevolution:draconium_block"
+			}]
+		}
+		{
+			title: "Transfering Energy!"
+			x: 8.5d
+			y: 4.0d
+			subtitle: "You will need at least two of these"
+			description: [
+				"The Energy Pylon works as a channel for trasnfering the energy inside the Energy Core."
+				""
+				"You will need at least two of those, one to input and one to output the energy from the Core"
+				""
+				"You need to place those close to the active Energy Core with a glass on top of it, right click on it to change its mode (input/output)"
+			]
+			dependencies: ["3828762D991800AB"]
+			id: "5AD1E795E2F748F3"
+			tasks: [{
+				id: "2CE84E541DD8AEDE"
+				type: "item"
+				item: "draconicevolution:energy_pylon"
+				count: 2L
+			}]
+			rewards: [{
+				id: "396A66B0DDF1D79D"
+				type: "item"
+				item: {
+					id: "minecraft:glass"
+					Count: 1b
+					tag: {
+						display: {
+							Name: "{\"text\":\"You might need these\"}"
+						}
+					}
+				}
+				count: 2
+			}]
+		}
+	]
+}

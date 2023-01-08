@@ -181,5 +181,49 @@
 				stage: "lesser_tartaric_gem"
 			}]
 		}
+		{
+			title: "SJM Alert"
+			icon: "jmm:junkie_monkey"
+			x: -7.0d
+			y: -6.5d
+			hide_dependency_lines: true
+			dependencies: ["318475082670FFF5"]
+			id: "2EF3384E43485A59"
+			tasks: [{
+				id: "136E3B34BEE893FB"
+				type: "gamestage"
+				stage: "supreme_monkey"
+			}]
+			rewards: [
+				{
+					id: "069DF296D9726514"
+					type: "command"
+					auto: "enabled"
+					command: "/title @a times 40 100 40"
+					player_command: false
+				}
+				{
+					id: "5233BF66F7691457"
+					type: "command"
+					auto: "enabled"
+					command: "/title @a subtitle {\"text\":\"@p is now a Supreme Junkie Monkey!\",\"bold\":true,\"italic\":true,\"color\":\"#FFE135\"}"
+					player_command: false
+				}
+				{
+					id: "75F0A8800E481E29"
+					type: "command"
+					auto: "enabled"
+					command: "/title @a title {\"text\":\"Hey! Check it out:\",\"bold\":true}"
+					player_command: false
+				}
+				{
+					id: "5ADE3F932573BD9A"
+					type: "command"
+					auto: "enabled"
+					command: "/say Hey guys, @p just completed the \"Supreme Junkie Monkey\" Challenge! They are TRULY a maniac."
+					player_command: false
+				}
+			]
+		}
 	]
 }

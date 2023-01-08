@@ -13,6 +13,7 @@
 			icon: "minecraft:oak_sapling"
 			x: 0.0d
 			y: -6.0d
+			subtitle: "Hewwwooo :bongocat:"
 			description: [
 				" Welcome to Junkie Monkey, we're glad to have you :D"
 				" "
@@ -33,14 +34,24 @@
 				type: "checkmark"
 				icon: "minecraft:oak_sapling"
 			}]
-			rewards: [{
-				id: "0000000000000A93"
-				type: "command"
-				title: "Farmer's Delight"
-				icon: "kubejs:farmers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_farmers_delight"
-				player_command: false
-			}]
+			rewards: [
+				{
+					id: "0000000000000A93"
+					type: "command"
+					title: "Farmer's Delight"
+					icon: "kubejs:farmers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_farmers_delight"
+					player_command: false
+				}
+				{
+					id: "6782DF6E9E7026B8"
+					type: "command"
+					title: "Welcome!"
+					icon: "alexsmobs:banana"
+					command: "/say Hey @p! Welcome to Junkie Monkey!"
+					player_command: false
+				}
+			]
 		}
 		{
 			x: -1.5d

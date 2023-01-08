@@ -84,7 +84,7 @@
 								id: "mininggadgets:upgrade_battery_3"
 								Count: 1b
 							}
-							DisplayScale: 1.0f
+							DisplayScale: 1
 							Animation: "fixed"
 							Colors: {
 								Bottom: {
@@ -110,7 +110,7 @@
 			}]
 		}
 		{
-			title: "Challenger"
+			title: "Challenger :dragon:"
 			icon: "minecraft:dragon_head"
 			x: 0.0d
 			y: 0.0d
@@ -276,7 +276,7 @@
 								id: "minecraft:lava_bucket"
 								Count: 1b
 							}
-							DisplayScale: 1.0f
+							DisplayScale: 1
 							Animation: "fixed"
 							Colors: {
 								Bottom: {
@@ -439,7 +439,7 @@
 								id: "minecraft:water_bucket"
 								Count: 1b
 							}
-							DisplayScale: 1.0f
+							DisplayScale: 1
 							Animation: "fixed"
 							Colors: {
 								Bottom: {
@@ -730,7 +730,7 @@
 								id: "thermal:crude_oil_bucket"
 								Count: 1b
 							}
-							DisplayScale: 1.0f
+							DisplayScale: 1
 							Animation: "fixed"
 							Colors: {
 								Bottom: {
@@ -787,7 +787,7 @@
 								id: "farmersdelight:horse_feed"
 								Count: 1b
 							}
-							DisplayScale: 1.0f
+							DisplayScale: 1
 							Animation: "fixed"
 							Colors: {
 								Bottom: {
@@ -844,7 +844,7 @@
 								id: "minecraft:golden_carrot"
 								Count: 1b
 							}
-							DisplayScale: 1.0f
+							DisplayScale: 1
 							Animation: "fixed"
 							Colors: {
 								Bottom: {
@@ -1470,28 +1470,37 @@
 						tag: {
 							BlockEntityTag: {
 								Item: {
-									Colors: {
-										Bottom: {
-											Red: 249
-											Blue: 254
-											Green: 255
-										}
-										Top: {
-											Red: 249
-											Blue: 254
-											Green: 255
-										}
-										Middle: {
-											Red: 137
-											Blue: 184
-											Green: 50
+									id: "industrialforegoing:infinity_nuke"
+									Count: 1b
+									tag: {
+										CanCharge: 1b
+										Special: 0b
+										Selected: "POOR"
+										Energy: 0L
+										Fluid: {
+											FluidName: "biofuel"
+											Amount: 0
 										}
 									}
-									DisplayScale: 0.5d
-									Animation: "fixed"
-									id: "industrialforegoing:infinity_nuke"
-									Count: 1
-									tag: { }
+								}
+								DisplayScale: 0.5f
+								Animation: "fixed"
+								Colors: {
+									Bottom: {
+										Red: 249
+										Blue: 254
+										Green: 255
+									}
+									Top: {
+										Red: 249
+										Blue: 254
+										Green: 255
+									}
+									Middle: {
+										Red: 137
+										Blue: 184
+										Green: 50
+									}
 								}
 							}
 						}
@@ -1506,28 +1515,37 @@
 						tag: {
 							BlockEntityTag: {
 								Item: {
-									Colors: {
-										Bottom: {
-											Red: 249
-											Blue: 254
-											Green: 255
-										}
-										Top: {
-											Red: 249
-											Blue: 254
-											Green: 255
-										}
-										Middle: {
-											Red: 137
-											Blue: 184
-											Green: 50
+									id: "industrialforegoing:infinity_launcher"
+									Count: 1b
+									tag: {
+										CanCharge: 1b
+										Special: 0b
+										Selected: "POOR"
+										Energy: 0L
+										Fluid: {
+											FluidName: "biofuel"
+											Amount: 0
 										}
 									}
-									DisplayScale: 0.5d
-									Animation: "fixed"
-									id: "industrialforegoing:infinity_launcher"
-									Count: 1
-									tag: { }
+								}
+								DisplayScale: 0.5f
+								Animation: "fixed"
+								Colors: {
+									Bottom: {
+										Red: 249
+										Blue: 254
+										Green: 255
+									}
+									Top: {
+										Red: 249
+										Blue: 254
+										Green: 255
+									}
+									Middle: {
+										Red: 137
+										Blue: 184
+										Green: 50
+									}
 								}
 							}
 						}
@@ -1651,7 +1669,7 @@
 								id: "minecraft:potato"
 								Count: 1b
 							}
-							DisplayScale: 1.0f
+							DisplayScale: 1
 							Animation: "fixed"
 							Colors: {
 								Bottom: {
@@ -1674,6 +1692,635 @@
 					}
 				}
 			}]
+		}
+		{
+			title: "Chaos Servant"
+			x: -1.0d
+			y: -2.0d
+			subtitle: "Good... Death"
+			description: ["I think you should try as this may unlock some other Challenges"]
+			dependencies: [
+				"428280A41C5FC298"
+				"1C6E46EA96373E74"
+			]
+			id: "688A3AE33D944F8F"
+			tasks: [{
+				id: "0813E695FA6B2927"
+				type: "kill"
+				icon: "draconicevolution:dragon_heart"
+				entity: "draconicevolution:draconic_guardian"
+				value: 5L
+			}]
+			rewards: [
+				{
+					id: "7C590CFB086FC214"
+					type: "command"
+					title: "Title - The Chaos Servant"
+					icon: "titles:title_scroll_common"
+					command: "/titles add @p jmm:chaos/servant"
+					player_command: false
+				}
+				{
+					id: "062E1230F9BD84E2"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "1E96E0B7FDF499FC"
+					type: "item"
+					item: {
+						id: "trofers:small_trophy"
+						Count: 1b
+						tag: {
+							BlockEntityTag: {
+								Item: {
+									id: "draconicevolution:small_chaos_frag"
+									Count: 1b
+								}
+								DisplayScale: 1.0f
+								Animation: "tumbling"
+								Colors: {
+									Bottom: {
+										Red: 48
+										Blue: 52
+										Green: 25
+									}
+									Top: {
+										Red: 41
+										Blue: 41
+										Green: 41
+									}
+									Middle: {
+										Red: 78
+										Blue: 78
+										Green: 78
+									}
+								}
+								Name: "Tiny Chaos Trophy"
+							}
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Chaos Emissary"
+			x: -1.0d
+			y: -3.0d
+			dependencies: ["688A3AE33D944F8F"]
+			hide: true
+			id: "15E4D84A62DB7FA0"
+			tasks: [{
+				id: "47E6FF1F4C9C1646"
+				type: "kill"
+				icon: "draconicevolution:dragon_heart"
+				entity: "draconicevolution:draconic_guardian"
+				value: 25L
+			}]
+			rewards: [
+				{
+					id: "3CDAFD893CCF9B5F"
+					type: "command"
+					title: "Title - The Chaos Emissary"
+					icon: "titles:title_scroll_uncommon"
+					command: "/titles add @p jmm:chaos/emissary"
+					player_command: false
+				}
+				{
+					id: "32822865BA98FAA6"
+					type: "xp"
+					xp: 250
+				}
+				{
+					id: "13CE678B7AA3467A"
+					type: "item"
+					item: {
+						id: "trofers:trophy"
+						Count: 1b
+						tag: {
+							BlockEntityTag: {
+								Item: {
+									id: "draconicevolution:medium_chaos_frag"
+									Count: 1b
+								}
+								DisplayScale: 1.0f
+								Animation: "tumbling"
+								Colors: {
+									Bottom: {
+										Red: 48
+										Blue: 52
+										Green: 25
+									}
+									Top: {
+										Red: 41
+										Blue: 41
+										Green: 41
+									}
+									Middle: {
+										Red: 78
+										Blue: 78
+										Green: 78
+									}
+								}
+								Name: "Small Chaos Trophy"
+							}
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Chaos Lord"
+			x: -1.0d
+			y: -4.0d
+			dependencies: ["15E4D84A62DB7FA0"]
+			hide: true
+			id: "0BA757E73A3ED062"
+			tasks: [{
+				id: "0DC90C8577940F25"
+				type: "kill"
+				icon: "draconicevolution:dragon_heart"
+				entity: "draconicevolution:draconic_guardian"
+				value: 50L
+			}]
+			rewards: [
+				{
+					id: "7609D1CBD6DED364"
+					type: "command"
+					title: "Title - The Chaos Lord"
+					icon: "titles:title_scroll_uncommon"
+					command: "/titles add @p jmm:chaos/lord"
+					player_command: false
+				}
+				{
+					id: "24B5B82F2A71C764"
+					type: "xp"
+					xp: 500
+				}
+				{
+					id: "50D4CDBCBCF7A368"
+					type: "item"
+					item: {
+						id: "trofers:trophy"
+						Count: 1b
+						tag: {
+							BlockEntityTag: {
+								Item: {
+									id: "draconicevolution:large_chaos_frag"
+									Count: 1b
+								}
+								DisplayScale: 1.0f
+								Animation: "tumbling"
+								Colors: {
+									Bottom: {
+										Red: 48
+										Blue: 52
+										Green: 25
+									}
+									Top: {
+										Red: 41
+										Blue: 41
+										Green: 41
+									}
+									Middle: {
+										Red: 78
+										Blue: 78
+										Green: 78
+									}
+								}
+								Name: "Medium Chaos Trophy"
+							}
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Chaos Sovereign"
+			x: -1.0d
+			y: -5.0d
+			subtitle: "How did you do this??"
+			description: [""]
+			dependencies: ["0BA757E73A3ED062"]
+			hide_text_until_complete: true
+			id: "50D8746A631351AE"
+			tasks: [{
+				id: "5981745349E8CD04"
+				type: "kill"
+				icon: "draconicevolution:dragon_heart"
+				entity: "draconicevolution:draconic_guardian"
+				value: 100L
+			}]
+			rewards: [
+				{
+					id: "2431D7C28A192AB9"
+					type: "command"
+					title: "Title - The Chaos Sovereign"
+					icon: "titles:title_scroll_rare"
+					command: "/titles add @p jmm:chaos/sovereign"
+					player_command: false
+				}
+				{
+					id: "3C748769241B8010"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					id: "615DC8950826CAC6"
+					type: "item"
+					item: {
+						id: "trofers:large_trophy"
+						Count: 1b
+						tag: {
+							BlockEntityTag: {
+								Item: {
+									id: "draconicevolution:chaos_shard"
+									Count: 1b
+								}
+								DisplayScale: 1.0f
+								Animation: "tumbling"
+								Colors: {
+									Bottom: {
+										Red: 48
+										Blue: 52
+										Green: 25
+									}
+									Top: {
+										Red: 41
+										Blue: 41
+										Green: 41
+									}
+									Middle: {
+										Red: 78
+										Blue: 78
+										Green: 78
+									}
+								}
+								Name: "Chaos Trophy"
+							}
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Dragon Slayer"
+			x: 1.0d
+			y: -2.0d
+			subtitle: "Good Luck"
+			description: ["I think you should try as this may unlock some other Challenges"]
+			dependencies: ["1C6E46EA96373E74"]
+			id: "13C9657417F5752D"
+			tasks: [{
+				id: "5176F59D8E590302"
+				type: "kill"
+				icon: "minecraft:dragon_head"
+				entity: "minecraft:ender_dragon"
+				value: 10L
+			}]
+			rewards: [
+				{
+					id: "6940D152B2BF0398"
+					type: "command"
+					title: "Title - The Dragon Slayer"
+					icon: "titles:title_scroll_common"
+					command: "/titles add @p jmm:dragon/slayer"
+					player_command: false
+				}
+				{
+					id: "2375E93B9499D380"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "310B42B8954FE9E2"
+					type: "item"
+					item: {
+						id: "trofers:small_trophy"
+						Count: 1b
+						tag: {
+							BlockEntityTag: {
+								Item: {
+									id: "draconicevolution:dragon_heart"
+									Count: 1b
+								}
+								DisplayScale: 0.5f
+								Animation: "spinning"
+								Colors: {
+									Bottom: {
+										Red: 48
+										Blue: 52
+										Green: 25
+									}
+									Top: {
+										Red: 255
+										Blue: 51
+										Green: 87
+									}
+									Middle: {
+										Red: 139
+										Blue: 0
+										Green: 0
+									}
+								}
+							}
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Dragon Hunter"
+			x: 1.0d
+			y: -3.0d
+			dependencies: ["13C9657417F5752D"]
+			hide: true
+			id: "261F18D6CCA951C7"
+			tasks: [{
+				id: "770616AEA674D2B8"
+				type: "kill"
+				icon: "minecraft:dragon_head"
+				entity: "minecraft:ender_dragon"
+				value: 50L
+			}]
+			rewards: [
+				{
+					id: "549FD78D1FB192F2"
+					type: "command"
+					title: "Title - The Dragon Hunter"
+					icon: "titles:title_scroll_uncommon"
+					command: "/titles add @p jmm:dragon/hunter"
+					player_command: false
+				}
+				{
+					id: "7D17F0EC948DF358"
+					type: "xp"
+					xp: 250
+				}
+				{
+					id: "4CD7984C83B00034"
+					type: "item"
+					item: {
+						id: "trofers:trophy"
+						Count: 1b
+						tag: {
+							BlockEntityTag: {
+								Item: {
+									id: "draconicevolution:dragon_heart"
+									Count: 1b
+								}
+								DisplayScale: 0.6f
+								Animation: "spinning"
+								Colors: {
+									Bottom: {
+										Red: 48
+										Blue: 52
+										Green: 25
+									}
+									Top: {
+										Red: 255
+										Blue: 51
+										Green: 87
+									}
+									Middle: {
+										Red: 139
+										Blue: 0
+										Green: 0
+									}
+								}
+							}
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Dragon Serial-Killer"
+			x: 1.0d
+			y: -4.0d
+			dependencies: ["261F18D6CCA951C7"]
+			hide: true
+			id: "159870BCB58E2C63"
+			tasks: [{
+				id: "56FE208A5A2E3C79"
+				type: "kill"
+				icon: "minecraft:dragon_head"
+				entity: "minecraft:ender_dragon"
+				value: 100L
+			}]
+			rewards: [
+				{
+					id: "1F96D4483A11F564"
+					type: "command"
+					title: "Title - The Dragon Serial-Killer"
+					icon: "titles:title_scroll_uncommon"
+					command: "/titles add @p jmm:dragon/serial_killer"
+					player_command: false
+				}
+				{
+					id: "76F8C93D8B59FDD8"
+					type: "xp"
+					xp: 500
+				}
+				{
+					id: "7E0FA2BCD51F8E3D"
+					type: "item"
+					item: {
+						id: "trofers:trophy"
+						Count: 1b
+						tag: {
+							BlockEntityTag: {
+								Item: {
+									id: "draconicevolution:dragon_heart"
+									Count: 1b
+								}
+								DisplayScale: 0.8f
+								Animation: "spinning"
+								Colors: {
+									Bottom: {
+										Red: 48
+										Blue: 52
+										Green: 25
+									}
+									Top: {
+										Red: 255
+										Blue: 51
+										Green: 87
+									}
+									Middle: {
+										Red: 139
+										Blue: 0
+										Green: 0
+									}
+								}
+							}
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Dragon Exterminator"
+			x: 1.0d
+			y: -5.0d
+			subtitle: "Hasta la vista, baby!"
+			description: [""]
+			dependencies: ["159870BCB58E2C63"]
+			hide_text_until_complete: true
+			id: "5A71C4DCBF5825CF"
+			tasks: [{
+				id: "5D5A9F948AB53774"
+				type: "kill"
+				icon: "minecraft:dragon_head"
+				entity: "minecraft:ender_dragon"
+				value: 250L
+			}]
+			rewards: [
+				{
+					id: "592DB98D53F7CDA2"
+					type: "command"
+					title: "Title - The Dragon Exterminator"
+					icon: "titles:title_scroll_rare"
+					command: "/titles add @p jmm:dragon/exterminator"
+					player_command: false
+				}
+				{
+					id: "40D53B372F59CB63"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					id: "55689B420086088D"
+					type: "item"
+					item: {
+						id: "trofers:large_trophy"
+						Count: 1b
+						tag: {
+							BlockEntityTag: {
+								Item: {
+									id: "draconicevolution:dragon_heart"
+									Count: 1b
+								}
+								DisplayScale: 1.0f
+								Animation: "spinning"
+								Colors: {
+									Bottom: {
+										Red: 48
+										Blue: 52
+										Green: 25
+									}
+									Top: {
+										Red: 255
+										Blue: 51
+										Green: 87
+									}
+									Middle: {
+										Red: 139
+										Blue: 0
+										Green: 0
+									}
+								}
+							}
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Supreme Junkie Monkey"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "jmm:textures/icon.png"
+				}
+			}
+			x: 0.0d
+			y: -7.0d
+			shape: "octagon"
+			subtitle: "How did you.... :monkey:"
+			description: [
+				"HEY! YOU! Yes, you, come here...."
+				""
+				"Look, this was supposed to not be possible, but you somehow manage to do it, so... CONGRATULATIONS!!"
+				""
+				"You may now receive the special Title \"The Supreme Junkie Monkey\" because you managed to finish all this crazy challenges!"
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"4473CCD6EB0E60E0"
+				"1C6E46EA96373E74"
+				"64A6812D6EFF4308"
+				"6D463AE8FE933401"
+				"378F01CE074D79A0"
+				"2AEE1AFA3BC416CE"
+				"24ED473C9C545C09"
+				"17E8CDC64C0FB5EA"
+				"3DB3B9732A87744A"
+				"15E4D84A62DB7FA0"
+				"159870BCB58E2C63"
+			]
+			size: 2.0d
+			id: "318475082670FFF5"
+			tasks: [{
+				id: "279C3972127FC5E2"
+				type: "checkmark"
+				title: "Congratulations, YOU MANIAC!"
+			}]
+			rewards: [
+				{
+					id: "3D02A8397BE5C058"
+					type: "item"
+					item: {
+						id: "trofers:large_trophy"
+						Count: 1b
+						tag: {
+							BlockEntityTag: {
+								Item: {
+									id: "jmm:junkie_monkey"
+									Count: 1b
+								}
+								DisplayHeight: 5
+								DisplayScale: 1
+								Animation: "fixed"
+								Colors: {
+									Bottom: {
+										Red: 120
+										Blue: 169
+										Green: 81
+									}
+									Top: {
+										Red: 120
+										Blue: 169
+										Green: 81
+									}
+									Middle: {
+										Red: 139
+										Blue: 0
+										Green: 0
+									}
+								}
+							}
+						}
+					}
+				}
+				{
+					id: "244C0E9268ACA46C"
+					type: "command"
+					title: "Title - The Supreme Junkie Monkey"
+					icon: "titles:title_scroll_rare"
+					command: "/titles add @p jmm:supreme_junkie_monkey"
+					player_command: false
+				}
+				{
+					id: "7F390FFE1D1A5550"
+					type: "gamestage"
+					title: "Game Stage: Supreme Monkey"
+					icon: "jmm:junkie_monkey"
+					auto: "invisible"
+					stage: "supreme_monkey"
+				}
+			]
 		}
 	]
 }
