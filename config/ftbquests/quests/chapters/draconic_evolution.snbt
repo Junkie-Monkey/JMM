@@ -5,7 +5,6 @@
 	filename: "draconic_evolution"
 	title: "Draconic Evolution [WIP]"
 	icon: "draconicevolution:dragon_heart"
-	always_invisible: true
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -51,10 +50,27 @@
 		}
 		{
 			title: "The Final Boss"
-			x: 0.0d
-			y: -1.5d
-			description: ["The Chaos Guardian is one of the most powerful bosses, if not the most powerful, in Junkie Monkey, if you really dare to try this Challenge, you better be really geared up with the best of the best weapon and equipment."]
-			dependencies: ["5E04A855EE71D54E"]
+			x: 2.5d
+			y: -6.0d
+			shape: "octagon"
+			subtitle: "Good Luck...."
+			description: [
+				"In order to get to the last Tier in Draconic Evolution you will need to face one last foe..."
+				""
+				"The &l&4Chaos Guardian&r is one of the most powerful bosses, if not the most powerful, in Junkie Monkey, so you better be geared up with the best of the best weapon and armor."
+				""
+				"You can find a Chaos Guardian every 10000 blocks in The End dimension."
+				""
+				"For example, you will find one at the coordinates (X: 0 | Z: 10000) and another one at (X: 10000 | Z: 0) and etc."
+				""
+				"The Chaos Guardian has different stages, on the first stage, just like the Ender Dragon, you will need to break their Crystals, but just a Chaos Tier can damage and break it, and that includes the dragon too."
+				""
+				"With that in mind, in your first battle against them, make so that they fire on their crystals and break it themselves, then you can damage them."
+				""
+				"They have other stages and other mechanics, but those I'll let you find out by yourself, Good Luck!"
+			]
+			dependencies: ["1E081E22603EEBD4"]
+			size: 1.2d
 			id: "428280A41C5FC298"
 			tasks: [{
 				id: "0A44C35753272B6D"
@@ -126,33 +142,6 @@
 			]
 		}
 		{
-			title: "The Draconic Battery"
-			x: 4.5d
-			y: 4.0d
-			subtitle: "That's a big mama"
-			description: [
-				"The Draconic Battery, AKA Energy Core, can store massive amounts of energy (RF/FE)"
-				""
-				"With 8 Different Tiers, the bigger, the better."
-				""
-				"On its last tier, it can store up to 9,223,372,036,854,775,807 RF"
-				""
-				"You need an imense amount of Draconium Blocks and Redstone Blocks to build up to the 7th tier, for the 8th tier you'll also need Awakened Draconium Blocks"
-			]
-			dependencies: ["166EDD32982C3BFF"]
-			id: "20EFD1FB3CB538D2"
-			tasks: [{
-				id: "707733DD9772C9B3"
-				type: "item"
-				item: "draconicevolution:energy_core"
-			}]
-			rewards: [{
-				id: "667ACB578A88320C"
-				type: "xp"
-				xp: 100
-			}]
-		}
-		{
 			title: "The Basic Items"
 			x: 4.5d
 			y: 0.0d
@@ -198,33 +187,21 @@
 			]
 		}
 		{
-			title: "Wyvern Tier"
-			x: 4.5d
-			y: -3.0d
-			dependencies: ["4273B051149902BA"]
-			id: "1F86576F6E291B99"
-			tasks: [{
-				id: "6BC09119F10D7522"
-				type: "item"
-				item: "draconicevolution:wyvern_core"
-			}]
-		}
-		{
 			title: "Draconium Tier"
 			icon: "draconicevolution:draconium_core"
 			x: 4.5d
-			y: -1.5d
+			y: -2.0d
 			description: [
 				"Draconic has a tier system that increases the power and strength of items depending on the base-tier of the item and its modules."
 				""
-				"The tiers are: Draconium -> Wyvern --"
-				"-> Draconic -> Chaotic"
+				"Being the initial stage, Draconium Tier doesn't offer many items, only the core, the crafting injector and the Draconium Chest"
 			]
 			dependencies: ["166EDD32982C3BFF"]
 			id: "4273B051149902BA"
 			tasks: [{
-				id: "2EB0BC7A134C1BF5"
-				type: "checkmark"
+				id: "435F2626777CC566"
+				type: "item"
+				item: "draconicevolution:draconium_core"
 			}]
 			rewards: [{
 				id: "18D1172A004FE737"
@@ -233,40 +210,155 @@
 			}]
 		}
 		{
-			title: "Draconic Tier"
+			title: "Wyvern Tier"
+			icon: "draconicevolution:wyvern_core"
 			x: 4.5d
-			y: -4.5d
-			dependencies: ["1F86576F6E291B99"]
+			y: -4.0d
+			description: ["The second tier in Draconic, Wyvern Tier is the initial tier for all gear, items and modules in this universe"]
+			dependencies: ["4273B051149902BA"]
+			id: "1F86576F6E291B99"
+			tasks: [
+				{
+					id: "6BC09119F10D7522"
+					type: "item"
+					item: "draconicevolution:wyvern_core"
+				}
+				{
+					id: "38F0C57A88925287"
+					type: "item"
+					item: "draconicevolution:wyvern_energy_core"
+				}
+			]
+			rewards: [{
+				id: "6B50570CC5A55519"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Draconic Tier"
+			icon: "draconicevolution:awakened_core"
+			x: 4.5d
+			y: -6.0d
+			description: ["The third tier is the Draconic Tier"]
+			dependencies: [
+				"1F86576F6E291B99"
+				"6CBE1E1944075490"
+			]
 			id: "1E081E22603EEBD4"
-			tasks: [{
-				id: "43564101AC8EBC68"
-				type: "item"
-				item: "draconicevolution:awakened_core"
+			tasks: [
+				{
+					id: "43564101AC8EBC68"
+					type: "item"
+					item: "draconicevolution:awakened_core"
+				}
+				{
+					id: "21C63DD9D5ED7952"
+					type: "item"
+					item: "draconicevolution:draconic_energy_core"
+				}
+			]
+			rewards: [{
+				id: "37D2C7D6DB61B6CD"
+				type: "xp"
+				xp: 100
 			}]
 		}
 		{
 			title: "Chaotic Tier"
+			icon: "draconicevolution:chaotic_core"
 			x: 4.5d
-			y: -6.0d
-			dependencies: ["1E081E22603EEBD4"]
+			y: -8.0d
+			description: ["The fourth and most powerful tier is the Chaotic Tier"]
+			dependencies: [
+				"1E081E22603EEBD4"
+				"1FE1BB99034A9169"
+				"5F8C7CF30C4D771A"
+			]
 			id: "4550414130677000"
-			tasks: [{
-				id: "6B0FAABFF02BDEC4"
-				type: "item"
-				item: "draconicevolution:chaotic_core"
+			tasks: [
+				{
+					id: "6B0FAABFF02BDEC4"
+					type: "item"
+					item: "draconicevolution:chaotic_core"
+				}
+				{
+					id: "73C31C4B4250B6B9"
+					type: "item"
+					item: "draconicevolution:chaotic_energy_core"
+				}
+			]
+			rewards: [{
+				id: "469DFB6E836E9DF7"
+				type: "xp"
+				xp: 100
 			}]
 		}
 		{
 			title: "The Draconic Reactor"
-			x: 13.5d
-			y: -4.0d
-			subtitle: "Be careful... it might... *explodes*"
-			dependencies: ["166EDD32982C3BFF"]
+			x: 7.5d
+			y: -12.5d
+			subtitle: "Be careful... it might... :boom:"
+			description: [
+				"&l&3What is a Draconic Reactor?"
+				""
+				"The best analogy for the Draconic Reactor is the Nuclear Reactor from IndustrialCraft 2 (IC2)."
+				""
+				"It doesn't have the complexities that IC2's Reactor has, but it's a lot more dangerous and can put out insane amounts of Redstone Flux (RF). "
+				""
+				"Just like IC2's Reactor, if you don't have the proper setup, it will explode. Unlike IC2's Reactor, there is no way to contain the explosion, and it has roughly a 300 block radius. "
+				""
+				"The explosion &lwill kill everything&r in sight, &c&lincluding players in &nCreative&r. Some recommendations are to put it far away or in another dimension"
+			]
+			dependencies: ["616CCD64152F669A"]
 			id: "7D629BE61CCFD5CC"
 			tasks: [{
 				id: "3018AE808BCFE7C6"
 				type: "item"
 				item: "draconicevolution:reactor_core"
+			}]
+			rewards: [
+				{
+					id: "70F35AF04D26B709"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "521BE1FF10000453"
+					type: "command"
+					title: "Good Luck"
+					icon: "engineersdecor:sign_radioactive"
+					auto: "invisible"
+					command: "/say Hey @p! I see you made your first Draconic Reactor Core, Please build this in a dimension other than the overworld... or as far as you can from your base..."
+					player_command: false
+				}
+			]
+		}
+		{
+			title: "The Draconic Battery"
+			x: 4.5d
+			y: 4.0d
+			subtitle: "That's a big mama"
+			description: [
+				"The Draconic Battery, AKA Energy Core, can store massive amounts of energy (RF/FE)"
+				""
+				"With 8 Different Tiers, the bigger, the better."
+				""
+				"On its last tier, it can store up to 9,223,372,036,854,775,807 RF"
+				""
+				"You need an imense amount of Draconium Blocks and Redstone Blocks to build up to the 7th tier, for the 8th tier you'll also need Awakened Draconium Blocks"
+			]
+			dependencies: ["166EDD32982C3BFF"]
+			id: "20EFD1FB3CB538D2"
+			tasks: [{
+				id: "707733DD9772C9B3"
+				type: "item"
+				item: "draconicevolution:energy_core"
+			}]
+			rewards: [{
+				id: "667ACB578A88320C"
+				type: "xp"
+				xp: 100
 			}]
 		}
 		{
@@ -312,6 +404,16 @@
 				"I wouldn't recommend doing this one, but if you want..."
 				""
 				"The Tier 1 Energy Core can store up to 45,500,000 RF"
+				""
+				"In order to assemble this tier you need to place down the energy core and the stabilizers need to be placed at each cardinal point around the Core, vertically or horizontally as long as it's on the same plane, up to 16 blocks away from the Core, as shown in the example below:"
+				"This Tier only need basic stabilizers so you will only need 4."
+				""
+				"{image:jmm:textures/screenshot/energy_core/tiers/1/assemble.png width:215 height:120 align:1}"
+				""
+				"In order to activate you will need to right click the core (or the stabilizers) and turn it on."
+				""
+				"This is how it looks like when it's active:"
+				"{image:jmm:textures/screenshot/energy_core/tiers/1/active.png width:215 height:120 align:1}"
 			]
 			dependencies: ["5AD1E795E2F748F3"]
 			id: "19758BC22D70323B"
@@ -331,7 +433,20 @@
 			title: "Tier 2"
 			x: 8.5d
 			y: 2.0d
-			description: ["The Tier 2 Energy Core can store up to 273,000,000 RF"]
+			description: [
+				"The Tier 2 Energy Core can store up to 273,000,000 RF"
+				""
+				"In order to assemble this tier you need to place down the energy core and right click on it so that you can change the tier in the GUI and assemble the core (remember to have the necessary items in your inventory)"
+				"The stabilizers need to be placed at each cardinal point around the Core, vertically or horizontally as long as it's on the same plane, up to 16 blocks away from the Core, as shown in the example below:"
+				"This Tier only need basic stabilizers so you will only need 4."
+				""
+				"{image:jmm:textures/screenshot/energy_core/tiers/2/assemble.png width:215 height:120 align:1}"
+				""
+				"In order to activate you will need to right click the stabilizers (since is no longer possible to right click the core) and turn it on."
+				""
+				"This is how it looks like when it's active:"
+				"{image:jmm:textures/screenshot/energy_core/tiers/2/active.png width:215 height:120 align:1}"
+			]
 			dependencies: [
 				"19758BC22D70323B"
 				"5AD1E795E2F748F3"
@@ -369,7 +484,20 @@
 			title: "Tier 3"
 			x: 9.5d
 			y: 2.5d
-			description: ["The Tier 3 Energy Core can store up to 1,640,000,000 RF"]
+			description: [
+				"The Tier 3 Energy Core can store up to 1,640,000,000 RF"
+				""
+				"In order to assemble this tier you need to place down the energy core and right click on it so that you can change the tier in the GUI and assemble the core (remember to have the necessary items in your inventory)"
+				"The stabilizers need to be placed at each cardinal point around the Core, vertically or horizontally as long as it's on the same plane, up to 16 blocks away from the Core, as shown in the example below:"
+				"This Tier only need basic stabilizers so you will only need 4."
+				""
+				"{image:jmm:textures/screenshot/energy_core/tiers/3/assemble.png width:215 height:120 align:1}"
+				""
+				"In order to activate you will need to right click the stabilizers (since is no longer possible to right click the core) and turn it on."
+				""
+				"This is how it looks like when it's active:"
+				"{image:jmm:textures/screenshot/energy_core/tiers/3/active.png width:215 height:120 align:1}"
+			]
 			dependencies: [
 				"0D424617D639F49A"
 				"5AD1E795E2F748F3"
@@ -408,7 +536,20 @@
 			title: "Tier 4"
 			x: 10.0d
 			y: 3.5d
-			description: ["The Tier 4 Energy Core can store up to 9,880,000,000 RF"]
+			description: [
+				"The Tier 4 Energy Core can store up to 9,880,000,000 RF"
+				""
+				"In order to assemble this tier you need to place down the energy core and right click on it so that you can change the tier in the GUI and assemble the core (remember to have the necessary items in your inventory)"
+				"The stabilizers need to be placed at each cardinal point around the Core, vertically or horizontally as long as it's on the same plane, up to 16 blocks away from the Core, as shown in the example below:"
+				"This Tier only need basic stabilizers so you will only need 4."
+				""
+				"{image:jmm:textures/screenshot/energy_core/tiers/4/assemble.png width:215 height:120 align:1}"
+				""
+				"In order to activate you will need to right click the stabilizers (since is no longer possible to right click the core) and turn it on."
+				""
+				"This is how it looks like when it's active:"
+				"{image:jmm:textures/screenshot/energy_core/tiers/4/active.png width:215 height:120 align:1}"
+			]
 			dependencies: [
 				"3DB6CEFF8E2DBA3F"
 				"5AD1E795E2F748F3"
@@ -453,7 +594,23 @@
 			title: "Tier 5"
 			x: 10.0d
 			y: 4.5d
-			description: ["The Tier 5 Energy Core can store up to 59,300,000,000 RF"]
+			description: [
+				"The Tier 5 Energy Core can store up to 59,300,000,000 RF"
+				""
+				"In order to assemble this tier you need to place down the energy core and right click on it so that you can change the tier in the GUI and assemble the core (remember to have the necessary items in your inventory)"
+				"The stabilizers need to be placed at each cardinal point around the Core, vertically or horizontally as long as it's on the same plane, up to 16 blocks away from the Core, as shown in the example below:"
+				""
+				"{image:jmm:textures/screenshot/energy_core/tiers/5/assemble.png width:215 height:120 align:1}"
+				""
+				"This Tier needs advanced stabilizers so you will need 36 and will have to build them in a square of 3x3 stabilizers, as shown below:"
+				""
+				"{image:jmm:textures/screenshot/energy_core/advanced_stabilizer.png width:215 height:120 align:1}"
+				""
+				"In order to activate you will need to right click the stabilizers (since is no longer possible to right click the core) and turn it on."
+				""
+				"This is how it looks like when it's active:"
+				"{image:jmm:textures/screenshot/energy_core/tiers/5/active.png width:215 height:120 align:1}"
+			]
 			dependencies: [
 				"30810C4610A2DBFC"
 				"5AD1E795E2F748F3"
@@ -498,7 +655,23 @@
 			title: "Tier 6"
 			x: 9.5d
 			y: 5.5d
-			description: ["The Tier 6 Energy Core can store up to 356,000,000,000 RF"]
+			description: [
+				"The Tier 6 Energy Core can store up to 356,000,000,000 RF"
+				""
+				"In order to assemble this tier you need to place down the energy core and right click on it so that you can change the tier in the GUI and assemble the core (remember to have the necessary items in your inventory)"
+				"The stabilizers need to be placed at each cardinal point around the Core, vertically or horizontally as long as it's on the same plane, up to 16 blocks away from the Core, as shown in the example below:"
+				""
+				"{image:jmm:textures/screenshot/energy_core/tiers/6/assemble.png width:215 height:120 align:1}"
+				""
+				"This Tier needs advanced stabilizers so you will need 36 and will have to build them in a square of 3x3 stabilizers, as shown below:"
+				""
+				"{image:jmm:textures/screenshot/energy_core/advanced_stabilizer.png width:215 height:120 align:1}"
+				""
+				"In order to activate you will need to right click the stabilizers (since is no longer possible to right click the core) and turn it on."
+				""
+				"This is how it looks like when it's active:"
+				"{image:jmm:textures/screenshot/energy_core/tiers/6/active.png width:215 height:120 align:1}"
+			]
 			dependencies: [
 				"312DA42290ED2BBD"
 				"5AD1E795E2F748F3"
@@ -543,7 +716,23 @@
 			title: "Tier 7"
 			x: 8.5d
 			y: 6.0d
-			description: ["The Tier 7 Energy Core can store up to 2,140,000,000,000 RF"]
+			description: [
+				"The Tier 7 Energy Core can store up to 2,140,000,000,000 RF"
+				""
+				"In order to assemble this tier you need to place down the energy core and right click on it so that you can change the tier in the GUI and assemble the core (remember to have the necessary items in your inventory)"
+				"The stabilizers need to be placed at each cardinal point around the Core, vertically or horizontally as long as it's on the same plane, up to 16 blocks away from the Core, as shown in the example below:"
+				""
+				"{image:jmm:textures/screenshot/energy_core/tiers/7/assemble.png width:215 height:120 align:1}"
+				""
+				"This Tier needs advanced stabilizers so you will need 36 and will have to build them in a square of 3x3 stabilizers, as shown below:"
+				""
+				"{image:jmm:textures/screenshot/energy_core/advanced_stabilizer.png width:215 height:120 align:1}"
+				""
+				"In order to activate you will need to right click the stabilizers (since is no longer possible to right click the core) and turn it on."
+				""
+				"This is how it looks like when it's active:"
+				"{image:jmm:textures/screenshot/energy_core/tiers/7/active.png width:215 height:120 align:1}"
+			]
 			dependencies: [
 				"28A673D466A5F5FD"
 				"5AD1E795E2F748F3"
@@ -589,7 +778,23 @@
 			x: 7.5d
 			y: 5.5d
 			subtitle: "Are you sure you need this much? :flushed:"
-			description: ["The Tier 8 Energy Core can store up to 9,223,372,036,854,775,807 RF"]
+			description: [
+				"The Tier 8 Energy Core can store up to 9,223,372,036,854,775,807 RF"
+				""
+				"In order to assemble this tier you need to place down the energy core and right click on it so that you can change the tier in the GUI and assemble the core (remember to have the necessary items in your inventory)"
+				"The stabilizers need to be placed at each cardinal point around the Core, vertically or horizontally as long as it's on the same plane, up to 16 blocks away from the Core, as shown in the example below:"
+				""
+				"{image:jmm:textures/screenshot/energy_core/tiers/8/assemble.png width:215 height:120 align:1}"
+				""
+				"This Tier needs advanced stabilizers so you will need 36 and will have to build them in a square of 3x3 stabilizers, as shown below:"
+				""
+				"{image:jmm:textures/screenshot/energy_core/advanced_stabilizer.png width:215 height:120 align:1}"
+				""
+				"In order to activate you will need to right click the stabilizers (since is no longer possible to right click the core) and turn it on."
+				""
+				"This is how it looks like when it's active:"
+				"{image:jmm:textures/screenshot/energy_core/tiers/8/active.png width:215 height:120 align:1}"
+			]
 			dependencies: [
 				"6EFC18E139E230CB"
 				"5AD1E795E2F748F3"
@@ -672,13 +877,1632 @@
 		}
 		{
 			x: -3.0d
-			y: -1.5d
+			y: 0.0d
 			subtitle: "THIS QUESTLINE IS STILL WIP"
+			description: ["Expect Changes and some bugs"]
 			id: "5E04A855EE71D54E"
 			tasks: [{
 				id: "531C29D541E0F5DE"
 				type: "checkmark"
 				title: "WIP"
+			}]
+		}
+		{
+			title: "Fusion Crafting: Draconium Tier "
+			x: 7.5d
+			y: -2.0d
+			description: ["Being the Initial Tier of crafting, the Draconium Injector open the doors for all the initial items and craftings that you will need to be doing"]
+			dependencies: [
+				"51A6C156ADA1D18A"
+				"4273B051149902BA"
+			]
+			id: "38D9537546269329"
+			tasks: [{
+				id: "2AA31BC107EEEC26"
+				type: "item"
+				item: "draconicevolution:basic_crafting_injector"
+				count: 12L
+			}]
+			rewards: [{
+				id: "6EB951CA992A9D2D"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Fusion Crafting"
+			icon: "draconicevolution:crafting_core"
+			x: 7.5d
+			y: 0.0d
+			subtitle: "Now this is crafty :laughing:"
+			description: [
+				"The heart of crafting in Draconic Evolution, the Fusion Crafting is no doubt the most important process to learn in your journey."
+				""
+				"With a Crafting core and a maximum of 12 Crafting Injectors around you can craft all the possible items in Draconic Evolution"
+				""
+				"In order to use the injectors you need to power them up with energy, this can be done using any form of energy transfer, which includes the energy crystals from the mod itself."
+				""
+				"You can see in the image below an example of how you can setup your Injectors and Crystals:"
+				"{image:jmm:textures/screenshot/fusion_crafting/charging.png width:215 height:120 align:1}"
+			]
+			dependencies: ["00361EAFEF5E1DDA"]
+			id: "51A6C156ADA1D18A"
+			tasks: [{
+				id: "639F89EE3F62DDE4"
+				type: "item"
+				item: "draconicevolution:crafting_core"
+			}]
+			rewards: [{
+				id: "3A6F49B4B374CE80"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Energy Crystals"
+			x: 6.0d
+			y: 0.0d
+			description: [
+				"Every mod that uses energy needs a way to transfer said energy, Draconic Evolution uses Crystals to do this job, with the same concept of tiers, low-tiered crystals will have a lower transfer-rate than a higher level crystal."
+				""
+				"The I/O Crystals can be used to input or output energy into the \"flow\" (or network) and accept any form of block that has or transfer energy, such as Flux Networks points/plugs and/or Mekanism cables/energy cubes."
+				""
+				"Right Clicking on an I/O crystal change its type from input to output and vice-versa."
+			]
+			dependencies: ["166EDD32982C3BFF"]
+			id: "00361EAFEF5E1DDA"
+			tasks: [
+				{
+					id: "680E054F8CE685AF"
+					type: "item"
+					item: "draconicevolution:basic_relay_crystal"
+				}
+				{
+					id: "0B7AAAF39A7A4BD3"
+					type: "item"
+					item: "draconicevolution:basic_io_crystal"
+				}
+				{
+					id: "59D3C26799E26921"
+					type: "item"
+					item: "draconicevolution:wyvern_wireless_crystal"
+				}
+				{
+					id: "10449496CCF0CD16"
+					type: "item"
+					item: "draconicevolution:wyvern_io_crystal"
+				}
+			]
+			rewards: [
+				{
+					id: "7F9D834113E36C30"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "19A92A9E5F44CCC5"
+					type: "item"
+					item: "draconicevolution:draconium_ingot"
+					count: 5
+					random_bonus: 5
+				}
+			]
+		}
+		{
+			x: 9.5d
+			y: -2.5d
+			description: ["The Draconium Chest is an interesting Item, I would try it out if I were you, since it can come in handy someday!"]
+			dependencies: ["38D9537546269329"]
+			id: "23360215EA576AA2"
+			tasks: [{
+				id: "2893B76E946AD3C0"
+				type: "item"
+				item: "draconicevolution:draconium_chest"
+			}]
+			rewards: [{
+				id: "7F4C678D12E86C38"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Wyvern Gear"
+			x: 9.5d
+			y: -4.5d
+			description: ["The base for all the other tier's gear, the Wyvern gear is the doors for the Draconic universe of strong items"]
+			dependencies: ["6CBE1E1944075490"]
+			id: "0E26E3D1B7CD23C8"
+			tasks: [
+				{
+					id: "7946A02A4CCAF55B"
+					type: "item"
+					item: {
+						id: "draconicevolution:wyvern_sword"
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								module_host: {
+									provider_id: [I;
+										1175471528
+										-430289007
+										-1600155189
+										-1131733301
+									]
+									modules: [ ]
+									properties: { }
+								}
+								energy: {
+									energy: 0L
+								}
+							}
+						}
+					}
+				}
+				{
+					id: "2C4F5B436E76A034"
+					type: "item"
+					item: {
+						id: "draconicevolution:wyvern_axe"
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								module_host: {
+									provider_id: [I;
+										808649267
+										380915064
+										-1648754774
+										1506687712
+									]
+									modules: [ ]
+									properties: {
+										mining_speed: {
+											hud: 1b
+											value: 1.0d
+										}
+									}
+								}
+								energy: {
+									energy: 0L
+								}
+							}
+						}
+					}
+				}
+				{
+					id: "145191E9EA7F4129"
+					type: "item"
+					item: {
+						id: "draconicevolution:wyvern_bow"
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								module_host: {
+									provider_id: [I;
+										1259898399
+										-487046644
+										-1225410348
+										-897177369
+									]
+									modules: [ ]
+									properties: { }
+								}
+								energy: {
+									energy: 0L
+								}
+							}
+						}
+					}
+				}
+				{
+					id: "52687E30D62F6E53"
+					type: "item"
+					item: {
+						id: "draconicevolution:wyvern_shovel"
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								module_host: {
+									provider_id: [I;
+										-460658788
+										1903905383
+										-1245885781
+										-750344321
+									]
+									modules: [ ]
+									properties: {
+										mining_speed: {
+											hud: 1b
+											value: 1.0d
+										}
+									}
+								}
+								energy: {
+									energy: 0L
+								}
+							}
+						}
+					}
+				}
+				{
+					id: "51CCD6732E40C1AA"
+					type: "item"
+					item: {
+						id: "draconicevolution:wyvern_hoe"
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								module_host: {
+									provider_id: [I;
+										1665917843
+										-793688579
+										-1461282762
+										-211844823
+									]
+									modules: [ ]
+									properties: { }
+								}
+								energy: {
+									energy: 0L
+								}
+							}
+						}
+					}
+				}
+				{
+					id: "71D1230DE98F4420"
+					type: "item"
+					item: {
+						id: "draconicevolution:wyvern_pickaxe"
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								module_host: {
+									provider_id: [I;
+										-1605240551
+										-1653127309
+										-1475185778
+										-1956642019
+									]
+									modules: [ ]
+									properties: {
+										mining_speed: {
+											hud: 1b
+											value: 1.0d
+										}
+									}
+								}
+								energy: {
+									energy: 0L
+								}
+							}
+						}
+					}
+				}
+				{
+					id: "74EF87773AAD8118"
+					type: "item"
+					item: {
+						id: "draconicevolution:wyvern_chestpiece"
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								module_host: {
+									provider_id: [I;
+										883897254
+										-921287195
+										-1480350715
+										459121689
+									]
+									modules: [ ]
+									properties: { }
+								}
+								energy: {
+									energy: 0L
+								}
+							}
+						}
+					}
+				}
+				{
+					id: "0E55CAE0C275C693"
+					type: "item"
+					item: {
+						id: "draconicevolution:wyvern_capacitor"
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								module_host: {
+									provider_id: [I;
+										-380721517
+										-1899937535
+										-1752308056
+										-1019851759
+									]
+									modules: [ ]
+									properties: {
+										charge_main: {
+											hud: 1b
+										}
+										charge_curios: {
+											hud: 1b
+										}
+										charge_hot_bar: {
+											hud: 1b
+										}
+										charge_armor: {
+											hud: 1b
+										}
+										charge_held_item: {
+											hud: 1b
+										}
+									}
+								}
+								energy: {
+									energy: 0L
+								}
+							}
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "72F0E3DA604CC015"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Draconic Gear"
+			x: 9.5d
+			y: -6.5d
+			description: ["The second best items, losing only to Chaotic Tier, this is the best equipment you can get before fighting the Chaos Guardian, be ready with all your best modules inside those items!"]
+			dependencies: ["5F8C7CF30C4D771A"]
+			id: "5742107602270F7A"
+			tasks: [
+				{
+					id: "7601419E30ECB620"
+					type: "item"
+					item: {
+						id: "draconicevolution:draconic_sword"
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								module_host: {
+									provider_id: [I;
+										606513372
+										167005944
+										-1709032460
+										-1793716104
+									]
+									modules: [ ]
+									properties: { }
+								}
+								energy: {
+									energy: 0L
+								}
+							}
+						}
+					}
+				}
+				{
+					id: "34D1EC201E364FCB"
+					type: "item"
+					item: {
+						id: "draconicevolution:draconic_axe"
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								module_host: {
+									provider_id: [I;
+										1133019926
+										-959166220
+										-2006254699
+										-1478112062
+									]
+									modules: [ ]
+									properties: {
+										mining_speed: {
+											hud: 1b
+											value: 1.0d
+										}
+									}
+								}
+								energy: {
+									energy: 0L
+								}
+							}
+						}
+					}
+				}
+				{
+					id: "0CA4490B187155D7"
+					type: "item"
+					item: {
+						id: "draconicevolution:draconic_bow"
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								module_host: {
+									provider_id: [I;
+										2014118587
+										-1791343828
+										-1819203768
+										520165286
+									]
+									modules: [ ]
+									properties: { }
+								}
+								energy: {
+									energy: 0L
+								}
+							}
+						}
+					}
+				}
+				{
+					id: "41CD1F0B0DB96543"
+					type: "item"
+					item: {
+						id: "draconicevolution:draconic_shovel"
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								module_host: {
+									provider_id: [I;
+										1495832838
+										506872749
+										-2052096709
+										1359821043
+									]
+									modules: [ ]
+									properties: {
+										mining_speed: {
+											hud: 1b
+											value: 1.0d
+										}
+									}
+								}
+								energy: {
+									energy: 0L
+								}
+							}
+						}
+					}
+				}
+				{
+					id: "3C1CF6430C548F4C"
+					type: "item"
+					item: {
+						id: "draconicevolution:draconic_hoe"
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								module_host: {
+									provider_id: [I;
+										738056246
+										1718372086
+										-2042446686
+										882534503
+									]
+									modules: [ ]
+									properties: { }
+								}
+								energy: {
+									energy: 0L
+								}
+							}
+						}
+					}
+				}
+				{
+					id: "1C26F78E0E53C0D0"
+					type: "item"
+					item: {
+						id: "draconicevolution:draconic_pickaxe"
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								module_host: {
+									provider_id: [I;
+										560288461
+										-940160916
+										-1770183369
+										-1287240337
+									]
+									modules: [ ]
+									properties: {
+										mining_speed: {
+											hud: 1b
+											value: 1.0d
+										}
+									}
+								}
+								energy: {
+									energy: 0L
+								}
+							}
+						}
+					}
+				}
+				{
+					id: "4D2ECCF2848A6E36"
+					type: "item"
+					item: {
+						id: "draconicevolution:draconic_chestpiece"
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								module_host: {
+									provider_id: [I;
+										-377206447
+										1079330557
+										-2045585077
+										1239170990
+									]
+									modules: [ ]
+									properties: { }
+								}
+								energy: {
+									energy: 0L
+								}
+							}
+						}
+					}
+				}
+				{
+					id: "68511BF43E5A9F68"
+					type: "item"
+					item: {
+						id: "draconicevolution:draconic_capacitor"
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								module_host: {
+									provider_id: [I;
+										571564191
+										359091228
+										-1500156240
+										78527428
+									]
+									modules: [ ]
+									properties: {
+										charge_main: {
+											hud: 1b
+										}
+										charge_curios: {
+											hud: 1b
+										}
+										charge_hot_bar: {
+											hud: 1b
+										}
+										charge_armor: {
+											hud: 1b
+										}
+										charge_held_item: {
+											hud: 1b
+										}
+									}
+								}
+								energy: {
+									energy: 0L
+								}
+							}
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "0D283EAF9E9648FD"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Chaotic Items"
+			x: 9.5d
+			y: -8.5d
+			description: [
+				"The Best Items!! The last and stronger tier in the Draconic Evolution, the Chaotic items offer you a strong base stats and modular space so that you can fit even more modules."
+				""
+				"Those are the only items, including the Staff, that can damage the Chaos Guardian Crystal directly, remember to put all your best modules inside them and have fun hunting down all the monsters."
+			]
+			dependencies: ["616CCD64152F669A"]
+			id: "7BDB2D6D3FEE57FF"
+			tasks: [
+				{
+					id: "30A2298D69C5AA07"
+					type: "item"
+					item: {
+						id: "draconicevolution:chaotic_sword"
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								module_host: {
+									provider_id: [I;
+										2033951794
+										-678477796
+										-1422006706
+										-1474533854
+									]
+									modules: [ ]
+									properties: { }
+								}
+								energy: {
+									energy: 0L
+								}
+							}
+						}
+					}
+				}
+				{
+					id: "4898F8A5F002CE9F"
+					type: "item"
+					item: {
+						id: "draconicevolution:chaotic_axe"
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								module_host: {
+									provider_id: [I;
+										1054814193
+										930825761
+										-1211965678
+										-789443270
+									]
+									modules: [ ]
+									properties: {
+										mining_speed: {
+											hud: 1b
+											value: 1.0d
+										}
+									}
+								}
+								energy: {
+									energy: 0L
+								}
+							}
+						}
+					}
+				}
+				{
+					id: "742E718C7BB5A00E"
+					type: "item"
+					item: {
+						id: "draconicevolution:chaotic_bow"
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								module_host: {
+									provider_id: [I;
+										262215767
+										1380860387
+										-1673190634
+										-1817826398
+									]
+									modules: [ ]
+									properties: { }
+								}
+								energy: {
+									energy: 0L
+								}
+							}
+						}
+					}
+				}
+				{
+					id: "40FF44F7222A4813"
+					type: "item"
+					item: {
+						id: "draconicevolution:chaotic_shovel"
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								module_host: {
+									provider_id: [I;
+										806774580
+										1701398076
+										-1235041588
+										769989242
+									]
+									modules: [ ]
+									properties: {
+										mining_speed: {
+											hud: 1b
+											value: 1.0d
+										}
+									}
+								}
+								energy: {
+									energy: 0L
+								}
+							}
+						}
+					}
+				}
+				{
+					id: "575DCC14E8E7C149"
+					type: "item"
+					item: {
+						id: "draconicevolution:chaotic_hoe"
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								module_host: {
+									provider_id: [I;
+										1969880919
+										1038698139
+										-1246082960
+										2008120250
+									]
+									modules: [ ]
+									properties: { }
+								}
+								energy: {
+									energy: 0L
+								}
+							}
+						}
+					}
+				}
+				{
+					id: "00E370CBD0F78432"
+					type: "item"
+					item: {
+						id: "draconicevolution:chaotic_pickaxe"
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								module_host: {
+									provider_id: [I;
+										347894105
+										5850286
+										-1474542617
+										-1441441754
+									]
+									modules: [ ]
+									properties: {
+										mining_speed: {
+											hud: 1b
+											value: 1.0d
+										}
+									}
+								}
+								energy: {
+									energy: 0L
+								}
+							}
+						}
+					}
+				}
+				{
+					id: "5074D5EA6C16F8ED"
+					type: "item"
+					item: {
+						id: "draconicevolution:chaotic_chestpiece"
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								module_host: {
+									provider_id: [I;
+										-471939952
+										-477279658
+										-1491222225
+										1727599530
+									]
+									modules: [ ]
+									properties: { }
+								}
+								energy: {
+									energy: 0L
+								}
+							}
+						}
+					}
+				}
+				{
+					id: "66CF5D6C11A9064F"
+					type: "item"
+					item: {
+						id: "draconicevolution:chaotic_capacitor"
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								module_host: {
+									provider_id: [I;
+										-881994294
+										-1529983236
+										-1077775780
+										1503637105
+									]
+									modules: [ ]
+									properties: {
+										charge_main: {
+											hud: 1b
+										}
+										charge_curios: {
+											hud: 1b
+										}
+										charge_hot_bar: {
+											hud: 1b
+										}
+										charge_armor: {
+											hud: 1b
+										}
+										charge_held_item: {
+											hud: 1b
+										}
+									}
+								}
+								energy: {
+									energy: 0L
+								}
+							}
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "630588FF16CB97E0"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Fusion Crafting: Draconic Tier "
+			x: 7.5d
+			y: -6.0d
+			dependencies: [
+				"6CBE1E1944075490"
+				"1E081E22603EEBD4"
+			]
+			id: "5F8C7CF30C4D771A"
+			tasks: [{
+				id: "56EF424D6E1DEBD8"
+				type: "item"
+				item: "draconicevolution:awakened_crafting_injector"
+				count: 12L
+			}]
+			rewards: [{
+				id: "70594E229D727FEE"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Fusion Crafting: Wyvern Tier "
+			x: 7.5d
+			y: -4.0d
+			description: ["Being the Initial tier of crafting needed for most items in Draconic Evolution, the Wyvern Injector is, with no doubt, one of  the "]
+			dependencies: [
+				"38D9537546269329"
+				"1F86576F6E291B99"
+			]
+			id: "6CBE1E1944075490"
+			tasks: [{
+				id: "35542EB9987B6DE9"
+				type: "item"
+				item: "draconicevolution:wyvern_crafting_injector"
+				count: 12L
+			}]
+			rewards: [{
+				id: "2F1E9825E814BDB9"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Fusion Crafting: Chaotic Tier "
+			x: 7.5d
+			y: -8.0d
+			dependencies: [
+				"5F8C7CF30C4D771A"
+				"4550414130677000"
+			]
+			id: "616CCD64152F669A"
+			tasks: [{
+				id: "3E36B8682184D1A2"
+				type: "item"
+				item: "draconicevolution:chaotic_crafting_injector"
+				count: 12L
+			}]
+			rewards: [{
+				id: "6C93EBA34FF53AB4"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "jei:textures/gui/icons/info.png"
+				}
+			}
+			x: 9.0d
+			y: 0.0d
+			subtitle: "You'll thank me later"
+			description: [
+				"A tip about upgrading the injectors to the next tier"
+				""
+				"Instead of crafting 13 injectors (12 for use and 1 for upgrading them)"
+				""
+				"Break one of the 12 injectors and upgrade that one, replace one of the others with the one you just upgraded and upgrade that one, keep going until you upgrade them all!"
+			]
+			dependencies: ["51A6C156ADA1D18A"]
+			id: "5FD51CA5807921F5"
+			tasks: [{
+				id: "7D286CE141BA1A82"
+				type: "checkmark"
+				title: "Tip"
+			}]
+			rewards: [{
+				id: "0FE88EE8B4B2E87B"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "jei:textures/gui/icons/info.png"
+				}
+			}
+			x: 10.5d
+			y: 0.0d
+			subtitle: "You really should read this, really"
+			description: [
+				"To start the fusion crafting process you need to click the \"Craft\" button after right-clicking the Core"
+				""
+				"{image:jmm:textures/screenshot/fusion_crafting/gui.png width:215 height:120 align:1}"
+				""
+				"But if you send a redstone signal to the Core it will start the crafting automatically if is a valid Recipe"
+				""
+				"{image:jmm:textures/screenshot/fusion_crafting/craft_process.png width:215 height:120 align:1}"
+				""
+				"Shift-right-click the Injector to change its mode from Stack to Single item mode"
+				""
+				"Having this things in mind you can make an easy automation using those two mechanics, all you need to find out is a way to place the middle item and then the other ones in any of the injectors"
+			]
+			dependencies: ["5FD51CA5807921F5"]
+			id: "0B7B7D21D199DCF0"
+			tasks: [{
+				id: "67D037F1C6131E87"
+				type: "checkmark"
+				title: "Another Tip"
+			}]
+			rewards: [{
+				id: "4F5CCE726EF16E4C"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			icon: "draconicevolution:chaos_shard"
+			x: 2.5d
+			y: -8.0d
+			description: [
+				"Congratulations! You managed to kill the Chaos Guardian!"
+				""
+				"Now all you have to do to put your hands into those Chaos Shards is break down on the middle of the island and break the giant Chaos Shard in there, that will give you some Shards!"
+			]
+			dependencies: ["428280A41C5FC298"]
+			id: "1FE1BB99034A9169"
+			tasks: [
+				{
+					id: "6378D5D16A70E409"
+					type: "item"
+					item: "draconicevolution:chaos_shard"
+				}
+				{
+					id: "3DFAE28815D3B651"
+					type: "checkmark"
+					title: "Congrats!"
+				}
+			]
+			rewards: [
+				{
+					id: "3104AA524178B719"
+					type: "item"
+					item: "draconicevolution:medium_chaos_frag"
+					count: 2
+					random_bonus: 3
+				}
+				{
+					id: "4516A4376CDDC8A3"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "jei:textures/gui/icons/info.png"
+				}
+			}
+			x: 2.5d
+			y: -4.0d
+			subtitle: "I think you should read this!"
+			description: [
+				"Draconic Evolution Items aren't really useful until you give them Modules!"
+				""
+				"Remember to remove the modules before upgrading the item to the next tier, otherwise you might lose the modules inside!!"
+				""
+				"Modules, same as items, have tiers, most modules start at Wyvern Tier but a few of them have a Draconium Tier as well."
+				""
+				"You can open the Module Menu by using the keybind set (Default: Shift + C)"
+				""
+				"You can put as many of the same module as you want (some modules have a limit) in an item, limited by the item's grid, the grid increase with the Item's tier, the module's tier increase their stats."
+				""
+				"Every Modular Item needs at least one Energy Module to work, the item won't work without that."
+				""
+				"Besides the energy module and a few specific others, modules are most for specific items, for example the projectile modules are for the Bow, while the speed modules can be used in the sword (or in the axe) to increase attack speed and in the Chest Piece to increase the player's speed."
+			]
+			dependencies: ["1F86576F6E291B99"]
+			id: "1DFC81E8B1AA5C07"
+			tasks: [{
+				id: "592DB38EB7DDD49A"
+				type: "checkmark"
+				title: "About Modular Items"
+			}]
+			rewards: [{
+				id: "081D9EAC975F2FBC"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Wyvern Modules"
+			x: 9.5d
+			y: -3.5d
+			description: ["Main Initial Modules, give interesting basic stats and some specific perks for specific items"]
+			dependencies: ["6CBE1E1944075490"]
+			id: "57DB6C73F8D973BB"
+			tasks: [
+				{
+					id: "4AF3FE9D2B62C489"
+					type: "item"
+					item: "draconicevolution:wyvern_energy_module"
+				}
+				{
+					id: "51AC547BA7E61017"
+					type: "item"
+					item: "draconicevolution:wyvern_speed_module"
+				}
+				{
+					id: "0F57B981F658FDC7"
+					type: "item"
+					item: "draconicevolution:wyvern_damage_module"
+				}
+				{
+					id: "610FADC7D115ED79"
+					type: "item"
+					item: "draconicevolution:wyvern_aoe_module"
+				}
+				{
+					id: "1789036149192CE5"
+					type: "item"
+					item: "draconicevolution:wyvern_proj_velocity_module"
+				}
+				{
+					id: "14D9805B7DFB119E"
+					type: "item"
+					item: "draconicevolution:wyvern_proj_accuracy_module"
+				}
+				{
+					id: "36CEFDB2383CF792"
+					type: "item"
+					item: "draconicevolution:wyvern_proj_grav_comp_module"
+				}
+				{
+					id: "6DAD79E9F57ACA06"
+					type: "item"
+					item: "draconicevolution:wyvern_proj_penetration_module"
+				}
+				{
+					id: "3F64BB234974F64B"
+					type: "item"
+					item: "draconicevolution:wyvern_proj_damage_module"
+				}
+				{
+					id: "6437936CB4EA7114"
+					type: "item"
+					item: "draconicevolution:wyvern_auto_fire_module"
+				}
+				{
+					id: "47CF48A079A83B90"
+					type: "item"
+					item: "draconicevolution:wyvern_shield_control_module"
+				}
+				{
+					id: "33322AF60EA514C3"
+					type: "item"
+					item: "draconicevolution:wyvern_shield_capacity_module"
+				}
+				{
+					id: "15CD6AF834996AB2"
+					type: "item"
+					item: "draconicevolution:wyvern_large_shield_capacity_module"
+				}
+				{
+					id: "30D37613D77E03D3"
+					type: "item"
+					item: "draconicevolution:wyvern_shield_recovery_module"
+				}
+				{
+					id: "03D312BF82C5E7F1"
+					type: "item"
+					item: "draconicevolution:wyvern_flight_module"
+				}
+				{
+					id: "746CB00AC4AFA3B9"
+					type: "item"
+					item: "draconicevolution:wyvern_undying_module"
+				}
+				{
+					id: "0A92558888808A3B"
+					type: "item"
+					item: "draconicevolution:wyvern_auto_feed_module"
+				}
+				{
+					id: "6CB56CF554F4ED54"
+					type: "item"
+					item: "draconicevolution:wyvern_hill_step_module"
+				}
+				{
+					id: "0AE35D15E78E2C84"
+					type: "item"
+					item: "draconicevolution:wyvern_jump_module"
+				}
+			]
+			rewards: [{
+				id: "0DB76BA950D80F16"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Draconium Modules"
+			x: 9.5d
+			y: -1.5d
+			description: ["Pretty basic modules, give initial stats, can be used as base for the next Tier module, not really worth using tho"]
+			dependencies: ["38D9537546269329"]
+			id: "13B3C03FE2A2B3DC"
+			tasks: [
+				{
+					id: "67F0716F84C90E63"
+					type: "item"
+					item: "draconicevolution:draconium_energy_module"
+				}
+				{
+					id: "697E38A02327E734"
+					type: "item"
+					item: "draconicevolution:draconium_speed_module"
+				}
+				{
+					id: "116551261DB050A5"
+					type: "item"
+					item: "draconicevolution:draconium_damage_module"
+				}
+				{
+					id: "34C14F253CBA9656"
+					type: "item"
+					item: "draconicevolution:draconium_aoe_module"
+				}
+				{
+					id: "187CB40998F607EF"
+					type: "item"
+					item: "draconicevolution:draconium_auto_feed_module"
+				}
+				{
+					id: "4FEC0364E854DA74"
+					type: "item"
+					item: "draconicevolution:draconium_jump_module"
+				}
+			]
+			rewards: [{
+				id: "02C4A1DA831F3C28"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 10.5d
+			y: -4.0d
+			description: ["The Advanced Dislocator is a teleportation device added by Draconic Evolution. It is the enhanced version of the Dislocator. It can store up to 100 different waypoints, which can additionally be used across dimensions. It uses Ender Pearls as fuel. "]
+			dependencies: ["6CBE1E1944075490"]
+			id: "16CEA7A3272B5DE2"
+			tasks: [{
+				id: "7F5B3E0C9FB49017"
+				type: "item"
+				item: {
+					id: "draconicevolution:advanced_dislocator"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "1B76B6ECB6ABA5F7"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 3.5d
+			y: 1.0d
+			description: [
+				"The Item Dislocator is an utility item added by Draconic Evolution."
+				""
+				"After being shift-right-clicked, it will attract nearby items to the player, until shift-right-clicked again."
+				""
+				"It has a range of 8 blocks and can be upgraded to an Awakened Item Dislocator. "
+			]
+			dependencies: ["166EDD32982C3BFF"]
+			id: "5AFB4A3BAAEA32BA"
+			tasks: [{
+				id: "01D29544A2329D0F"
+				type: "item"
+				item: "draconicevolution:magnet"
+			}]
+			rewards: [{
+				id: "7852FF8D2F375FD9"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 2.5d
+			y: 2.0d
+			description: [
+				"The Awakened Item Dislocator is the advanced version of the Item Dislocator added by Draconic Evolution."
+				""
+				"After being shift-right-clicked, it will attract nearby items to the player, until shift-right-clicked again. It has a range of 32 blocks. "
+			]
+			dependencies: ["5AFB4A3BAAEA32BA"]
+			id: "3A7A286969329B98"
+			tasks: [{
+				id: "126343E448285FB6"
+				type: "item"
+				item: "draconicevolution:advanced_magnet"
+			}]
+			rewards: [{
+				id: "796EDC35F261E468"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 5.5d
+			y: 1.0d
+			description: [
+				"The Dislocator is a transportation device added by Draconic Evolution."
+				""
+				"It is first bound to a location by shift right-clicking. Right-clicking the Dislocator will teleport the user to the bound location. "
+				""
+				"It has 31 uses and after every use it will deplete 2  health points which cannot be avoided."
+				""
+				"The Dislocator will not work if the player has less than 3 health points. It can teleport players across dimensions."
+			]
+			dependencies: ["166EDD32982C3BFF"]
+			id: "03DBE2FF6E797E32"
+			tasks: [{
+				id: "791C9ED97613E2E5"
+				type: "item"
+				item: {
+					id: "draconicevolution:dislocator"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "73CA96BF8987B6C9"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Draconic Modules"
+			x: 9.5d
+			y: -5.5d
+			description: ["Second most powerful modules, losing only to the Chaotic ones, those are the best modules you'll get before fighting the Chaos Guardian"]
+			dependencies: ["5F8C7CF30C4D771A"]
+			id: "38098AD042A3C2C7"
+			tasks: [
+				{
+					id: "57041E269F34CEFC"
+					type: "item"
+					item: "draconicevolution:draconic_energy_module"
+				}
+				{
+					id: "2104806AEE28B382"
+					type: "item"
+					item: "draconicevolution:draconic_speed_module"
+				}
+				{
+					id: "53CF4DB886FFCAB0"
+					type: "item"
+					item: "draconicevolution:draconic_damage_module"
+				}
+				{
+					id: "44A743C33BF2462B"
+					type: "item"
+					item: "draconicevolution:draconic_aoe_module"
+				}
+				{
+					id: "1E55FC87654268F2"
+					type: "item"
+					item: "draconicevolution:draconic_proj_velocity_module"
+				}
+				{
+					id: "4F1D7B063BCACB7F"
+					type: "item"
+					item: "draconicevolution:draconic_proj_accuracy_module"
+				}
+				{
+					id: "2D398AC03FBC9256"
+					type: "item"
+					item: "draconicevolution:draconic_proj_grav_comp_module"
+				}
+				{
+					id: "33C37F584F0B13EB"
+					type: "item"
+					item: "draconicevolution:draconic_proj_penetration_module"
+				}
+				{
+					id: "4C94DC398DDB791C"
+					type: "item"
+					item: "draconicevolution:draconic_proj_damage_module"
+				}
+				{
+					id: "35582B9C5F248CA3"
+					type: "item"
+					item: "draconicevolution:draconic_shield_control_module"
+				}
+				{
+					id: "61F49716EE1A1CC6"
+					type: "item"
+					item: "draconicevolution:draconic_shield_capacity_module"
+				}
+				{
+					id: "7D292F1BD64FAC6C"
+					type: "item"
+					item: "draconicevolution:draconic_large_shield_capacity_module"
+				}
+				{
+					id: "2B05553B9B1C8136"
+					type: "item"
+					item: "draconicevolution:draconic_shield_recovery_module"
+				}
+				{
+					id: "695332A8A60A36F7"
+					type: "item"
+					item: "draconicevolution:draconic_flight_module"
+				}
+				{
+					id: "6F5EDF465D71B058"
+					type: "item"
+					item: "draconicevolution:draconic_undying_module"
+				}
+				{
+					id: "43E5E6509060BD01"
+					type: "item"
+					item: "draconicevolution:draconic_auto_feed_module"
+				}
+				{
+					id: "5CDB68CFB50EB74D"
+					type: "item"
+					item: "draconicevolution:draconic_jump_module"
+				}
+				{
+					id: "0EFBC30EC281E54F"
+					type: "item"
+					item: "draconicevolution:draconic_proj_anti_immune_module"
+				}
+			]
+			rewards: [{
+				id: "5F6BF7C7D2BF3EE9"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 10.5d
+			y: -6.0d
+			description: [
+				"The Draconic Staff of Power is the end-game weapon/tool added by Draconic Evolution."
+				""
+				"It is the upgraded version of the Draconic Sword, Draconic Pickaxe and the Draconic Shovel combined."
+				""
+				"When used with the AOE module it has a max mining range of 7x7x7 along with an area of effect safe mode."
+			]
+			dependencies: ["5F8C7CF30C4D771A"]
+			id: "6EAC092511A873F6"
+			tasks: [{
+				id: "5680D0C2063AF6EB"
+				type: "item"
+				item: {
+					id: "draconicevolution:draconic_staff"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							module_host: {
+								provider_id: [I;
+									1802142363
+									305810950
+									-1401796481
+									1643940952
+								]
+								modules: [ ]
+								properties: {
+									mining_speed: {
+										hud: 1b
+										value: 1.0d
+									}
+								}
+							}
+							energy: {
+								energy: 0L
+							}
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "687F533C03C21961"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 9.5d
+			y: -7.5d
+			description: ["*THE* Best modules you can get on the game for your items, those give most stats and can only be used on Chaotic Ter items."]
+			dependencies: ["616CCD64152F669A"]
+			id: "2236C44D9A7D5AF8"
+			tasks: [
+				{
+					id: "5DFBBAB0516CFFA5"
+					type: "item"
+					item: "draconicevolution:chaotic_energy_module"
+				}
+				{
+					id: "18494BE082BCC912"
+					type: "item"
+					item: "draconicevolution:chaotic_speed_module"
+				}
+				{
+					id: "02069334783E90C8"
+					type: "item"
+					item: "draconicevolution:chaotic_damage_module"
+				}
+				{
+					id: "118BEC65097F4BC2"
+					type: "item"
+					item: "draconicevolution:chaotic_aoe_module"
+				}
+				{
+					id: "03A529F6BC307C17"
+					type: "item"
+					item: "draconicevolution:chaotic_proj_velocity_module"
+				}
+				{
+					id: "6EE0A3A784B5C14D"
+					type: "item"
+					item: "draconicevolution:chaotic_proj_accuracy_module"
+				}
+				{
+					id: "4821703F5F541157"
+					type: "item"
+					item: "draconicevolution:chaotic_proj_grav_comp_module"
+				}
+				{
+					id: "4119556B3432579A"
+					type: "item"
+					item: "draconicevolution:chaotic_proj_penetration_module"
+				}
+				{
+					id: "0F5D6B412F527CDE"
+					type: "item"
+					item: "draconicevolution:chaotic_proj_damage_module"
+				}
+				{
+					id: "1AD58CC712206501"
+					type: "item"
+					item: "draconicevolution:chaotic_shield_control_module"
+				}
+				{
+					id: "4E0473DE0D88B238"
+					type: "item"
+					item: "draconicevolution:chaotic_shield_capacity_module"
+				}
+				{
+					id: "3E2D6D5FCDB9B756"
+					type: "item"
+					item: "draconicevolution:chaotic_large_shield_capacity_module"
+				}
+				{
+					id: "08203E668C13B69D"
+					type: "item"
+					item: "draconicevolution:chaotic_shield_recovery_module"
+				}
+				{
+					id: "29BC4CAF7568A1E0"
+					type: "item"
+					item: "draconicevolution:chaotic_flight_module"
+				}
+				{
+					id: "516023DDFB8C3C8B"
+					type: "item"
+					item: "draconicevolution:chaotic_undying_module"
+				}
+				{
+					id: "4F7E147F829739F6"
+					type: "item"
+					item: "draconicevolution:chaotic_jump_module"
+				}
+			]
+			rewards: [{
+				id: "7C1FA9657E806740"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 10.5d
+			y: -8.0d
+			description: [
+				"The upgraded version of the Draconic Staff of Power."
+				""
+				"It has more space for modules and accepts chaotic modules, allowing the stats to go crazy"
+				""
+				"When used with the AOE module it has a max mining range of 11x11x11 along with an area of effect safe mode."
+			]
+			dependencies: [
+				"6EAC092511A873F6"
+				"616CCD64152F669A"
+			]
+			id: "7AEC1F6618B4BA28"
+			tasks: [{
+				id: "1157587C6005F82F"
+				type: "item"
+				item: {
+					id: "draconicevolution:chaotic_staff"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							module_host: {
+								provider_id: [I;
+									175177194
+									814302588
+									-1229085403
+									1289893251
+								]
+								modules: [ ]
+								properties: {
+									mining_speed: {
+										hud: 1b
+										value: 1.0d
+									}
+								}
+							}
+							energy: {
+								energy: 0L
+							}
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "70557A7F217A92C3"
+				type: "xp"
+				xp: 100
 			}]
 		}
 	]
