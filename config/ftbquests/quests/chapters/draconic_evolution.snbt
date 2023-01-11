@@ -3,7 +3,7 @@
 	group: "72A9465344128AF9"
 	order_index: 8
 	filename: "draconic_evolution"
-	title: "Draconic Evolution [WIP]"
+	title: "Draconic Evolution"
 	icon: "draconicevolution:dragon_heart"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
@@ -20,8 +20,14 @@
 				"Draconic Evolution is a very challenging mod for those who seek the most powerful high-tier equipment and tools"
 				""
 				"That being said, good luck exploring this universe"
+				""
+				"              :warning: &l&cWARNING&r :warning:"
+				"&rMost of the information in this questline was gathered in the wiki, which is mostly for the 1.12 version of the mod."
+				""
+				"I did my best to update the information to the latest version about using the newest mechanics and GUIs but some technical and more specific information may be wrong!!"
+				""
+				"(Be specially careful about the Draconic Reactor, although I made a lot of tests to make sure it was accurate)"
 			]
-			dependencies: ["5E04A855EE71D54E"]
 			size: 2.0d
 			optional: true
 			id: "6D9AC0DEBB23BFCE"
@@ -70,7 +76,7 @@
 				"They have other stages and other mechanics, but those I'll let you find out by yourself, Good Luck!"
 			]
 			dependencies: ["1E081E22603EEBD4"]
-			size: 1.2d
+			size: 1.5d
 			id: "428280A41C5FC298"
 			tasks: [{
 				id: "0A44C35753272B6D"
@@ -145,6 +151,7 @@
 			title: "The Basic Items"
 			x: 4.5d
 			y: 0.0d
+			subtitle: "Ya Basic!"
 			description: [
 				"As of every mod in this universe, Draconic has some base items that are going to be used several times."
 				""
@@ -194,7 +201,7 @@
 			description: [
 				"Draconic has a tier system that increases the power and strength of items depending on the base-tier of the item and its modules."
 				""
-				"Being the initial stage, Draconium Tier doesn't offer many items, only the core, the crafting injector and the Draconium Chest"
+				"Being the initial stage, Draconium tier doesn't offer many items, only the core, the crafting injector, the Draconium Chest and some pretty basic modules."
 			]
 			dependencies: ["166EDD32982C3BFF"]
 			id: "4273B051149902BA"
@@ -214,7 +221,11 @@
 			icon: "draconicevolution:wyvern_core"
 			x: 4.5d
 			y: -4.0d
-			description: ["The second tier in Draconic, Wyvern Tier is the initial tier for all gear, items and modules in this universe"]
+			description: [
+				"The Wyvern tier is the second tier and initial tier for all gear and modular items in this mod."
+				""
+				"Offering us a great potential in items and modules, this tier also open doors for the Advanced Dislocator and the crafting recipe for Awakened Draconium Blocks"
+			]
 			dependencies: ["4273B051149902BA"]
 			id: "1F86576F6E291B99"
 			tasks: [
@@ -240,7 +251,11 @@
 			icon: "draconicevolution:awakened_core"
 			x: 4.5d
 			y: -6.0d
-			description: ["The third tier is the Draconic Tier"]
+			description: [
+				"The Draconic Tier is the third tier, providing the best items before the Chaotic tier."
+				""
+				"Enjoy while you can, because soon enough you will have to fight the Chaos Guardian and those will be your best items."
+			]
 			dependencies: [
 				"1F86576F6E291B99"
 				"6CBE1E1944075490"
@@ -269,7 +284,7 @@
 			icon: "draconicevolution:chaotic_core"
 			x: 4.5d
 			y: -8.0d
-			description: ["The fourth and most powerful tier is the Chaotic Tier"]
+			description: ["The fourth and most powerful tier is the Chaotic Tier, bringing an imense amount of power to the hands of its user."]
 			dependencies: [
 				"1E081E22603EEBD4"
 				"1FE1BB99034A9169"
@@ -297,7 +312,8 @@
 		{
 			title: "The Draconic Reactor"
 			x: 7.5d
-			y: -12.5d
+			y: -10.5d
+			shape: "hexagon"
 			subtitle: "Be careful... it might... :boom:"
 			description: [
 				"&l&3What is a Draconic Reactor?"
@@ -308,9 +324,14 @@
 				""
 				"Just like IC2's Reactor, if you don't have the proper setup, it will explode. Unlike IC2's Reactor, there is no way to contain the explosion, and it has roughly a 300 block radius. "
 				""
-				"The explosion &lwill kill everything&r in sight, &c&lincluding players in &nCreative&r. Some recommendations are to put it far away or in another dimension"
+				"The explosion &lwill kill everything&r in sight. Some recommendations are to put it far away or in another dimension."
 			]
-			dependencies: ["616CCD64152F669A"]
+			dependencies: [
+				"616CCD64152F669A"
+				"726F85DBA77128A7"
+				"5844E1C7C216DBB1"
+			]
+			size: 1.5d
 			id: "7D629BE61CCFD5CC"
 			tasks: [{
 				id: "3018AE808BCFE7C6"
@@ -338,6 +359,7 @@
 			title: "The Draconic Battery"
 			x: 4.5d
 			y: 4.0d
+			shape: "pentagon"
 			subtitle: "That's a big mama"
 			description: [
 				"The Draconic Battery, AKA Energy Core, can store massive amounts of energy (RF/FE)"
@@ -349,6 +371,7 @@
 				"You need an imense amount of Draconium Blocks and Redstone Blocks to build up to the 7th tier, for the 8th tier you'll also need Awakened Draconium Blocks"
 			]
 			dependencies: ["166EDD32982C3BFF"]
+			size: 1.5d
 			id: "20EFD1FB3CB538D2"
 			tasks: [{
 				id: "707733DD9772C9B3"
@@ -406,6 +429,7 @@
 				"The Tier 1 Energy Core can store up to 45,500,000 RF"
 				""
 				"In order to assemble this tier you need to place down the energy core and the stabilizers need to be placed at each cardinal point around the Core, vertically or horizontally as long as it's on the same plane, up to 16 blocks away from the Core, as shown in the example below:"
+				""
 				"This Tier only need basic stabilizers so you will only need 4."
 				""
 				"{image:jmm:textures/screenshot/energy_core/tiers/1/assemble.png width:215 height:120 align:1}"
@@ -437,7 +461,9 @@
 				"The Tier 2 Energy Core can store up to 273,000,000 RF"
 				""
 				"In order to assemble this tier you need to place down the energy core and right click on it so that you can change the tier in the GUI and assemble the core (remember to have the necessary items in your inventory)"
+				""
 				"The stabilizers need to be placed at each cardinal point around the Core, vertically or horizontally as long as it's on the same plane, up to 16 blocks away from the Core, as shown in the example below:"
+				""
 				"This Tier only need basic stabilizers so you will only need 4."
 				""
 				"{image:jmm:textures/screenshot/energy_core/tiers/2/assemble.png width:215 height:120 align:1}"
@@ -488,7 +514,9 @@
 				"The Tier 3 Energy Core can store up to 1,640,000,000 RF"
 				""
 				"In order to assemble this tier you need to place down the energy core and right click on it so that you can change the tier in the GUI and assemble the core (remember to have the necessary items in your inventory)"
+				""
 				"The stabilizers need to be placed at each cardinal point around the Core, vertically or horizontally as long as it's on the same plane, up to 16 blocks away from the Core, as shown in the example below:"
+				""
 				"This Tier only need basic stabilizers so you will only need 4."
 				""
 				"{image:jmm:textures/screenshot/energy_core/tiers/3/assemble.png width:215 height:120 align:1}"
@@ -540,7 +568,9 @@
 				"The Tier 4 Energy Core can store up to 9,880,000,000 RF"
 				""
 				"In order to assemble this tier you need to place down the energy core and right click on it so that you can change the tier in the GUI and assemble the core (remember to have the necessary items in your inventory)"
+				""
 				"The stabilizers need to be placed at each cardinal point around the Core, vertically or horizontally as long as it's on the same plane, up to 16 blocks away from the Core, as shown in the example below:"
+				""
 				"This Tier only need basic stabilizers so you will only need 4."
 				""
 				"{image:jmm:textures/screenshot/energy_core/tiers/4/assemble.png width:215 height:120 align:1}"
@@ -598,6 +628,7 @@
 				"The Tier 5 Energy Core can store up to 59,300,000,000 RF"
 				""
 				"In order to assemble this tier you need to place down the energy core and right click on it so that you can change the tier in the GUI and assemble the core (remember to have the necessary items in your inventory)"
+				""
 				"The stabilizers need to be placed at each cardinal point around the Core, vertically or horizontally as long as it's on the same plane, up to 16 blocks away from the Core, as shown in the example below:"
 				""
 				"{image:jmm:textures/screenshot/energy_core/tiers/5/assemble.png width:215 height:120 align:1}"
@@ -659,6 +690,7 @@
 				"The Tier 6 Energy Core can store up to 356,000,000,000 RF"
 				""
 				"In order to assemble this tier you need to place down the energy core and right click on it so that you can change the tier in the GUI and assemble the core (remember to have the necessary items in your inventory)"
+				""
 				"The stabilizers need to be placed at each cardinal point around the Core, vertically or horizontally as long as it's on the same plane, up to 16 blocks away from the Core, as shown in the example below:"
 				""
 				"{image:jmm:textures/screenshot/energy_core/tiers/6/assemble.png width:215 height:120 align:1}"
@@ -720,6 +752,7 @@
 				"The Tier 7 Energy Core can store up to 2,140,000,000,000 RF"
 				""
 				"In order to assemble this tier you need to place down the energy core and right click on it so that you can change the tier in the GUI and assemble the core (remember to have the necessary items in your inventory)"
+				""
 				"The stabilizers need to be placed at each cardinal point around the Core, vertically or horizontally as long as it's on the same plane, up to 16 blocks away from the Core, as shown in the example below:"
 				""
 				"{image:jmm:textures/screenshot/energy_core/tiers/7/assemble.png width:215 height:120 align:1}"
@@ -782,6 +815,7 @@
 				"The Tier 8 Energy Core can store up to 9,223,372,036,854,775,807 RF"
 				""
 				"In order to assemble this tier you need to place down the energy core and right click on it so that you can change the tier in the GUI and assemble the core (remember to have the necessary items in your inventory)"
+				""
 				"The stabilizers need to be placed at each cardinal point around the Core, vertically or horizontally as long as it's on the same plane, up to 16 blocks away from the Core, as shown in the example below:"
 				""
 				"{image:jmm:textures/screenshot/energy_core/tiers/8/assemble.png width:215 height:120 align:1}"
@@ -876,18 +910,6 @@
 			}]
 		}
 		{
-			x: -3.0d
-			y: 0.0d
-			subtitle: "THIS QUESTLINE IS STILL WIP"
-			description: ["Expect Changes and some bugs"]
-			id: "5E04A855EE71D54E"
-			tasks: [{
-				id: "531C29D541E0F5DE"
-				type: "checkmark"
-				title: "WIP"
-			}]
-		}
-		{
 			title: "Fusion Crafting: Draconium Tier "
 			x: 7.5d
 			y: -2.0d
@@ -914,6 +936,7 @@
 			icon: "draconicevolution:crafting_core"
 			x: 7.5d
 			y: 0.0d
+			shape: "diamond"
 			subtitle: "Now this is crafty :laughing:"
 			description: [
 				"The heart of crafting in Draconic Evolution, the Fusion Crafting is no doubt the most important process to learn in your journey."
@@ -926,6 +949,7 @@
 				"{image:jmm:textures/screenshot/fusion_crafting/charging.png width:215 height:120 align:1}"
 			]
 			dependencies: ["00361EAFEF5E1DDA"]
+			size: 1.5d
 			id: "51A6C156ADA1D18A"
 			tasks: [{
 				id: "639F89EE3F62DDE4"
@@ -1501,8 +1525,9 @@
 			title: "Chaotic Items"
 			x: 9.5d
 			y: -8.5d
+			subtitle: "Now this is just OP"
 			description: [
-				"The Best Items!! The last and stronger tier in the Draconic Evolution, the Chaotic items offer you a strong base stats and modular space so that you can fit even more modules."
+				"&lThe Best Items!! &rThe last and stronger tier in the Draconic Evolution, the Chaotic items offer you a strong base stats and modular space so that you can fit even more modules."
 				""
 				"Those are the only items, including the Staff, that can damage the Chaos Guardian Crystal directly, remember to put all your best modules inside them and have fun hunting down all the monsters."
 			]
@@ -1751,6 +1776,11 @@
 			title: "Fusion Crafting: Draconic Tier "
 			x: 7.5d
 			y: -6.0d
+			description: [
+				"The third tier of Fusion Crafting Injectors used in the Fusion crafting process and is created using Fusion crafting. "
+				""
+				"This open doors to the great modules and modular items, being the strongest ones you'll get before defeating the Chaos Guardian."
+			]
 			dependencies: [
 				"6CBE1E1944075490"
 				"1E081E22603EEBD4"
@@ -1772,7 +1802,7 @@
 			title: "Fusion Crafting: Wyvern Tier "
 			x: 7.5d
 			y: -4.0d
-			description: ["Being the Initial tier of crafting needed for most items in Draconic Evolution, the Wyvern Injector is, with no doubt, one of  the "]
+			description: ["Being the Initial Tier of crafting needed for modular items, the Wyvern Injector is one of the most important steps in our adventure with the modular items that Draconic Evolution offers us."]
 			dependencies: [
 				"38D9537546269329"
 				"1F86576F6E291B99"
@@ -1794,6 +1824,11 @@
 			title: "Fusion Crafting: Chaotic Tier "
 			x: 7.5d
 			y: -8.0d
+			description: [
+				"The fourth and final tier of Fusion Crafting Injectors used in the Fusion crafting process and is created using Fusion crafting."
+				""
+				"This open doors to all most powerful modular items and modules in Draconic Evolution."
+			]
 			dependencies: [
 				"5F8C7CF30C4D771A"
 				"4550414130677000"
@@ -2184,7 +2219,7 @@
 				""
 				"It is first bound to a location by shift right-clicking. Right-clicking the Dislocator will teleport the user to the bound location. "
 				""
-				"It has 31 uses and after every use it will deplete 2  health points which cannot be avoided."
+				"It has 31 uses and after every use it will deplete 2 health points which cannot be avoided."
 				""
 				"The Dislocator will not work if the player has less than 3 health points. It can teleport players across dimensions."
 			]
@@ -2315,6 +2350,7 @@
 		{
 			x: 10.5d
 			y: -6.0d
+			subtitle: "The Staff!!"
 			description: [
 				"The Draconic Staff of Power is the end-game weapon/tool added by Draconic Evolution."
 				""
@@ -2457,6 +2493,7 @@
 		{
 			x: 10.5d
 			y: -8.0d
+			subtitle: "&lTHE &rStaff!!"
 			description: [
 				"The upgraded version of the Draconic Staff of Power."
 				""
@@ -2501,6 +2538,446 @@
 			}]
 			rewards: [{
 				id: "70557A7F217A92C3"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 6.0d
+			y: -10.5d
+			description: [
+				"The Reactor Energy Injector is a block added by the Draconic Evolution mod. "
+				""
+				"The main purpose of this block is to insert imense amounts of energy inside the Reactor to create and sustain its shield (what keeps it from exploding)"
+				""
+				"The best way to control this input safely and even control how much is inserted in is by using a Flux Gate underneath it with a Potentiometer to control the redstone power."
+			]
+			dependencies: ["616CCD64152F669A"]
+			id: "726F85DBA77128A7"
+			tasks: [{
+				id: "747E7FD57CC25129"
+				type: "item"
+				item: "draconicevolution:reactor_injector"
+			}]
+			rewards: [{
+				id: "6E8D8F2D2C6DDED9"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 9.0d
+			y: -10.5d
+			subtitle: "Keep it stable!"
+			description: [
+				"The Reactor Stabilizer is a block added by the Draconic Evolution mod. "
+				""
+				"The main purpose of this item is to keep the Draconic Reactor stable and also work as an output for its RF generation."
+				""
+				"The best way to output the RF is by using a Flux Gate to limit the flow, since the Draconic Reactor doesn't have a concept of \"limits\", and will give or take as much RF as it can."
+			]
+			dependencies: ["616CCD64152F669A"]
+			id: "5844E1C7C216DBB1"
+			tasks: [{
+				id: "52B5E0DCED39E440"
+				type: "item"
+				item: "draconicevolution:reactor_stabilizer"
+				count: 4L
+			}]
+			rewards: [{
+				id: "3E6C148F4223DB91"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 3.5d
+			y: -1.0d
+			subtitle: "But just how much potential?"
+			description: [
+				"Potentiometer is a block added by the Draconic Evolution mod. "
+				""
+				"It can be placed on the sides of blocks and it is capable of emitting a redstone signal. "
+				""
+				"By default it does not emit a signal. The signal can be activated by right-clicking it. "
+				""
+				"The block will then emit a signal with strength of 1, which can be increased all the way up to maximum strength (15) by right-clicking it. "
+				""
+				"Shift-right-clicking will decrease the signal strength. "
+				""
+				"Changing the signal strength also changes the front-facing side of the block, which acts as a signal strength indicator display."
+			]
+			dependencies: ["166EDD32982C3BFF"]
+			id: "4A9355ECD643F89A"
+			tasks: [{
+				id: "462BF7553821F866"
+				type: "item"
+				item: "draconicevolution:potentiometer"
+			}]
+			rewards: [{
+				id: "7ED3534DC945F091"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 2.5d
+			y: -2.0d
+			subtitle: "You shall not pass... the flow limit."
+			description: [
+				"Flux Gate is a block added by the Draconic Evolution mod. "
+				""
+				"This block limits how much RF/t can flow through it, being a great solution to limiting and safe-creating a Draconic Reactor, for example."
+				""
+				"It is also adjustable with a redstone signal, therefore it may be a good idea to place a Potentiometer on it."
+			]
+			dependencies: ["4A9355ECD643F89A"]
+			id: "570B643932D38F38"
+			tasks: [{
+				id: "39FBFADE548AD81F"
+				type: "item"
+				item: "draconicevolution:flux_gate"
+			}]
+			rewards: [{
+				id: "38A8A91E118F4EE8"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "jei:textures/gui/icons/info.png"
+				}
+			}
+			x: 7.5d
+			y: -12.5d
+			subtitle: "This one you really should read..."
+			description: [
+				"First, you place the Draconic Reactor Core where you want the center of your reactor to be."
+				""
+				"This is where the actual reaction will take place, and it will grow depending on the temperature and fuel you put in it."
+				""
+				"Next, you take 4 Reactor Stabilizers and place them in a ring around the core, the recommended distance being 5 blocks."
+				""
+				"{image:jmm:textures/screenshot/draconic_reactor/assemble_unsafe.png width:215 height:120 align:1}"
+				""
+				"They can be one block above or below the core, and can be up to 8 blocks away, but must be in the same setup otherwise."
+				""
+				"They can also be placed vertically around the core. They must have a direct line-of-sight to the core when placed, otherwise they will not register."
+				""
+				"Some tips when building: Sneaking while placing them makes them face towards you. Placing them 5 or more blocks away ensures that the reactor will not engulf the Stabilizers, as they do not work if they are inside the reactor."
+				""
+				"Now, you need to place an Energy Injector on one of the sides of the core that doesn't have a Reactor Stabilizer. This block is important, because it feeds RF back into the Reactor, which is explained in detail later."
+			]
+			dependencies: [
+				"726F85DBA77128A7"
+				"7D629BE61CCFD5CC"
+				"5844E1C7C216DBB1"
+			]
+			id: "654CEE91DFAB9974"
+			tasks: [{
+				id: "50D5CB13F4BE76BD"
+				type: "checkmark"
+				title: "Assemble Tips"
+			}]
+			rewards: [{
+				id: "271A239BC68069D9"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "jei:textures/gui/icons/info.png"
+				}
+			}
+			x: 5.0d
+			y: -14.0d
+			description: [
+				"Before powering on the reactor, some additional safety features are probably a good idea."
+				""
+				"The Reactor doesn't have a concept of \"limits\", and will give or take as much RF as it can."
+				""
+				"This will create an unstable reactor, and eventually an explosion."
+				""
+				"It's a good idea to use a couple of Flux Gates, which limits how much RF/t can flow through it."
+				""
+				"It is also adjustable with a redstone signal, therefore it may be a good idea to place a Potentiometer on each one."
+				""
+				"{image:jmm:textures/screenshot/draconic_reactor/assemble_safe.png width:215 height:120 align:1}"
+				""
+				"The Flux Gate is directional, and have an arrow that points where the energy will be flowing."
+				""
+				"Place one Flux Gate on the back of one of the Stabilizers with its arrow pointing to the other side"
+				""
+				"{image:jmm:textures/screenshot/draconic_reactor/assemble_flux_gate_stabilizer.png width:215 height:120 align:1}"
+				""
+				"Then place a second Flux Gate with its arrow pointing to the bottom of the Energy Injector."
+				""
+				"{image:jmm:textures/screenshot/draconic_reactor/assemble_flux_gate_injector.png width:215 height:120 align:1}"
+				""
+				"This allows you to control how much RF/t is going out of and into the reactor, respectively."
+				""
+				"Below you can see some example numbers for a stable and safe Draconic Reactor, but I still recommend you play safe and tinker a little the numbers as you go."
+				""
+				"Safe Values for the Stabilizer Flux Gate (RF Output):"
+				""
+				"{image:jmm:textures/screenshot/draconic_reactor/safe_value_stabilizer.png width:215 height:120 align:1}"
+				""
+				"Safe Values for the Injector Flux Gate (RF Input):"
+				""
+				"{image:jmm:textures/screenshot/draconic_reactor/safe_value_injector.png width:215 height:120 align:1}"
+				""
+				"Besides this, another way you can stay safe is to place it 50 blocks or more above the landscape."
+				""
+				"This will make it where, if it explodes, it will destroy all your equipment used to keep your reactor stable as it would in both cases, but it won't devastate your base and it won't spawn a ton of lava! That's a fair trade to me!"
+			]
+			dependencies: ["654CEE91DFAB9974"]
+			id: "79B4C3141823521F"
+			tasks: [{
+				id: "67DD5A1464ECB666"
+				type: "checkmark"
+				title: "Safety First"
+			}]
+			rewards: [{
+				id: "4EB142618E3AD148"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "jei:textures/gui/icons/info.png"
+				}
+			}
+			x: 6.5d
+			y: -15.0d
+			description: [
+				"Now that you have a fully built Draconic Reactor, we need to insert fuel."
+				""
+				"The Draconic Reactor runs off of Awakened Draconium Blocks, and can hold up to 8 blocks of fuel."
+				""
+				"{image:jmm:textures/screenshot/draconic_reactor/gui_offline.png width:215 height:120 align:1}"
+				""
+				"Once you put in the fuel, you may have noticed the core grew in size."
+				""
+				"This is a hint that you need to have the proper space for the core, otherwise it will not be stabilized properly."
+				""
+				"{image:jmm:textures/screenshot/draconic_reactor/charged_offline.png width:215 height:120 align:1}"
+				""
+				"If it can't be stabilized properly, the reactor will explode."
+				""
+				"Now that the Reactor is loaded with fuel, we can hit the button on the bottom right called \"Charge\"."
+				""
+				"Once this is pressed, the Reactor now needs a great deal of RF in order to charge up."
+				""
+				"This has to be inserted through the Energy Injector."
+				""
+				"If you followed the section on \"Safety First\", you can adjust the Flux Gate to allow more RF/t to flow into the Reactor."
+				""
+				"{image:jmm:textures/screenshot/draconic_reactor/charged_warming.png width:215 height:120 align:1}"
+				""
+				"Once the Reactor has charged up it's Containment Field (the middle left bar) to 50%, Energy Saturation (the middle right bar) to 50%, and it's Temperature (the far left bar) to 2000C, the reactor can be activated."
+				""
+				"It is recommended that you read the section \"Keeping it Stable\" before activating the Reactor."
+				""
+				"{image:jmm:textures/screenshot/draconic_reactor/gui_warming.png width:215 height:120 align:1}"
+				""
+				"Once it's on, RF is extracted through the Stabilizers, and injected through the Energy Injector."
+				""
+				"Note that the Energy Injector can consume virtually infinite RF/t, and will use the Energy consumed in one tick to either charge its Containment Field, its Saturation or to heat itself."
+				""
+				"This means that, if you connect the Energy Injector to a Power source capable of supplying infinite RF/t (such as an Energy Core), it will drain all the needed energy in one tick and fully charge the Reactor."
+			]
+			dependencies: [
+				"654CEE91DFAB9974"
+				"79B4C3141823521F"
+			]
+			id: "5FCB1C5E56FB3CC2"
+			tasks: [{
+				id: "6DB27992A5AF8759"
+				type: "checkmark"
+				title: "Powering Up"
+			}]
+			rewards: [{
+				id: "6D7E5C42357E7D7E"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "jei:textures/gui/icons/info.png"
+				}
+			}
+			x: 8.5d
+			y: -15.0d
+			description: [
+				"The last thing anybody wants is their base turning into a nuclear wasteland from an unbalanced Draconic Reactor."
+				""
+				"This requires understanding the GUI and the numbers that are shown in there."
+				""
+				"The bottom right of your GUI will display a bunch of numbers about the Reactor."
+				""
+				"Combined with the 4 bars, this gives you all the information you need to know about your reactor to keep it from blowing up."
+				""
+				"{image:jmm:textures/screenshot/draconic_reactor/gui_online.png width:215 height:120 align:1}"
+				""
+				"First, let's start with the most important numbers."
+				""
+				"The &lContainment Field&r is the one thing keeping the Reactor from vaporizing you and the surrounding land into nothing."
+				""
+				"It is represented by the middle left bar, and the Field Input Rate."
+				""
+				"The stronger the Containment Field is, the more RF/t you need to keep it at that level."
+				""
+				"The Field Input Rate tells us the current RF/t we need to inject into the Reactor via the Energy Injector in order to keep it at the level it's currently at."
+				""
+				"There is no limit to how high or low you can make the Containment Field, but you need to make sure it stays above 0%."
+				""
+				"The lower the level of the Containment Field, the less RF/t it uses and the more efficient your reactor becomes, but it also reduces the wiggle room on the output."
+				""
+				"The second most important thing about the Reactor is &lTemperature&r."
+				""
+				"The more energy you draw from the Reactor, the hotter it becomes, producing more energy."
+				""
+				"This is represented by the far left bar. Hotter is better, as it means your reactor will use less fuel."
+				""
+				"However, if it goes above 8000C, the Temperature Load Factor begins to go up at an exponential rate."
+				""
+				"This means it puts more and more stress on the Containment Field the hotter it gets."
+				""
+				"This is bad news, so the optimum temperature for running your Reactor is 8000C."
+				""
+				"Additionally, if the Temperature drops below 2000C, the reaction becomes too cold to work anymore, so the Reactor simply shuts down."
+				""
+				"&lYou cannot break any blocks of the Reactor unless the Temperature is below 2000C.&r"
+				""
+				"The third more important aspect is &lGeneration Rate&r and &lEnergy Saturation&r, which is represented by the middle right bar."
+				""
+				"When you pull RF from the Reactor, you are actually taking it from its saturation."
+				""
+				"The Reactor then speeds up to try and replace this missing energy."
+				""
+				"How much energy the Reactor is producing is represented by the Generation Rate."
+				""
+				"The higher the Saturation, the lower the Generation Rate."
+				""
+				"Additionally, the higher the Generation Rate, the higher the Temperature."
+				""
+				"Fourth and finally, there's &lFuel Consumption&r."
+				""
+				"This is represented by the far right bar or &lFuel Conversion Level&r, &lFuel Conversion Rate&r and &lCore Mass&r. "
+				""
+				"Core Mass is how much fuel you initially loaded into the Reactor Core."
+				""
+				"It doesn't change at all unless you insert or extract fuel and byproducts."
+				""
+				"Fuel Conversion Level tells you how much fuel you have left, or how much fuel has been converted into &lChaos&r."
+				""
+				"Finally, Fuel Conversion Rate is the most important number here."
+				""
+				"It tells you how much fuel is being spent per tick on keeping the Reactor going."
+				""
+				"A perfectly stabilized Reactor burns 0 nb/t (1mB=1,000,000 nB)."
+				""
+				"The longer the Reactor stays at certain power output, the more the temperature rises, meaning the more RF/t gets generated."
+				""
+				"Since it's a constant output, the excess goes into the Saturation, lowering the Generated RF/t."
+				""
+				"This lowers the Fuel Conversion Rate, and means that the longer the Reactor stays balanced, the longer it lasts without needing to be refueled."
+				""
+				"{image:jmm:textures/screenshot/draconic_reactor/charged_online.png width:215 height:120 align:1}"
+				""
+				"Now let's talk about how to make all this things work together."
+				""
+				"By using Flux Networks together with an Energy Core (Draconic's Battery) we can safely remove an infinite amount of energy at an infinite rate from somewhere and send it somewhere else."
+				""
+				"This replaces the need of a Tesseract (which would be essentially the same thing) or a Cryo-Stabilized Fluxduct, the main two options that a player use to have in 1.12"
+				""
+				"By placing a Flux Point under the Injector's Flux Gate and &ldisabling its limit &r(remember to do that) we can input any amount of energy that we need inside the Reactor."
+				""
+				"If you are using the the recommended values shown in the \"Safety First\" section, you will need roughly 1GRF (1.000.000.000 RF) to start the Reactor."
+				""
+				"After that all you will need is to place down a Flux Plug behind the Stabilizer's Flux Gate and &ldisabling its limit &r(remember to do that)"
+				""
+				"If you followed all the instructions your reactor should look like the picture you've seen above, now you can start that bad boy!"
+			]
+			dependencies: [
+				"654CEE91DFAB9974"
+				"5FCB1C5E56FB3CC2"
+			]
+			id: "0D20ADCFAF2969F2"
+			tasks: [{
+				id: "5FC6476A6D353763"
+				type: "checkmark"
+				title: "Keeping it Stable"
+			}]
+			rewards: [{
+				id: "3F38DB4AEFA64642"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "jei:textures/gui/icons/info.png"
+				}
+			}
+			x: 10.0d
+			y: -14.0d
+			description: [
+				"If the Reactor explodes, &l&cpanic&r. There's going to be nothing left but a hole. So, to make things simple, don't make it go boom. :boom:"
+				""
+				"This is how it will look before it explodes:"
+				""
+				"{image:jmm:textures/screenshot/draconic_reactor/charged_boom.png width:215 height:120 align:1}"
+				""
+				"This is the information the GUI will show:"
+				""
+				"{image:jmm:textures/screenshot/draconic_reactor/gui_boom.png width:215 height:120 align:1}"
+				""
+				"And this is probably the last thing you will see if you stay:"
+				""
+				"{image:jmm:textures/screenshot/draconic_reactor/boom_effect.png width:215 height:120 align:1}"
+				""
+				"And this is what you will see when you come back, nothing but a massive, giant, hole:"
+				""
+				"{image:jmm:textures/screenshot/draconic_reactor/boom_hole.png width:215 height:120 align:1}"
+				""
+				"Look the size of this hole on the map...."
+				""
+				"{image:jmm:textures/screenshot/draconic_reactor/boom_hole_map.png width:215 height:215 align:1}"
+				""
+				"Well... like &nTimbaland&r would say... &oit's too late to apologize... it's too late!&r"
+			]
+			dependencies: [
+				"654CEE91DFAB9974"
+				"0D20ADCFAF2969F2"
+			]
+			id: "4DA72A1158B52C0C"
+			tasks: [{
+				id: "644EB8D696664634"
+				type: "checkmark"
+				title: "Going Boom :boom:"
+			}]
+			rewards: [{
+				id: "2861D7E5E2CF2DCF"
 				type: "xp"
 				xp: 100
 			}]
