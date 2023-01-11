@@ -274,6 +274,10 @@
 								id: "cookingforblockheads:crafting_book"
 								Count: 1.0d
 							}
+		                    securitycraft: {
+			                    id: "securitycraft:sc_manual"
+			                    Count: 1.0d
+		                    }
 							powah: {
 								id: "powah:book"
 								Count: 1.0d
@@ -358,6 +362,19 @@
 					Count: 1b
 					tag: {
 						"akashictome:data": {
+							patchouli: {
+								id: "patchouli:guide_book"
+								Count: 1
+								tag: {
+									"akashictome:displayName": {
+										text: "Modded for Dummies"
+									}
+									"patchouli:book": "patchouli:modded_for_dummies"
+									display: {
+										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Modded for Dummies\"}]}"
+									}
+								}
+							}
 							industrialforegoing: {
 								id: "patchouli:guide_book"
 								Count: 1
@@ -535,19 +552,6 @@
 									}
 								}
 							}
-							patchouli: {
-								id: "patchouli:guide_book"
-								Count: 1
-								tag: {
-									"akashictome:displayName": {
-										text: "Modded for Dummies"
-									}
-									"patchouli:book": "patchouli:modded_for_dummies"
-									display: {
-										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Modded for Dummies\"}]}"
-									}
-								}
-							}
 							rftoolsbase: {
 								id: "rftoolsbase:manual"
 								Count: 1
@@ -584,6 +588,18 @@
 									}
 								}
 							}
+                            securitycraft: {
+                                id: "securitycraft:sc_manual"
+                                Count: 1
+                                tag: {
+                                    "akashictome:displayName": {
+                                        text: "SecurityCraft Manual"
+                                    }
+                                    display: {
+                                        Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"SecurityCraft Manual"}]}'
+                                    }
+                                }
+                            }
 							powah: {
 								id: "powah:book"
 								Count: 1
