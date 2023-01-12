@@ -274,10 +274,10 @@
 								id: "cookingforblockheads:crafting_book"
 								Count: 1.0d
 							}
-		                    securitycraft: {
-			                    id: "securitycraft:sc_manual"
-			                    Count: 1.0d
-		                    }
+							securitycraft: {
+								id: "securitycraft:sc_manual"
+								Count: 1.0d
+							}
 							powah: {
 								id: "powah:book"
 								Count: 1.0d
@@ -588,18 +588,18 @@
 									}
 								}
 							}
-                            securitycraft: {
-                                id: "securitycraft:sc_manual"
-                                Count: 1
-                                tag: {
-                                    "akashictome:displayName": {
-                                        text: "SecurityCraft Manual"
-                                    }
-                                    display: {
-                                        Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"SecurityCraft Manual"}]}'
-                                    }
-                                }
-                            }
+							securitycraft: {
+							id: "securitycraft:sc_manual"
+								Count: 1
+								tag: {
+									"akashictome:displayName": {
+										text: "SecurityCraft Manual"
+									}
+									display: {
+										Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"SecurityCraft Manual"}]}'
+									}
+								}
+							}
 							powah: {
 								id: "powah:book"
 								Count: 1
