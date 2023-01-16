@@ -1,0 +1,7 @@
+{
+    "parent": "minecraft:block/cube_all",
+    "textures": {
+        "all": "minecraft:block/lapis_ore",
+        "particle": "emendatusenigmatica:blocks/overlays/lapis"
+    }
+}
