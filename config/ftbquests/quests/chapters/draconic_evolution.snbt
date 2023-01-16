@@ -313,7 +313,7 @@
 			title: "The Draconic Reactor"
 			x: 7.5d
 			y: -10.5d
-			shape: "hexagon"
+			shape: "octagon"
 			subtitle: "Be careful... it might... :boom:"
 			description: [
 				"&l&3What is a Draconic Reactor?"
@@ -359,7 +359,7 @@
 			title: "The Draconic Battery"
 			x: 4.5d
 			y: 4.0d
-			shape: "pentagon"
+			shape: "octagon"
 			subtitle: "That's a big mama"
 			description: [
 				"The Draconic Battery, AKA Energy Core, can store massive amounts of energy (RF/FE)"
@@ -936,7 +936,7 @@
 			icon: "draconicevolution:crafting_core"
 			x: 7.5d
 			y: 0.0d
-			shape: "diamond"
+			shape: "octagon"
 			subtitle: "Now this is crafty :laughing:"
 			description: [
 				"The heart of crafting in Draconic Evolution, the Fusion Crafting is no doubt the most important process to learn in your journey."
@@ -2681,7 +2681,7 @@
 			tasks: [{
 				id: "50D5CB13F4BE76BD"
 				type: "checkmark"
-				title: "Assemble Tips"
+				title: "Assembly Tips"
 			}]
 			rewards: [{
 				id: "271A239BC68069D9"

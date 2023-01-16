@@ -1008,6 +1008,7 @@
 			y: -8.0d
 			description: ["A block capable of storing big amounts of an item, you can insert or extract items by interacting with the front."]
 			hide_dependency_lines: true
+			dependencies: ["000000000000004A"]
 			id: "0000000000000F12"
 			tasks: [{
 				id: "0000000000000F13"
@@ -1097,6 +1098,7 @@
 			y: -8.0d
 			description: ["A block capable of storing big amounts of a fluid."]
 			hide_dependency_lines: true
+			dependencies: ["000000000000004A"]
 			id: "0000000000000F1C"
 			tasks: [{
 				id: "0000000000000F1D"

@@ -408,6 +408,7 @@
 			}]
 		}
 		{
+			title: "Sophisticated Backpacks"
 			icon: {
 				id: "sophisticatedbackpacks:backpack"
 				Count: 1b
@@ -428,9 +429,9 @@
 			dependencies: ["00000000000003FF"]
 			id: "0000000000000986"
 			tasks: [{
-				id: "0000000000000998"
-				type: "checkmark"
-				title: "Sophisticated Backpacks"
+				id: "23180D06889528FC"
+				type: "item"
+				item: "sophisticatedbackpacks:backpack"
 			}]
 			rewards: [{
 				id: "0000000000000997"
