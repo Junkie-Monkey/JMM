@@ -1,0 +1,16 @@
+
+[enchantments]
+
+	[enchantments.perpetual]
+		#ID of the item being used for getting the Perpetual Enchant
+		#default: 'minecraft:nether_star'
+		enchantItem = "jmm:eternum"
+		#List of the mods you want to blacklist
+		#Example: 'perpetual'
+		#default: []
+		modBlacklist = []
+		#List of the item IDs you want to blacklist
+		#Example: 'minecraft:shield'
+		#default: []
+		itemBlacklist = []
+

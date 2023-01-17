@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "OwO",
+        "UWU",
+        "OwO"
+    ],
+    "key": {
+        "O": {
+            "item": "minecraft:obsidian"
+        },
+        "w": {
+            "item": "minecraft:shulker_shell"
+        },
+        "U": {
+            "item": "minecraft:netherite_ingot"
+        },
+        "W": {
+            "item": "minecraft:nether_star"
+        }
+    },
+    "result": {
+        "item": "jmm:eternum",
+        "count": 1
+    }
+}

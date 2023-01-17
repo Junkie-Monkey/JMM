@@ -1060,7 +1060,7 @@
 		}
 		{
 			title: "Tools and Armor"
-			x: -4.5d
+			x: -4.0d
 			y: -11.5d
 			shape: "gear"
 			description: [
@@ -2967,7 +2967,7 @@
 			]
 		}
 		{
-			x: -6.5d
+			x: -7.0d
 			y: -11.5d
 			shape: "gear"
 			description: [
@@ -3250,6 +3250,28 @@
 				icon: "kubejs:epic_lootbox"
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_thermal_series_loot_epic"
 				player_command: false
+			}]
+		}
+		{
+			x: -5.5d
+			y: -11.5d
+			shape: "gear"
+			subtitle: "Eternity within your reach!"
+			description: [
+				"The Eternum Jewel is a special item that when combined with a tool (or any item that has durability) it will enchant it with Perpetual, preventing it from taking any damage, making it indestructible"
+				""
+				"The recipe of this item is pretty much the same complexibility of making a tool indestructible with Tinkers Construct modifiers."
+			]
+			id: "338908845015B1AA"
+			tasks: [{
+				id: "19E592C158040C54"
+				type: "item"
+				item: "jmm:eternum"
+			}]
+			rewards: [{
+				id: "6376A02CB9EF886D"
+				type: "xp"
+				xp: 100
 			}]
 		}
 	]
