@@ -605,7 +605,7 @@ onEvent('jei.information', (event) => {
     disabledItems.forEach((item) => {
         event.add(
             item,
-            "This item has been disabled, if you managed to obtain it please report it on Junkie Monkey's issue tracker: https://github.com/KuryKat/JMM/issues"
+            "This item has been disabled, if you managed to obtain it please report it on Junkie Monkey's issue tracker: https://github.com/Junkie-Monkey/JMM/issues"
         );
     });
 
