@@ -1399,5 +1399,277 @@
 				}
 			]
 		}
+		{
+			title: "Simple Storage Network"
+			x: 2.5d
+			y: -10.0d
+			subtitle: "This is really early game friendly!"
+			description: [
+				"The Simple Storage Network is a mod made by Lothrazar and adds several items toward building a storage system that is easily integrated into other systems, easily expandable and requires no power, making it perfect for early-game storage solutions."
+				""
+				"By placing down the Root and connecting with any inventory storage (chests, for example) you can then use the Storage Inventory block connected to the root to access the items inside the Network (inside the chests)"
+			]
+			dependencies: ["00000000000003FF"]
+			id: "63B41309CDCF182A"
+			tasks: [
+				{
+					id: "68088849DD8D81DA"
+					type: "item"
+					item: "storagenetwork:master"
+				}
+				{
+					id: "3C40FF9152856E72"
+					type: "item"
+					item: "storagenetwork:inventory"
+				}
+			]
+			rewards: [{
+				id: "585DD2F12AEA2147"
+				type: "item"
+				item: "storagenetwork:storage_kabel"
+				count: 5
+				random_bonus: 5
+			}]
+		}
+		{
+			x: 4.0d
+			y: -10.0d
+			description: [
+				"The Storage Request Table is an Advanced version of the Storage Inventory which includes a Crafting Table in the GUI to allow you to easily craft with the items in your Network"
+				""
+				"Tip: You can use JEI to search for an item and then click on the \"+\" sign to request the items from your Network."
+			]
+			dependencies: ["63B41309CDCF182A"]
+			id: "3E2545211486DDBA"
+			tasks: [{
+				id: "68D22B28F76CAA82"
+				type: "item"
+				item: "storagenetwork:request"
+			}]
+			rewards: [{
+				id: "45319B50C95DE765"
+				type: "item"
+				item: "storagenetwork:storage_kabel"
+				count: 5
+				random_bonus: 5
+			}]
+		}
+		{
+			title: "Look, Remotes!"
+			x: 3.5d
+			y: -11.0d
+			subtitle: "Just like TV!"
+			description: [
+				"With those remotes, you can access your network items from anywhere, and I really mean anywhere, cause there's no range limit."
+				""
+				"Use the Crafting Remote to have access to your Network together with the hability to craft with the items inside of it!"
+				""
+				"Tip: Right-click with a remote in the Network Root to link them to the desired network."
+			]
+			dependencies: ["63B41309CDCF182A"]
+			id: "1E247114A50E62CA"
+			tasks: [
+				{
+					id: "680496D3B8E4FF84"
+					type: "item"
+					item: "storagenetwork:inventory_remote"
+				}
+				{
+					id: "364F73B3E93428FC"
+					type: "item"
+					item: "storagenetwork:crafting_remote"
+				}
+			]
+			rewards: [{
+				id: "68048C0069FC6060"
+				type: "item"
+				item: "storagenetwork:storage_kabel"
+				count: 5
+				random_bonus: 5
+			}]
+		}
+		{
+			title: "Cables!"
+			x: 2.5d
+			y: -11.5d
+			subtitle: "So many cables! :scream:"
+			description: [
+				"Simple Storage Network adds several cables with unique utilities, each one of them can be used to different purposes."
+				""
+				"Each one of them contains a brief explanation of its purpose when you hover it."
+				""
+				"The main one is the link cable, since is the one you'll be using to connect more chests into the network!"
+			]
+			dependencies: ["63B41309CDCF182A"]
+			id: "02F2023D161F820F"
+			tasks: [
+				{
+					id: "0214C0C3F6667F95"
+					type: "item"
+					item: "storagenetwork:kabel"
+					count: 20L
+				}
+				{
+					id: "3D634D47CBD482A2"
+					type: "item"
+					item: "storagenetwork:storage_kabel"
+					count: 10L
+				}
+				{
+					id: "3744D82661650BA9"
+					type: "item"
+					item: "storagenetwork:import_kabel"
+					count: 2L
+				}
+				{
+					id: "7C09F0C2A0222390"
+					type: "item"
+					item: "storagenetwork:import_filter_kabel"
+					count: 2L
+				}
+				{
+					id: "6C9909027B17C97A"
+					type: "item"
+					item: "storagenetwork:filter_kabel"
+					count: 2L
+				}
+				{
+					id: "52BCDCE4850DA931"
+					type: "item"
+					item: "storagenetwork:export_kabel"
+					count: 2L
+				}
+			]
+			rewards: [
+				{
+					id: "1AFCF4F56A362147"
+					type: "item"
+					item: "storagenetwork:kabel"
+					count: 10
+					random_bonus: 10
+				}
+				{
+					id: "067D01A455B809C8"
+					type: "item"
+					item: "storagenetwork:storage_kabel"
+					count: 5
+					random_bonus: 5
+				}
+				{
+					id: "33297241CF05F03C"
+					type: "item"
+					item: "storagenetwork:import_kabel"
+					count: 2
+					random_bonus: 2
+				}
+				{
+					id: "1ACED019AC0846AF"
+					type: "item"
+					item: "storagenetwork:import_filter_kabel"
+					count: 2
+					random_bonus: 2
+				}
+				{
+					id: "15288889F18ADC86"
+					type: "item"
+					item: "storagenetwork:filter_kabel"
+					count: 2
+					random_bonus: 2
+				}
+				{
+					id: "6FA243782B1F9D1E"
+					type: "item"
+					item: "storagenetwork:export_kabel"
+					count: 2
+					random_bonus: 2
+				}
+			]
+		}
+		{
+			x: 5.5d
+			y: -10.0d
+			subtitle: "Oh great, another remote"
+			description: ["With this remote, right-clicking on the network to bind and then left clicking on a block to select allows you to pull that specific block from the Network, if available, to build with, allowing you to walk empty-handed!"]
+			dependencies: ["3E2545211486DDBA"]
+			id: "486E1F51C24DC067"
+			tasks: [{
+				id: "00B43B9C1D1B2FD7"
+				type: "item"
+				item: "storagenetwork:builder_remote"
+			}]
+			rewards: [{
+				id: "4F67E5156D43EBD1"
+				type: "item"
+				item: "storagenetwork:storage_kabel"
+				count: 5
+				random_bonus: 5
+			}]
+		}
+		{
+			title: "Cable Upgrades"
+			x: 2.5d
+			y: -13.0d
+			description: [
+				"Use this upgrades to increase specific cable's capabilities."
+				""
+				"Using the stack upgrade on the import cable for example will make so that it imports 64 items instead of 1 each round, using the speed one will increase its processing speed."
+			]
+			dependencies: ["02F2023D161F820F"]
+			id: "2E671A1512FA5CBB"
+			tasks: [
+				{
+					id: "72FE48E0C28C9226"
+					type: "item"
+					item: "storagenetwork:stack_upgrade"
+				}
+				{
+					id: "06C518B89DAB7C38"
+					type: "item"
+					item: "storagenetwork:speed_upgrade"
+				}
+			]
+			rewards: [{
+				id: "1DD97694D0326710"
+				type: "item"
+				item: "storagenetwork:storage_kabel"
+				count: 5
+				random_bonus: 5
+			}]
+		}
+		{
+			title: "More Remotes"
+			x: 4.5d
+			y: -12.0d
+			description: [
+				"This two remotes have very specific habilities that can come in handy!"
+				""
+				"The Network Picker Remote can pick items from the network, if available, when you right-click it in a block (after connecting it to a Network)"
+				""
+				"The Network Collector Remote is used to send every item you pick up back to the network its bounded, it does not send the items you already have in your inventory, only the ones you pick up from the ground."
+				""
+				"Tip: You can disable the Network Collector Remote by placing it inside a backpack or other storage that is not your inventory, this will allow you to pick up items again."
+			]
+			dependencies: ["1E247114A50E62CA"]
+			id: "32951059CF7DC794"
+			tasks: [
+				{
+					id: "170253C4E6C0688D"
+					type: "item"
+					item: "storagenetwork:picker_remote"
+				}
+				{
+					id: "18194BB113930580"
+					type: "item"
+					item: "storagenetwork:collector_remote"
+				}
+			]
+			rewards: [{
+				id: "47D78AFFA679C284"
+				type: "item"
+				item: "storagenetwork:storage_kabel"
+				count: 5
+				random_bonus: 5
+			}]
+		}
 	]
 }
