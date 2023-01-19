@@ -282,6 +282,13 @@
 								id: "securitycraft:sc_manual"
 								Count: 1.0d
 							}
+							storagenetwork: {
+								id: "patchouli:guide_book"
+								Count: 1.0d
+								tag: {
+									"patchouli:book": "storagenetwork:network_book"
+								}
+							}
 							powah: {
 								id: "powah:book"
 								Count: 1.0d
@@ -601,6 +608,19 @@
 									}
 									display: {
 										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"SecurityCraft Manual\"}]}"
+									}
+								}
+							}
+							storagenetwork: {
+								id: "patchouli:guide_book"
+								Count: 1
+								tag: {
+									"akashictome:displayName": {
+										text: "Network Guide Book"
+									}
+									"patchouli:book": "storagenetwork:network_book"
+									display: {
+										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Network Guide Book\"}]}"
 									}
 								}
 							}
