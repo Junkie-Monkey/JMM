@@ -1,7 +1,7 @@
 {
     "packmenu.jmm.singleplayer": "Un jugador",
     "packmenu.jmm.multiplayer": "Multijugador",
-    "packmenu.jmm.server": "Join Server",
+    "packmenu.jmm.github": "Report a Bug",
     "packmenu.jmm.options": "Opciones",
     "packmenu.jmm.mods": "Mods",
     "packmenu.jmm.quit": "Salir"

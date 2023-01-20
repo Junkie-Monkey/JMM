@@ -1,7 +1,7 @@
 {
     "packmenu.jmm.singleplayer": "Одиночная игра",
     "packmenu.jmm.multiplayer": "Сетевая игра",
-    "packmenu.jmm.server": "Join Server",
+    "packmenu.jmm.github": "Report a Bug",
     "packmenu.jmm.options": "Настройки",
     "packmenu.jmm.mods": "Моды",
     "packmenu.jmm.quit": "Выход"
