@@ -1,5 +1,5 @@
 {
-    "domain.jmm.display_name": "Junkie Monkey",
+    "domain.jmm.display_name": "Macaco Noia",
     "block.minecraft.nether_portal.name": "Portal do Nether",
     "block.minecraft.stonecutter": "Cortador de pedra",
     "container.stonecutter": "Cortador de pedra",
@@ -95,5 +95,18 @@
     "bountiful.decree.demolisher.name": "Demolidor",
     "bountiful.decree.witch.name": "Bruxa",
     "bountiful.decree.druid.name": "Druida",
+    "enchantment.draconicevolution.reaper_enchantment.desc": "Killing mobs has a chance to drop the corresponding Mob Soul.",
+    "enchantment.create.capacity.desc": "Increases the air capacity of a Copper Backtank.",
+    "enchantment.create.potato_recovery.desc": "Potato Cannon ammo has a chance to drop as an item on hit.",
+    "enchantment.mythicbotany.hammer_mobility.desc": "Increases Mjöllnir attack speed.",
+    "dislocate.draconicevolution.low_health": "Can't use dislocator - Low Health.",
+    "neat.keybind.toggle": "Toggle Health Bar Above Entities",
+    "keybinding.ironjetpacks.decrement_throttle": "Decrease Throttle",
+    "key.cannon_shoot": "Shoot Cannon (Look at The Cannon)",
+    "key.ship_back": "Move Ship Backwards",
+    "key.ship_forward": "Move Ship Forwards",
+    "key.ship_left": "Turn Ship to The Left",
+    "key.ship_right": "Turn Ship to The Right",
+    "key.zoom": "Zoom",
     "": ""
 }
