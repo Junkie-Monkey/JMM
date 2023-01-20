@@ -100,8 +100,6 @@ Re-run the script `update-server` whenever you want to update to a new modpack v
 
 ## Links
 
--   [CurseForge (normal)](https://www.curseforge.com/minecraft/modpacks/enigmatica6)
+-   [CurseForge](https://www.curseforge.com/minecraft/modpacks/Junkie-Monkey/)
 
--   [CurseForge (expert)](https://www.curseforge.com/minecraft/modpacks/enigmatica6expert)
-
--   [Discord](https://discord.gg/HnWNd7X)
+-   [Discord](https://discord.gg/7jBSfARh5f)
