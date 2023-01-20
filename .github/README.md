@@ -1,6 +1,7 @@
-# Enigmatica 6
+# Junkie Monkey
 
-This is the official repository and issue-tracker for the modpack Enigmatica 6, for Minecraft 1.16.5
+This is the official repository and issue-tracker for the modpack Junkie Monkey, for Minecraft 1.16.5
+This modpack is an authorized fork from the modpack Enigmatica 6, which adds a few more mods and quests to it!
 
 ### Table of Contents
 
@@ -25,6 +26,8 @@ There are a few things we would like testers to consider/look for:
 -   Things that need small optimizations, such as advancement text and textures.
 
 # Setup
+
+_Note: `.bat` files are for Windows, `.sh` are for Mac / Linux._
 
 ### For Contributors and Testers
 
@@ -54,7 +57,7 @@ git checkout develop
 git pull
 ```
 
-8. Now double click the script `InstanceSyncSetup.sh` to setup InstanceSync. It is found in the `automation` folder.
+8. Now double click the script `InstanceSyncSetup` to setup InstanceSync. It is found in the `automation` folder.
 
 You're done!
 
