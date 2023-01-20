@@ -100,5 +100,13 @@
     "enchantment.create.potato_recovery.desc": "Potato Cannon ammo has a chance to drop as an item on hit.",
     "enchantment.mythicbotany.hammer_mobility.desc": "Increases Mjöllnir attack speed.",
     "dislocate.draconicevolution.low_health": "Can't use dislocator - Low Health.",
+    "neat.keybind.toggle": "Toggle Health Bar Above Entities",
+    "keybinding.ironjetpacks.decrement_throttle": "Decrease Throttle",
+    "key.cannon_shoot": "Shoot Cannon (Look at The Cannon)",
+    "key.ship_back": "Move Ship Backwards",
+    "key.ship_forward": "Move Ship Forwards",
+    "key.ship_left": "Turn Ship to The Left",
+    "key.ship_right": "Turn Ship to The Right",
+    "key.zoom": "Zoom",
     "": ""
 }
