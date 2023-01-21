@@ -11,13 +11,13 @@
 #### You might need to chmod +x before executing
 ####
 #### IF THERE ARE ANY ISSUES
-#### Please make a report on the most recent Enigmatica version's github:
-#### https://github.com/NillerMedDild
+#### Please make a report on the most recent Junkie Monkey version's github:
+#### https://github.com/Junkie-Monkey/JMM
 #### with the contents of [serverstart.log] and [installer.log]
 ####
 #### Created by: Dijkstra
 #### Mascot: Ordinator
-#### Maintained by: NillerMedDild 
+#### Maintained by: NillerMedDild & KuryKat
 ####
 #### NO OFFICIAL AFFILIATION WITH MOJANG OR FORGE
 ####
@@ -121,7 +121,7 @@ check_dir(){
 			exit 0
 		else
 			echo "WARN: Bad folder (TMP) but continuing anyway" >>serverstart.log 2>&1
-			echo "Bypassing cd=temp halt per script settings"
+			echo "Bypassing cd=temp halt (per script settings)"
 		fi
 	fi
 
@@ -133,7 +133,7 @@ check_dir(){
 		echo "RUN_FROM_BAD_FOLDER setting is off, exiting script"
 		exit 0
 		else
-		echo "WARN: Bad folder (R/W) cut continuing anyway" >>serverstart.log 2>&1
+		echo "WARN: Bad folder (R/W) but continuing anyway" >>serverstart.log 2>&1
 		echo "Bypassing no R/W halt (per script settings)"
 		fi
 	fi
@@ -236,7 +236,7 @@ while true ; do
 		diff=$(($now-$last_crash))
 		if [ "$diff" -gt "3600" ]; then
 			a=1
-			else
+		else
 			a=$((a+1))
 		fi
 		last_crash=$((SECONDS))

@@ -1,5 +1,5 @@
 # Settings for the ModpackUploader
-# For details/help see: https://github.com/NillerMedDild/ModpackUploader
+# For details/help see: https://github.com/EnigmaticaModpacks/ModpackUploader
 
 # The main modpack folder
 # Do not change or move
@@ -9,31 +9,31 @@ $INSTANCE_ROOT = ("$PSScriptRoot/.." | Resolve-Path)
 #  CURSEFORGE ACCOUNT SETTINGS
 # =====================================================================//
 
-$CURSEFORGE_USER = "NillerMedDild"
+$CURSEFORGE_USER = "KuryKat"
 
 # For details see: https://www.curseforge.com/account/api-tokens
 # Defined in secrets.ps1 
 # $CURSEFORGE_TOKEN = 
 
 # ProjectID can be found on the modpack's Curseforge Projects page, under "About This Project"
-$CURSEFORGE_PROJECT_ID = 389471
+$CURSEFORGE_PROJECT_ID = 799793
 
 # =====================================================================//
 #  MAIN MODPACK SETTINGS
 # =====================================================================//
 
-# This is the modpack name as seen in it's CurseForge url: https://www.curseforge.com/minecraft/modpacks/[enigmatica6]
-$MODPACK_NAME = "Enigmatica6"
+# This is the modpack name as seen in it's CurseForge url: https://www.curseforge.com/minecraft/modpacks/[name]
+$MODPACK_NAME = "Junkie-Monkey"
 
 # Name of the Modpack in the ZIP File
-$CLIENT_NAME = "Enigmatica6"
+$CLIENT_NAME = "Junkie-Monkey"
 
 # Version Of The Modpack
-$MODPACK_VERSION = "1.6.2"
+$MODPACK_VERSION = "0.0.1"
 
 # Last Version Of The Modpack
 # Needed For Changelog Parsing
-$LAST_MODPACK_VERSION = "1.6.1"
+$LAST_MODPACK_VERSION = "0.0.0"
 
 # =====================================================================//
 #  CHANGELOG SETTINGS
@@ -75,7 +75,7 @@ $MODLIST_CREATOR_JAR = "ModListCreator-4.0.2-fatjar.jar"
 #  CLIENT FILE SETTINGS
 #=====================================================================//
 
-$CLIENT_FILE_AUTHOR = "EnigmaticaModpacks"
+$CLIENT_FILE_AUTHOR = "KuryKat"
 
 $FOLDERS_TO_INCLUDE_IN_CLIENT_FILES = @("building_gadgets_patterns",
 	"config",
@@ -84,7 +84,9 @@ $FOLDERS_TO_INCLUDE_IN_CLIENT_FILES = @("building_gadgets_patterns",
 	"local",
 	"packmenu",
 	"patchouli_books",
-	"schematics")
+	"schematics",
+	"shaderpacks"
+)
 
 $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"betterendforge/client.json",
@@ -164,7 +166,10 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"forge-client.toml",
 	"configured-client.toml",
 	"Mekanism/client.toml",
-	"Mekanism/tools-client.toml"
+	"Mekanism/tools-client.toml",
+    "brandon3055/DraconicEvolution.cfg",
+    "brandon3055/hud_settings.json",
+    "hats-client.toml"
 )
 
 $FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @("local/ftbutilities", "local/ftbchunks/data", "local/ftbultimine", "local/ftbultimine-client.snbt", "resourcepacks")
@@ -247,7 +252,7 @@ $CLIENT_ZIP_NAME = "$CLIENT_NAME-$MODPACK_VERSION"
 $LAST_MODPACK_ZIP_NAME = "$CLIENT_NAME-$LAST_MODPACK_VERSION"
 
 # Default: "$CLIENT_NAME $MODPACK_VERSION"
-$CLIENT_FILE_DISPLAY_NAME = "Enigmatica 6 $MODPACK_VERSION"
+$CLIENT_FILE_DISPLAY_NAME = "Junkie Monkey $MODPACK_VERSION"
 
 # Can be "markdown", "text" or "html"
 # Default: $CLIENT_CHANGELOG_TYPE
@@ -262,10 +267,10 @@ $SERVER_CHANGELOG = $CLIENT_CHANGELOG
 $SERVER_RELEASE_TYPE = $CLIENT_RELEASE_TYPE
 
 # Default: "$CLIENT_NAME Server $MODPACK_VERSION"
-$SERVER_ZIP_NAME = "$CLIENT_NAME`Server-$MODPACK_VERSION"
+$SERVER_ZIP_NAME = "$CLIENT_NAME-Server-$MODPACK_VERSION"
 
 # Default: $SERVER_FILENAME
-$SERVER_FILE_DISPLAY_NAME = "Enigmatica 6 Server $MODPACK_VERSION"
+$SERVER_FILE_DISPLAY_NAME = "Junkie Monkey Server $MODPACK_VERSION"
 
 # Path to the ModListCreators output file
 $MODLIST_PATH = "$INSTANCE_ROOT/changelogs/modlist_$MODPACK_VERSION.md"

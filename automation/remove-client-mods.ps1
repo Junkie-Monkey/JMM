@@ -5,10 +5,14 @@ $CLIENT_MODS_TO_REMOVE_FROM_SERVER_FILES = @(
 	"EntityCulling",
 	"moreoverlays",
 	"Neat",
+	"Toast-Control", 
+	"PackMenu",
 	"oauth",
 	"ponderjs",
-	"Toast-Control", 
-	"PackMenu"
+    "simple-rpc",
+    "rubidium",
+    "magnesium_extras",
+    "dynamiclightsreforged"
 )
 
 if (Test-Path "mods" -PathType Container) {
