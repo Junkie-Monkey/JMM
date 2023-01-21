@@ -1,1 +1,5 @@
+This Article should cover all needed information, check it out!
+
+> When downloading the default "server.properties" download the Enigmatica 6 one, since this modpack is a fork from it. <
+
 https://wiki.enigmatica.net/main/help-desk/guides/server-installation

@@ -4,10 +4,10 @@ _specver: 2
 # modpack related settings, changes the supposed to change the visual appearance of the launcher
 modpack:
     # Name of the mod pack, that is displayed in various places where it fits
-    name: Enigmatica 6
+    name: Junkie Monkey
 
     # Description
-    description: Play with new mods and old favorites in Minecraft 1.16.5! Enigmatica 6 offers a boatload of custom content including quests!
+    description: Hey folks! Want to explore your old favorites and also some new adventures with your friends? Then you came to the right place! Junkie Monkey offers you all the best and updated mods on 1.16.5! (This modpack is a fork from Enigmatica 6)
 
 # settings regarding the installation of the modpack
 install:
@@ -60,12 +60,17 @@ install:
         # optional paramenter used for curse to specify a whole project to ignore (mostly if it is client side only)
         ignoreProject:
             - 231275 # Ding
+            - 409087 # Entity Culling
             - 391382 # More Overlays Updated
             - 238372 # Neat
             - 271740 # Toast Control
             - 358191 # PackMenu
             - 513857 # OAuth
             - 521714 # PonderJS
+            - 411816 # SimpleRPC
+            - 574856 # Rubidium
+            - 558905 # Rubidium Extras
+            - 551736 # Rubidium Dynamic Lights
 
     # The base path where the server should be installed to, ~ for current path
     baseInstallPath: ~
