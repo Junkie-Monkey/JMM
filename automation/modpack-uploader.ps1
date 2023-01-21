@@ -6,15 +6,16 @@ $overridesFolder = "overrides"
 $secretsFile = "secrets.ps1"
 
 function Validate-SecretsFile {
-    if (!(Test-Path "$PSScriptRoot\$secretsFile")) {
+    if (!(Test-Path "$PSScriptRoot/$secretsFile")) {
         Write-Host "You need a valid CurseForge API Token in a $secretsFile file" -ForegroundColor Red
         Write-Host "Creating $secretsFile" -ForegroundColor Cyan
         New-Item -Path $PSScriptRoot -ItemType File -Name $secretsFile -Value "# To generate an API token go to: https://authors.curseforge.com/account/api-tokens `n $CURSEFORGE_TOKEN = `"your-curseforge-token-here`""
     }
 }
 
-. "$PSScriptRoot\settings.ps1"
-. "$PSScriptRoot\$secretsFile"
+. "$PSScriptRoot/settings.ps1"
+. "$PSScriptRoot/$secretsFile"
+
 
 function Get-GitHubRelease {
     param(
@@ -26,15 +27,21 @@ function Get-GitHubRelease {
         $file
     )
 	
-    $releases = "https://api.github.com/repos/$repo/releases"
+    $response = Invoke-RestMethod -Uri "https://api.github.com/repos/$repo/releases"
 
-    Write-Host "Determining latest release of $repo"
-    $tag = (Invoke-WebRequest -Uri $releases -UseBasicParsing | ConvertFrom-Json)[0].tag_name
+    $matchingRelease = $response.assets -match $file
+    if ($matchingRelease) {
+        $downloadUrl = $matchingRelease.browser_download_url
+    
+        Remove-Item $file -ErrorAction SilentlyContinue
 
-    $download = "https://github.com/$repo/releases/download/$tag/$file"
+        Write-Host "Dowloading $file..."
 
-    Write-Host "Dowloading..."
-    Invoke-WebRequest $download -Out $file
+        Invoke-RestMethod $downloadUrl -Out $file
+    }
+    else {
+        Write-Error "Found no files matching '$file' in the repository '$repo'"
+    }
 }
 
 function Test-ForDependencies {
@@ -51,7 +58,8 @@ function Test-ForDependencies {
         throw "7zip not command available. Please follow the instructions above." 
     }
 
-    $isCurlAvailable = Get-Command curl.exe
+    $isCurlAvailable = Get-Command $curl
+
     if (-not $isCurlAvailable) {
         Clear-Host
         Write-Host 
@@ -62,7 +70,7 @@ function Test-ForDependencies {
         Write-Host 
         Write-Host "When you're done, rerun this script.`n"
 
-        throw "curl.exe command not available. Please follow the instructions above." 
+        throw "curl not available. Please follow the instructions above." 
     }
 }
 
@@ -92,6 +100,10 @@ function New-ClientFiles {
             Write-Host "Adding " -ForegroundColor Cyan -NoNewline
             Write-Host $_ -ForegroundColor Blue -NoNewline
             Write-Host " to client files." -ForegroundColor Cyan
+            $destinationFolder = "$overridesFolder/$_" | Split-Path
+            if (!(Test-Path -Path $destinationFolder)) {
+                New-Item $destinationFolder -Type Directory
+            }
             Copy-Item -Path $_ -Destination "$overridesFolder/$_" -Recurse
         }
 
@@ -123,11 +135,20 @@ function New-ManifestJson {
             }) > $null
     }
 
+    $modloaderId = $minecraftInstanceJson.baseModLoader.name
+
+    if ($MODLOADER -eq "fabric") {
+        # Example output: "fabric-0.13.3-1.18.1"
+        $splitModloaderId = $modloaderId -split "-"
+        # Only keep "fabric-0.13.3"
+        $modloaderId = $splitModloaderId[0] + "-" + $splitModloaderId[1]
+    }
+
     $jsonOutput = @{
         minecraft       = @{
             version    = $minecraftInstanceJson.baseModLoader.minecraftVersion
             modLoaders = @(@{
-                    id      = $minecraftInstanceJson.baseModLoader.name
+                    id      = $modloaderId
                     primary = $true
                 })
         }
@@ -201,6 +222,8 @@ function Push-ClientFiles {
             Remove-BlacklistedFiles
         }
 
+        # This ugly json seems to be a necessity, 
+        # I have yet to get @{} and ConvertTo-Json to work with the CurseForge Upload API
         $CLIENT_METADATA = 
         "{
             changelog: `'$CLIENT_CHANGELOG`',
@@ -219,7 +242,7 @@ function Push-ClientFiles {
         Write-Host "Uploading client files to https://minecraft.curseforge.com/api/projects/$CURSEFORGE_PROJECT_ID/upload-file" -ForegroundColor Green
         Write-Host
 
-        $response = curl.exe `
+        $response = & $curl `
             --url "https://minecraft.curseforge.com/api/projects/$CURSEFORGE_PROJECT_ID/upload-file" `
             --user "$CURSEFORGE_USER`:$CURSEFORGE_TOKEN" `
             -H "Accept: application/json" `
@@ -227,6 +250,8 @@ function Push-ClientFiles {
             -F metadata=$CLIENT_METADATA `
             -F file=@"$CLIENT_ZIP_NAME.zip" `
             --progress-bar | ConvertFrom-Json
+       
+
         $clientFileReturnId = $response.id
 
         if (-not $response.id) {
@@ -240,7 +265,9 @@ function Push-ClientFiles {
         Write-Host "Return Id: $clientFileReturnId" -ForegroundColor Cyan
         Write-Host
 
-        Update-FileLinkInServerFiles -ClientFileReturnId $clientFileReturnId
+        if ($ENABLE_SERVERSTARTER_MODULE) {
+            Update-FileLinkInServerFiles -ClientFileReturnId $clientFileReturnId
+        }
     }
 }
 
@@ -254,7 +281,9 @@ function Update-FileLinkInServerFiles {
         $idPart1 = Remove-LeadingZero -text $idPart1
         $idPart2 = $clientFileIdString.Substring(4, $clientFileIdString.length - 4)
         $idPart2 = Remove-LeadingZero -text $idPart2
-        $curseForgeCdnUrl = "https://media.forgecdn.net/files/$idPart1/$idPart2/$CLIENT_ZIP_NAME.zip"
+        # CurseForge replaces whitespace in filenames with + in their CDN urls
+        $sanitizedClientZipName = $CLIENT_ZIP_NAME.Replace(" ", "+")
+        $curseForgeCdnUrl = "https://media.forgecdn.net/files/$idPart1/$idPart2/$sanitizedClientZipName.zip"
         $content = (Get-Content -Path $SERVER_SETUP_CONFIG_PATH) -replace "https://media.forgecdn.net/files/\d+/\d+/.*.zip", $curseForgeCdnUrl 
         [System.IO.File]::WriteAllLines(($SERVER_SETUP_CONFIG_PATH | Resolve-Path), $content)
 
@@ -274,8 +303,8 @@ function New-ServerFiles {
         Write-Host 
         Write-Host "Creating server files..." -ForegroundColor Cyan
         Write-Host 
-        7z a -tzip $serverZip "$SERVER_FILES_FOLDER\*"
-        Move-Item -Path "automation\$serverZip" -Destination $serverZip -ErrorAction SilentlyContinue
+        7z a -tzip $serverZip "$SERVER_FILES_FOLDER/*"
+        Move-Item -Path "automation/$serverZip" -Destination $serverZip -ErrorAction SilentlyContinue
         Write-Host "Server files created!" -ForegroundColor Green
 
         if ($ENABLE_MODPACK_UPLOADER_MODULE) {
@@ -304,7 +333,7 @@ function Push-ServerFiles {
         Write-Host "Uploading server files..." -ForegroundColor Cyan
         Write-Host 
 
-        $serverFileResponse = curl.exe `
+        $serverFileResponse = & $curl `
             --url "https://minecraft.curseforge.com/api/projects/$CURSEFORGE_PROJECT_ID/upload-file" `
             --user "$CURSEFORGE_USER`:$CURSEFORGE_TOKEN" `
             -H "Accept: application/json" `
@@ -360,6 +389,10 @@ function Update-Modlist {
             Get-GitHubRelease -repo "ModdingX/ModListCreator" -file $MODLIST_CREATOR_JAR
         }
 
+        Write-Host
+        Write-Host "Generating Modlist..."
+        Write-Host
+	
         Remove-Item $MODLIST_PATH -ErrorAction SilentlyContinue
         java -jar $MODLIST_CREATOR_JAR modlist --output $MODLIST_PATH --detailed "$CLIENT_ZIP_NAME.zip"
         Copy-Item -Path $MODLIST_PATH -Destination "$INSTANCE_ROOT/MODLIST.md"
@@ -376,9 +409,16 @@ function Remove-LeadingZero {
 $startLocation = Get-Location
 Set-Location $INSTANCE_ROOT
 
+if ($null -eq $IsWindows -or $IsWindows) {
+    # The script is running on Windows, use curl.exe
+    $curl = "curl.exe"
+}
+else {
+    $curl = "curl"
+}
+
 Test-ForDependencies
 Validate-SecretsFile
-
 New-ClientFiles
 Push-ClientFiles
 if ($ENABLE_SERVER_FILE_MODULE -and -not $ENABLE_MODPACK_UPLOADER_MODULE) {
