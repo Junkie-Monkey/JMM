@@ -57,7 +57,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        packmode: ['normal', 'expert']
+        packmode: ['normal']
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -70,11 +70,6 @@ jobs:
         with:
           path: mods
           key: ${{ github.run_id }}-mods
-
-      - name: Setting mode to ${{ matrix.packmode }}
-        run: |
-          node .github/actions/ci/packmode.js ${{ matrix.packmode }} > mode.json
-          cat mode.json
 
       - name: Install server
         run: |
@@ -107,7 +102,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        packmode: ['normal', 'expert']
+        packmode: ['normal']
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3

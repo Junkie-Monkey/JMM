@@ -33,7 +33,7 @@ axios
     // ensure unzip target does not exist
     exec(`rm -r '${__dirname}/artifact'`)
 
-    axios.get(artifact.archive_download_url, {responseType: 'stream'}).then(response => {
+    axios.get(artifact.archive_download_url, { responseType: 'stream' }).then(response => {
       console.log('downloaded, saving...')
       fsp.writeFile(`${__dirname}/artifact.zip`, response.data).then(() => {
         console.log('saved, unzipping...')

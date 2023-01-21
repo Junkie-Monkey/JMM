@@ -8,4 +8,4 @@ on:
 
 jobs:
   support-requests:
-    uses: NillerMedDild/.github/.github/workflows/support.yml@master
+    uses: Junkie-Monkey/.github/.github/workflows/support.yml@master
