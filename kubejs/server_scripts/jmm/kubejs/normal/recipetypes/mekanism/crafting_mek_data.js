@@ -1,6 +1,4 @@
 onEvent('recipes', (event) => {
-
-
     const recipes = [
         {
             output: 'mekanism:elite_combining_factory',

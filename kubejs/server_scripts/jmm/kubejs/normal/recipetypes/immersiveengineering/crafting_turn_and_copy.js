@@ -1,5 +1,4 @@
 onEvent('recipes', (event) => {
-
     const recipes = [
         {
             group: 'ie_concrete',

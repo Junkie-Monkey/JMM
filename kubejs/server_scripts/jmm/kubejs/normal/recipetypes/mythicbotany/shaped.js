@@ -1,6 +1,4 @@
 onEvent('recipes', (event) => {
-
-
     const recipes = [
         {
             output: 'mythicbotany:alfsteel_pylon',

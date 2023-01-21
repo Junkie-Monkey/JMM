@@ -55,94 +55,89 @@ onEvent('ponder.registry', (event) => {
                 scene.idle(70);
             }
         )
-        .scene(
-            'dried_seaweed_blocks',
-            'Dried Seaweed Blocks - Extra Flakey',
-            'jmm:jmm/bases/3x3',
-            (scene, util) => {
-                scene.showBasePlate();
-                scene.world().showSection(util.select().layer(1), Facing.south);
+        .scene('dried_seaweed_blocks', 'Dried Seaweed Blocks - Extra Flakey', 'jmm:jmm/bases/3x3', (scene, util) => {
+            scene.showBasePlate();
+            scene.world().showSection(util.select().layer(1), Facing.south);
 
-                scene.idle(20);
+            scene.idle(20);
 
-                scene
-                    .overlay()
-                    .showText(60)
-                    .colored(PonderPalette.WHITE)
-                    .text(`Once you've harvested your seaweed it needs to be dried and crafted into a block.`)
-                    .independent(0);
+            scene
+                .overlay()
+                .showText(60)
+                .colored(PonderPalette.WHITE)
+                .text(`Once you've harvested your seaweed it needs to be dried and crafted into a block.`)
+                .independent(0);
 
-                scene.idle(30);
+            scene.idle(30);
 
-                scene.addKeyframe();
+            scene.addKeyframe();
 
-                scene.world().setBlock([1, 1, 1], Block.id('minecraft:furnace').with('lit', false).blockState, true);
+            scene.world().setBlock([1, 1, 1], Block.id('minecraft:furnace').with('lit', false).blockState, true);
 
-                scene.idle(40);
+            scene.idle(40);
 
-                scene
-                    .overlay()
-                    .showText(60)
-                    .colored(PonderPalette.WHITE)
-                    .text(`Seaweed can be dried in a furnace, just like kelp.`)
-                    .independent(0);
-                scene.idle(20);
-                scene.world().modifyBlock([1, 1, 1], (state) => state.with('lit', true));
+            scene
+                .overlay()
+                .showText(60)
+                .colored(PonderPalette.WHITE)
+                .text(`Seaweed can be dried in a furnace, just like kelp.`)
+                .independent(0);
+            scene.idle(20);
+            scene.world().modifyBlock([1, 1, 1], (state) => state.with('lit', true));
 
-                scene.idle(20);
-                scene
-                    .overlay()
-                    .showControls(
-                        new PonderInput([2.65, 1, 2], PonderPointing.RIGHT)
-                            .showing(PonderIcons.I_CONFIG_OPEN)
-                            .withItem('sushigocrafting:seaweed'),
-                        30
-                    );
-                scene.idle(40);
-                scene
-                    .overlay()
-                    .showControls(
-                        new PonderInput([1, 1.5, 1.5], PonderPointing.LEFT)
-                            .showing(PonderIcons.I_CONFIG_OPEN)
-                            .withItem('sushigocrafting:dried_seaweed'),
-                        30
-                    );
-                scene.idle(60);
+            scene.idle(20);
+            scene
+                .overlay()
+                .showControls(
+                    new PonderInput([2.65, 1, 2], PonderPointing.RIGHT)
+                        .showing(PonderIcons.I_CONFIG_OPEN)
+                        .withItem('sushigocrafting:seaweed'),
+                    30
+                );
+            scene.idle(40);
+            scene
+                .overlay()
+                .showControls(
+                    new PonderInput([1, 1.5, 1.5], PonderPointing.LEFT)
+                        .showing(PonderIcons.I_CONFIG_OPEN)
+                        .withItem('sushigocrafting:dried_seaweed'),
+                    30
+                );
+            scene.idle(60);
 
-                scene.addKeyframe();
+            scene.addKeyframe();
 
-                scene.idle(20);
+            scene.idle(20);
 
-                scene.world().setBlock([1, 1, 1], util.getDefaultState('minecraft:crafting_table'), true);
+            scene.world().setBlock([1, 1, 1], util.getDefaultState('minecraft:crafting_table'), true);
 
-                scene
-                    .overlay()
-                    .showText(60)
-                    .colored(PonderPalette.WHITE)
-                    .text(`Now craft or pack the dried seaweed into a dried seaweed block.`)
-                    .independent(0);
+            scene
+                .overlay()
+                .showText(60)
+                .colored(PonderPalette.WHITE)
+                .text(`Now craft or pack the dried seaweed into a dried seaweed block.`)
+                .independent(0);
 
-                scene.idle(20);
-                scene
-                    .overlay()
-                    .showControls(
-                        new PonderInput([2.65, 1, 2], PonderPointing.RIGHT)
-                            .showing(PonderIcons.I_3x3)
-                            .withItem('sushigocrafting:dried_seaweed'),
-                        30
-                    );
-                scene.idle(40);
-                scene
-                    .overlay()
-                    .showControls(
-                        new PonderInput([1, 1.5, 1.5], PonderPointing.LEFT)
-                            .showing(PonderIcons.I_CONFIG_OPEN)
-                            .withItem('sushigocrafting:dried_seaweed_block'),
-                        30
-                    );
-                scene.idle(60);
-            }
-        )
+            scene.idle(20);
+            scene
+                .overlay()
+                .showControls(
+                    new PonderInput([2.65, 1, 2], PonderPointing.RIGHT)
+                        .showing(PonderIcons.I_3x3)
+                        .withItem('sushigocrafting:dried_seaweed'),
+                    30
+                );
+            scene.idle(40);
+            scene
+                .overlay()
+                .showControls(
+                    new PonderInput([1, 1.5, 1.5], PonderPointing.LEFT)
+                        .showing(PonderIcons.I_CONFIG_OPEN)
+                        .withItem('sushigocrafting:dried_seaweed_block'),
+                    30
+                );
+            scene.idle(60);
+        })
         .scene(
             'nori_sheet_press',
             'Nori Sheet Press - Seaweed Plate Crafting',

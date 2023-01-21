@@ -1,5 +1,4 @@
 onEvent('recipes', (event) => {
-
     const id_prefix = 'jmm:normal/unification/';
 
     materialsToUnify.forEach((material) => {

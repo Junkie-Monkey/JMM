@@ -1,6 +1,4 @@
 onEvent('recipes', (event) => {
-
-
     const recipes = [
         {
             output: Item.of('prettypipes:pipe', 12),

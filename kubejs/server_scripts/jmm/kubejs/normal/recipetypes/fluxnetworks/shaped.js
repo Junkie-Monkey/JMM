@@ -1,6 +1,4 @@
 onEvent('recipes', (event) => {
-
-
     const recipes = [
         {
             output: Item.of('fluxnetworks:flux_controller', 1),

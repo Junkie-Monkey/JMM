@@ -1,5 +1,4 @@
 onEvent('recipes', (event) => {
-
     const recipes = [
         {
             output: 'botanypots:botany_pot',

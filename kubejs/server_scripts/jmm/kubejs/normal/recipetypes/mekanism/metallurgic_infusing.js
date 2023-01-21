@@ -1,6 +1,4 @@
 onEvent('recipes', (event) => {
-
-
     const id_prefix = 'jmm:normal/mekanism/metallurgic_infusing/';
 
     var data = {

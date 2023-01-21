@@ -1,5 +1,4 @@
 onEvent('recipes', (event) => {
-
     const recipes = [
         {
             output: Item.of('emendatusenigmatica:signalum_dust', 4),

@@ -1,6 +1,4 @@
 onEvent('recipes', (event) => {
-
-
     var outputRemovals = [
         'torchmaster:feral_flare_lantern',
         'torchmaster:megatorch',

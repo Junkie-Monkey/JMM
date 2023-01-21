@@ -1,5 +1,4 @@
 onEvent('recipes', (event) => {
-
     const id_prefix = 'jmm:normal/ars_nouveau/enchanting_apparatus/';
     const recipes = [
         {

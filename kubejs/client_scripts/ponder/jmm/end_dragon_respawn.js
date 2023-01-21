@@ -2,11 +2,7 @@
 
 onEvent('ponder.registry', (event) => {
     event
-        .create('jmm:respawn_ender_dragon', [
-            'minecraft:end_crystal',
-            'minecraft:dragon_egg',
-            'minecraft:dragon_head'
-        ])
+        .create('jmm:respawn_ender_dragon', ['minecraft:end_crystal', 'minecraft:dragon_egg', 'minecraft:dragon_head'])
 
         .scene(
             'respawn_ender_dragon',

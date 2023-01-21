@@ -1,5 +1,4 @@
 onEvent('recipes', (event) => {
-
     const recipes = [
         {
             inputs: [

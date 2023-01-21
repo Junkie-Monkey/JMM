@@ -1,5 +1,4 @@
 onEvent('jei.information', (event) => {
-
     const recipes = [
         {
             items: ['resourcefulbees:t2_apiary', 'resourcefulbees:t3_apiary', 'resourcefulbees:t4_apiary'],

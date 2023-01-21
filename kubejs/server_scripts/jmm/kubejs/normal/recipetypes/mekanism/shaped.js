@@ -1,5 +1,4 @@
 onEvent('recipes', (event) => {
-
     const id_prefex = 'jmm:normal/mekanism/shaped';
     const recipes = [];
 

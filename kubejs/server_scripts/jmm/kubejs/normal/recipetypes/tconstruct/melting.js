@@ -1,5 +1,4 @@
 onEvent('recipes', (event) => {
-
     const id_prefix = 'jmm:normal/tconstruct/melting/';
     const recipes = [
         /*

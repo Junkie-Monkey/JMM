@@ -1,6 +1,4 @@
 onEvent('recipes', (event) => {
-
-
     const recipes = [
         {
             output: 'botania:gaia_pylon',

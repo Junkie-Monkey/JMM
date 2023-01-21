@@ -1,5 +1,4 @@
 onEvent('recipes', (event) => {
-
     const id_prefix = 'jmm:normal/industrialforegoing/laser_drill_fluid/';
     let nether_end_biomes = end_biomes.concat(nether_biomes);
 

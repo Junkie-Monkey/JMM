@@ -528,13 +528,15 @@ onEvent('item.registry', (event) => {
         .group('KubeJS')
         .displayName('§6§lSupreme §2§lJunkie §5§lMonkey')
         .tooltip('§3Only the most maniac players have this item....')
-        .unstackable()
+        .unstackable();
 
     event
         .create('jmm:eternum')
         .group('KubeJS')
         .displayName('§5Eternum Jewel')
-        .tooltip('§7Enchants a tool with Perpetual when used at a Smithing Table.\n\n§7§oWith eternity at your fingertips, what should you do?')
+        .tooltip(
+            '§7Enchants a tool with Perpetual when used at a Smithing Table.\n\n§7§oWith eternity at your fingertips, what should you do?'
+        )
         .unstackable()
-        .glow(true)
+        .glow(true);
 });

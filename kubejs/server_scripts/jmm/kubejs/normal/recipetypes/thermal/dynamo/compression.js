@@ -1,6 +1,4 @@
 onEvent('recipes', (event) => {
-
-
     const id_prefix = 'jmm:normal/thermal/compression_fuel/';
 
     var multiplier = 10;

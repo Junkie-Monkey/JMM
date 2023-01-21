@@ -1,6 +1,4 @@
 onEvent('recipes', (event) => {
-
-
     const id_prefix = 'jmm:normal/astralsorcery/block_transmutation/';
 
     var data = {

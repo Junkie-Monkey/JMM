@@ -1,5 +1,4 @@
 onEvent('recipes', (event) => {
-
     const id_prefix = 'jmm:normal/pneumaticcraft/heat_frame_cooling/';
     recipes = [
         {

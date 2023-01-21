@@ -21,17 +21,12 @@ onEvent('item.tooltip', (event) => {
     .color('#808080') //any hex color
     */
 
-
     const recipes = [
         {
             items: ['resourcefulbees:t2_apiary', 'resourcefulbees:t3_apiary', 'resourcefulbees:t4_apiary'],
             text: [
-                Text.of(
-                    'Crafting this will return any bees in the hives/apiaries used ONLY if all'
-                ).red(),
-                Text.of(
-                    'hives/apiaries used have been previously placed in-world and recieved NBT.'
-                ).red()
+                Text.of('Crafting this will return any bees in the hives/apiaries used ONLY if all').red(),
+                Text.of('hives/apiaries used have been previously placed in-world and recieved NBT.').red()
             ]
         }
     ];

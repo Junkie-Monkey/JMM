@@ -126,4 +126,3 @@ const chest_wood_type_blacklist = [
     'wisteria',
     'yucca'
 ];
-

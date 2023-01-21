@@ -1,5 +1,4 @@
 onEvent('recipes', (event) => {
-
     const id_prefix = 'jmm:normal/masterful_machinery/industrial_deuterium_plant/';
     const recipes = [
         {

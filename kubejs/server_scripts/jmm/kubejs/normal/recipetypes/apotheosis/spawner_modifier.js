@@ -1,5 +1,4 @@
 onEvent('recipes', (event) => {
-
     const id_prefix = 'jmm:normal/apotheosis/spawner_modifier/';
     const recipes = [
         {
