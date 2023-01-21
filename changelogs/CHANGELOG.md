@@ -4,6 +4,22 @@ _Using Forge-1.16.5-36.2.39_ | _[Mod Updates](https://github.com/Junkie-Monkey/J
 
 Since this is a fork from Enigmatica 6, its [CHANGELOG](https://github.com/EnigmaticaModpacks/Enigmatica6/blob/master/changelogs/CHANGELOG.md#enigmatica-6--enigmatica-6-expert-v162) until the v1.6.2 list the changes that came before this version.
 
+**Added Mods**
+
+-   [Brandon's Core](https://www.curseforge.com/minecraft/mc-mods/brandons-core) (by [brandon3055](https://www.curseforge.com/members/brandon3055/projects))
+-   [Draconic Evolution](https://www.curseforge.com/minecraft/mc-mods/draconic-evolution) (by [brandon3055](https://www.curseforge.com/members/brandon3055/projects))
+-   [Hats](https://www.curseforge.com/minecraft/mc-mods/hats) (by [ohaiiChun](https://www.curseforge.com/members/ohaiiChun/projects))
+-   [iChunUtil](https://www.curseforge.com/minecraft/mc-mods/ichunutil) (by [ohaiiChun](https://www.curseforge.com/members/ohaiiChun/projects))
+-   [Magnesium/Rubidium Dynamic Lights](https://www.curseforge.com/minecraft/mc-mods/dynamiclights-reforged) (by [TeamDeusVult](https://www.curseforge.com/members/TeamDeusVult/projects))
+-   [Magnesium/Rubidium Extras](https://www.curseforge.com/minecraft/mc-mods/magnesium-extras) (by [TeamDeusVult](https://www.curseforge.com/members/TeamDeusVult/projects))
+-   [Oculus](https://www.curseforge.com/minecraft/mc-mods/oculus) (by [Asek3](https://www.curseforge.com/members/Asek3/projects))
+-   [Perpetual Durability](https://www.curseforge.com/minecraft/mc-mods/perpetual-durability) (by [Lady_Lexxie](https://www.curseforge.com/members/Lady_Lexxie/projects))
+-   [Rubidium](https://www.curseforge.com/minecraft/mc-mods/rubidium) (by [Asek3](https://www.curseforge.com/members/Asek3/projects))
+-   [Security Craft](https://www.curseforge.com/minecraft/mc-mods/security-craft) (by [Geforce132](https://www.curseforge.com/members/Geforce132/projects))
+-   [Simple Discord RPC [Forge/Fabric/Quilt]](https://www.curseforge.com/minecraft/mc-mods/simple-discord-rpc) (by [hypherionsa](https://www.curseforge.com/members/hypherionsa/projects))
+-   [Simple Storage Network](https://www.curseforge.com/minecraft/mc-mods/simple-storage-network) (by [Lothrazar](https://www.curseforge.com/members/Lothrazar/projects))
+-   [Titles](https://www.curseforge.com/minecraft/mc-mods/titles) (by [Aurilux](https://www.curseforge.com/members/Aurilux/projects))
+
 **Changes/Improvements**
 
 -   Clarify Heating and Cooling in PNC quests - [Enigmatica6 \#5294](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5294)
@@ -19,3 +35,9 @@ Since this is a fork from Enigmatica 6, its [CHANGELOG](https://github.com/Enigm
 -   [Typo] Building Chapter - The Mighty Architect Quest - [Enigmatica6 \#5276](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5276)
 -   [Typo] Building Chapter - Quark Quest - [Enigmatica6 \#5275](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5275)
 -   [Typo] Storage Chapter - Foundry Controller Quest - [Enigmatica6 \#5274](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5274)
+
+**Removed Mods**
+
+-   [BisectHosting Server Integration Menu [FORGE]](https://www.curseforge.com/minecraft/mc-mods/bisecthosting-server-integration-menu-forge) (by [BisectHosting](https://www.curseforge.com/members/BisectHosting/projects))
+-   [Config Swapper](https://www.curseforge.com/minecraft/mc-mods/config-swapper) (by [Darkere](https://www.curseforge.com/members/Darkere/projects))
+-   [Simple Discord Rich Presence (Forge /  Fabric)](https://www.curseforge.com/minecraft/mc-mods/simple-discord-rich-presence) (by [Sunekaer](https://www.curseforge.com/members/Sunekaer/projects))
