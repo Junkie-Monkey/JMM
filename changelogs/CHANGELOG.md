@@ -1,3 +1,19 @@
+### Junkie Monkey v0.0.2
+
+_Using Forge-1.16.5-36.2.39_ | _[Mod Updates](https://github.com/Junkie-Monkey/JMM/blob/master/changelogs/changelog_mods_0.0.2.md)_ | _[Modlist](https://github.com/Junkie-Monkey/JMM/blob/master/changelogs/modlist_0.0.2.md)_
+
+**Changes/Improvements**
+
+-   Disabled shaders being ON by default as this would highly impact low-end computers.
+-   Update Default Options to reduce some values.
+
+**Bug Fixes**
+
+-   Fixed RGBee not being available in beekeeper villager. - [Enigmatica6 \#5315](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5315)
+-   Fixed Server Files having wrong End of Line (EOL) Termination.
+
+---
+
 ### Junkie Monkey v0.0.1
 
 _Using Forge-1.16.5-36.2.39_ | _[Mod Updates](https://github.com/Junkie-Monkey/JMM/blob/master/changelogs/changelog_mods_0.0.1.md)_ | _[Modlist](https://github.com/Junkie-Monkey/JMM/blob/master/changelogs/modlist_0.0.1.md)_
