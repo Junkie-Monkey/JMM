@@ -12,7 +12,8 @@ $CLIENT_MODS_TO_REMOVE_FROM_SERVER_FILES = @(
     "simple-rpc",
     "rubidium",
     "magnesium_extras",
-    "dynamiclightsreforged"
+    "dynamiclightsreforged",
+    "oculus"
 )
 
 if (Test-Path "mods" -PathType Container) {

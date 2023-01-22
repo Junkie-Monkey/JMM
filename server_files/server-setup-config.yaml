@@ -71,6 +71,7 @@ install:
             - 574856 # Rubidium
             - 558905 # Rubidium Extras
             - 551736 # Rubidium Dynamic Lights
+            - 581495 # Oculus
 
     # The base path where the server should be installed to, ~ for current path
     baseInstallPath: ~
