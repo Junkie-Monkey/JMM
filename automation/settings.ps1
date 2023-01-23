@@ -77,7 +77,8 @@ $MODLIST_CREATOR_JAR = "ModListCreator-4.0.2-fatjar.jar"
 
 $CLIENT_FILE_AUTHOR = "KuryKat"
 
-$FOLDERS_TO_INCLUDE_IN_CLIENT_FILES = @("building_gadgets_patterns",
+$FOLDERS_TO_INCLUDE_IN_CLIENT_FILES = @(
+    "building_gadgets_patterns",
 	"config",
 	"defaultconfigs",
 	"kubejs",
@@ -172,7 +173,14 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
     "hats-client.toml"
 )
 
-$FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @("local/ftbutilities", "local/ftbchunks/data", "local/ftbultimine", "local/ftbultimine-client.snbt", "resourcepacks")
+$FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @(
+    "local/ftbutilities",
+    "local/ftbchunks/data",
+    "local/ftbultimine",
+    "local/ftbultimine-client.snbt",
+    "resourcepacks",
+    "packmenu/resources/assets/jmm/buttons/reload.json"
+)
 
 #=====================================================================//
 #  SERVER FILE SETTINGS
