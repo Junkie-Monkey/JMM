@@ -1,0 +1,1440 @@
+{
+	id: "014E1FF34881981E"
+	group: "5A8B89F87F77CF4C"
+	order_index: 0
+	filename: "potions_master"
+	title: "Potions Master"
+	icon: {
+		id: "minecraft:potion"
+		Count: 1b
+		tag: {
+			Potion: "potionsmaster:diamond_sight"
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			icon: {
+				id: "minecraft:potion"
+				Count: 1b
+				tag: {
+					Potion: "potionsmaster:diamond_sight"
+				}
+			}
+			x: 0.0d
+			y: 0.0d
+			shape: "hexagon"
+			description: ["Potions Master is a mod that adds a new kind of potion to the game. It will help you find resources using “X-ray”-like vision. By using it you can see all the ores nearby through other blocks."]
+			size: 1.5d
+			optional: true
+			id: "19D339CCE7B5E7AC"
+			tasks: [{
+				id: "525887DA330D5B54"
+				type: "checkmark"
+				title: "Potions Master"
+			}]
+			rewards: [{
+				id: "3E887E84EC3E229E"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Let's get Pestling"
+			x: 3.0d
+			y: 0.0d
+			description: [
+				"In order to make your X-Ray potions you need to craft a mortar and a pestle to be able to make the required powder for the ore you want."
+				""
+				"Check JEI for more information on how to make the items and the powders"
+			]
+			dependencies: ["19D339CCE7B5E7AC"]
+			id: "36F89408DD1DCB41"
+			tasks: [
+				{
+					id: "6F26684C13E5A6CE"
+					type: "item"
+					item: "potionsmaster:tile_mortar"
+				}
+				{
+					id: "33685535F8E83312"
+					type: "item"
+					item: "potionsmaster:pestle"
+				}
+			]
+			rewards: [{
+				id: "7B7DA5B0571095A2"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Mixin' it up"
+			x: 0.0d
+			y: -2.0d
+			subtitle: "So many inside at the same time! :yohane:"
+			description: [
+				"Besides adding incredible X-Ray potions, Potions Master also adds the possibility of mixing any kind of potions in a singular one."
+				""
+				"Place down the cauldron above a lit campfire and right-click it with two different potions plus a glowstone."
+				""
+				"The cauldron will then start mixing the potions, wait until the mixture reduces in size, then right click the top of the cauldron with an empty bottle. the resulting potion can be put back in to combine with other potions."
+				""
+				"&c&lWarning!! &r&aRight clicking the cauldron with an empty hand will clear its contents and reset it."
+			]
+			dependencies: ["19D339CCE7B5E7AC"]
+			id: "0A2EAD1D93522CFA"
+			tasks: [{
+				id: "61791E829AC118F6"
+				type: "item"
+				item: "potionsmaster:cauldron"
+			}]
+			rewards: [{
+				id: "5F7F42C84257D556"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -2.0d
+			y: 0.0d
+			description: ["Dropped from Sheep, Cures Poison when consumed."]
+			dependencies: ["19D339CCE7B5E7AC"]
+			id: "58CF2ED98F929C96"
+			tasks: [{
+				id: "4885F5D591D0EBA5"
+				type: "item"
+				item: "potionsmaster:bezoar"
+			}]
+			rewards: [{
+				id: "7987A3191E848A20"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -1.5d
+			y: -1.5d
+			description: [
+				"Smelt Charcoal Powder and consume it to remove the Wither effect."
+				""
+				"(Check JEI for the recipe)"
+			]
+			dependencies: ["19D339CCE7B5E7AC"]
+			id: "3AA9E1B4E7E1DDBB"
+			tasks: [{
+				id: "61E7ABCA33BA6F76"
+				type: "item"
+				item: "potionsmaster:activated_charcoal"
+			}]
+			rewards: [{
+				id: "362C04B8F5BC4B5A"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -1.5d
+			y: 1.5d
+			description: ["Dropped from Polar Bears, Cures Mining Fatigue when consumed."]
+			dependencies: ["19D339CCE7B5E7AC"]
+			id: "7E55B7083A5E6158"
+			tasks: [{
+				id: "76CBE4D91CE42007"
+				type: "item"
+				item: "potionsmaster:gallbladder"
+			}]
+			rewards: [{
+				id: "7B4B82474F463919"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Perfect for Combat"
+			x: -1.0d
+			y: -3.5d
+			description: ["Use the cauldron to make a mixed potion of strength + speed."]
+			dependencies: ["0A2EAD1D93522CFA"]
+			id: "00ACDAE7C0DD3D92"
+			tasks: [{
+				id: "380410B0D56F3B7B"
+				type: "item"
+				title: "Strength II + Speed II"
+				item: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						CustomPotionEffects: [
+							{
+								Ambient: 0b
+								CurativeItems: [{
+									id: "minecraft:milk_bucket"
+									Count: 1b
+								}]
+								ShowIcon: 0b
+								ShowParticles: 0b
+								Duration: 1800
+								Id: 1b
+								Amplifier: 1b
+							}
+							{
+								Ambient: 0b
+								CurativeItems: [{
+									id: "minecraft:milk_bucket"
+									Count: 1b
+								}]
+								ShowIcon: 0b
+								ShowParticles: 0b
+								Duration: 1800
+								Id: 5b
+								Amplifier: 1b
+							}
+						]
+						display: {
+							Name: "{\"translate\":\"Blended Potion\",\"with\":[\"java.lang.Object@6c7cc86e\"]}"
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "637AA437603BC3FA"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:strong_strength"
+						}
+					}
+				}
+				{
+					id: "3A38F9D3BB3946F3"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:strong_swiftness"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Perfect for Stealth Combat"
+			x: 0.0d
+			y: -4.5d
+			subtitle: "I want even more inside"
+			description: ["Mix both previous mixed potions to create a stealth combat potion."]
+			dependencies: [
+				"0A2EAD1D93522CFA"
+				"00ACDAE7C0DD3D92"
+				"75143017CE47BD4C"
+			]
+			id: "769010D2EC11EF5E"
+			tasks: [{
+				id: "5D017643ED913821"
+				type: "item"
+				title: "Strength II + Speed II + Invisilibility + Night Vision"
+				item: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						CustomPotionEffects: [
+							{
+								Ambient: 0b
+								CurativeItems: [{
+									id: "minecraft:milk_bucket"
+									Count: 1b
+								}]
+								ShowIcon: 0b
+								ShowParticles: 0b
+								Duration: 1800
+								Id: 1b
+								Amplifier: 1b
+							}
+							{
+								Ambient: 0b
+								CurativeItems: [{
+									id: "minecraft:milk_bucket"
+									Count: 1b
+								}]
+								ShowIcon: 0b
+								ShowParticles: 0b
+								Duration: 1800
+								Id: 5b
+								Amplifier: 1b
+							}
+							{
+								Ambient: 0b
+								CurativeItems: [{
+									id: "minecraft:milk_bucket"
+									Count: 1b
+								}]
+								ShowIcon: 0b
+								ShowParticles: 0b
+								Duration: 3600
+								Id: 16b
+								Amplifier: 0b
+							}
+							{
+								Ambient: 0b
+								CurativeItems: [{
+									id: "minecraft:milk_bucket"
+									Count: 1b
+								}]
+								ShowIcon: 0b
+								ShowParticles: 0b
+								Duration: 3600
+								Id: 14b
+								Amplifier: 0b
+							}
+						]
+						display: {
+							Name: "{\"translate\":\"Blended Potion\",\"with\":[\"java.lang.Object@3e4a3a29\"]}"
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "1A3871D009C12FAF"
+				type: "item"
+				item: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						CustomPotionEffects: [
+							{
+								Ambient: 0b
+								CurativeItems: [{
+									id: "minecraft:milk_bucket"
+									Count: 1b
+								}]
+								ShowIcon: 0b
+								ShowParticles: 0b
+								Duration: 1800
+								Id: 1b
+								Amplifier: 1b
+							}
+							{
+								Ambient: 0b
+								CurativeItems: [{
+									id: "minecraft:milk_bucket"
+									Count: 1b
+								}]
+								ShowIcon: 0b
+								ShowParticles: 0b
+								Duration: 1800
+								Id: 5b
+								Amplifier: 1b
+							}
+							{
+								Ambient: 0b
+								CurativeItems: [{
+									id: "minecraft:milk_bucket"
+									Count: 1b
+								}]
+								ShowIcon: 0b
+								ShowParticles: 0b
+								Duration: 3600
+								Id: 16b
+								Amplifier: 0b
+							}
+							{
+								Ambient: 0b
+								CurativeItems: [{
+									id: "minecraft:milk_bucket"
+									Count: 1b
+								}]
+								ShowIcon: 0b
+								ShowParticles: 0b
+								Duration: 3600
+								Id: 14b
+								Amplifier: 0b
+							}
+						]
+						display: {
+							Name: "{\"translate\":\"Blended Potion\",\"with\":[\"java.lang.Object@3e4a3a29\"]}"
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "Perfect for Stealth"
+			x: 1.0d
+			y: -3.5d
+			description: ["Use the cauldron to make a mixed potion of invisibility + night vision."]
+			dependencies: ["0A2EAD1D93522CFA"]
+			id: "75143017CE47BD4C"
+			tasks: [{
+				id: "50A0AF3375548E2F"
+				type: "item"
+				title: "Invisilibility + Night Vision"
+				item: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						CustomPotionEffects: [
+							{
+								Ambient: 0b
+								CurativeItems: [{
+									id: "minecraft:milk_bucket"
+									Count: 1b
+								}]
+								ShowIcon: 0b
+								ShowParticles: 0b
+								Duration: 3600
+								Id: 16b
+								Amplifier: 0b
+							}
+							{
+								Ambient: 0b
+								CurativeItems: [{
+									id: "minecraft:milk_bucket"
+									Count: 1b
+								}]
+								ShowIcon: 0b
+								ShowParticles: 0b
+								Duration: 3600
+								Id: 14b
+								Amplifier: 0b
+							}
+						]
+						display: {
+							Name: "{\"translate\":\"Blended Potion\",\"with\":[\"java.lang.Object@bbb6781\"]}"
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "081F2FCF4630BDC6"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:invisibility"
+						}
+					}
+				}
+				{
+					id: "45A71BF5C4B4D6C8"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:night_vision"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 10.0d
+			y: -1.0d
+			description: ["By using the Mortar and Pestle with a piece of Aluminium in the crafting grid you get a Aluminium Powder."]
+			dependencies: ["36F89408DD1DCB41"]
+			id: "49F12A6BF02663CF"
+			tasks: [{
+				id: "40AD836BF3BDD9DD"
+				type: "item"
+				item: "potionsmaster:aluminium_powder"
+			}]
+			rewards: [{
+				id: "24C5732994E54450"
+				type: "xp"
+				xp: 5
+			}]
+		}
+		{
+			x: 8.0d
+			y: 2.0d
+			description: ["By using the Mortar and Pestle with a piece of Uranium in the crafting grid you get a Uranium Powder."]
+			dependencies: ["36F89408DD1DCB41"]
+			id: "3578885673416E2D"
+			tasks: [{
+				id: "0A1829FC331CA115"
+				type: "item"
+				item: "potionsmaster:uranium_powder"
+			}]
+			rewards: [{
+				id: "7D26DFFE8477AA58"
+				type: "xp"
+				xp: 5
+			}]
+		}
+		{
+			x: 7.0d
+			y: -2.5d
+			description: ["By using the Mortar and Pestle with a piece of Iron in the crafting grid you get a Iron Powder."]
+			dependencies: ["36F89408DD1DCB41"]
+			id: "652AC6C2B07F2581"
+			tasks: [{
+				id: "5A6BD4F4E9526339"
+				type: "item"
+				item: "potionsmaster:iron_powder"
+			}]
+			rewards: [{
+				id: "42573A4CDBC772E2"
+				type: "xp"
+				xp: 5
+			}]
+		}
+		{
+			x: 5.0d
+			y: -3.5d
+			description: ["By using the Mortar and Pestle with an Emerald in the crafting grid you get an Emerald Powder."]
+			dependencies: ["36F89408DD1DCB41"]
+			id: "044EF0F4A40856C6"
+			tasks: [{
+				id: "53A8467A9A69B88B"
+				type: "item"
+				item: "potionsmaster:emerald_powder"
+			}]
+			rewards: [{
+				id: "1D2AAF3A936F7BCB"
+				type: "xp"
+				xp: 5
+			}]
+		}
+		{
+			x: 7.0d
+			y: 2.5d
+			description: ["By using the Mortar and Pestle with a piece of Lead in the crafting grid you get a Lead Powder."]
+			dependencies: ["36F89408DD1DCB41"]
+			id: "5AE055FCBB670B2A"
+			tasks: [{
+				id: "647FEFFD08FC15ED"
+				type: "item"
+				item: "potionsmaster:lead_powder"
+			}]
+			rewards: [{
+				id: "2C8C90ADFED74F6A"
+				type: "xp"
+				xp: 5
+			}]
+		}
+		{
+			x: 8.0d
+			y: -2.0d
+			description: ["By using the Mortar and Pestle with a piece of Lapis Lazuli in the crafting grid you get a Lapis Lazuli Powder."]
+			dependencies: ["36F89408DD1DCB41"]
+			id: "0AFD3CA094EF7767"
+			tasks: [{
+				id: "0AE5A44B543C3EFC"
+				type: "item"
+				item: "potionsmaster:lapis_powder"
+			}]
+			rewards: [{
+				id: "50B06269A5A37A69"
+				type: "xp"
+				xp: 5
+			}]
+		}
+		{
+			x: 4.0d
+			y: -4.0d
+			description: ["By using the Mortar and Pestle with a piece of Copper in the crafting grid you get a Copper Powder."]
+			dependencies: ["36F89408DD1DCB41"]
+			id: "6B6553A402A37A81"
+			tasks: [{
+				id: "312C29D3EDE28A6F"
+				type: "item"
+				item: "potionsmaster:copper_powder"
+			}]
+			rewards: [{
+				id: "78ADAEC486378FBF"
+				type: "xp"
+				xp: 5
+			}]
+		}
+		{
+			x: 10.0d
+			y: 1.0d
+			description: ["By using the Mortar and Pestle with a piece of Tin in the crafting grid you get a Tin Powder."]
+			dependencies: ["36F89408DD1DCB41"]
+			id: "26DB33702E8528A1"
+			tasks: [{
+				id: "2FA9D0DAF3EFD4A0"
+				type: "item"
+				item: "potionsmaster:tin_powder"
+			}]
+			rewards: [{
+				id: "1040728EDCFCCEAA"
+				type: "xp"
+				xp: 5
+			}]
+		}
+		{
+			x: 6.0d
+			y: 3.0d
+			description: ["By using the Mortar and Pestle with a piece of Silver in the crafting grid you get a Silver Powder."]
+			dependencies: ["36F89408DD1DCB41"]
+			id: "21C2D821CC727E4E"
+			tasks: [{
+				id: "53D4A00026176EC0"
+				type: "item"
+				item: "potionsmaster:silver_powder"
+			}]
+			rewards: [{
+				id: "00C426FDEFA9FCB5"
+				type: "xp"
+				xp: 5
+			}]
+		}
+		{
+			x: 9.0d
+			y: -1.5d
+			description: ["By using the Mortar and Pestle with a piece of Redstone in the crafting grid you get a Redstone Powder."]
+			dependencies: ["36F89408DD1DCB41"]
+			id: "193769ACB35D9F50"
+			tasks: [{
+				id: "677D7CFE31A4D83A"
+				type: "item"
+				item: "potionsmaster:redstone_powder"
+			}]
+			rewards: [{
+				id: "032EAC30D5D67F0B"
+				type: "xp"
+				xp: 5
+			}]
+		}
+		{
+			x: 9.0d
+			y: 1.5d
+			description: ["By using the Mortar and Pestle with a piece of Nickel in the crafting grid you get a Nickel Powder."]
+			dependencies: ["36F89408DD1DCB41"]
+			id: "402F2EB886F52B11"
+			tasks: [{
+				id: "01E45E248C95BB2D"
+				type: "item"
+				item: "potionsmaster:nickel_powder"
+			}]
+			rewards: [{
+				id: "2FDC1D913AD332C5"
+				type: "xp"
+				xp: 5
+			}]
+		}
+		{
+			x: 4.0d
+			y: 4.0d
+			description: ["By using the Mortar and Pestle with a piece of Osmium in the crafting grid you get an Osmium Powder."]
+			dependencies: ["36F89408DD1DCB41"]
+			id: "34772166E277C304"
+			tasks: [{
+				id: "7E06A67A4C8696E7"
+				type: "item"
+				item: "potionsmaster:osmium_powder"
+			}]
+			rewards: [{
+				id: "14C54591DF7A7E99"
+				type: "xp"
+				xp: 5
+			}]
+		}
+		{
+			x: 5.0d
+			y: 3.5d
+			description: ["By using the Mortar and Pestle with a piece of Zinc in the crafting grid you get a Zinc Powder."]
+			dependencies: ["36F89408DD1DCB41"]
+			id: "7DF23536E660B12A"
+			tasks: [{
+				id: "0240859BE0FE08F0"
+				type: "item"
+				item: "potionsmaster:zinc_powder"
+			}]
+			rewards: [{
+				id: "53C2512F4A247A44"
+				type: "xp"
+				xp: 5
+			}]
+		}
+		{
+			x: 6.0d
+			y: -3.0d
+			description: ["By using the Mortar and Pestle with a piece of Gold in the crafting grid you get a Gold Powder."]
+			dependencies: ["36F89408DD1DCB41"]
+			id: "42F89294E36AC466"
+			tasks: [{
+				id: "525441AA77606019"
+				type: "item"
+				item: "potionsmaster:gold_powder"
+			}]
+			rewards: [{
+				id: "667A2292DB9ED6AE"
+				type: "xp"
+				xp: 5
+			}]
+		}
+		{
+			x: 3.0d
+			y: 4.5d
+			description: ["By using the Mortar and Pestle with a piece of Quartz in the crafting grid you get a Quartz Powder."]
+			dependencies: ["36F89408DD1DCB41"]
+			id: "2188B940D80082F8"
+			tasks: [{
+				id: "54A7FE1F066A0787"
+				type: "item"
+				item: "potionsmaster:quartz_powder"
+			}]
+			rewards: [{
+				id: "1AEA737EE181DD84"
+				type: "xp"
+				xp: 5
+			}]
+		}
+		{
+			x: 3.0d
+			y: -4.5d
+			description: ["By using the Mortar and Pestle with a piece of Coal in the crafting grid you get a Coal Powder."]
+			dependencies: ["36F89408DD1DCB41"]
+			id: "20DDD4B03E27DB35"
+			tasks: [{
+				id: "72A430ED551F9C9E"
+				type: "item"
+				item: "potionsmaster:coal_powder"
+			}]
+			rewards: [{
+				id: "3FF503E25BC783DF"
+				type: "xp"
+				xp: 5
+			}]
+		}
+		{
+			x: 10.5d
+			y: 0.0d
+			description: ["By using the Mortar and Pestle with a Diamond in the crafting grid you get a Diamond Powder."]
+			dependencies: ["36F89408DD1DCB41"]
+			id: "47E4A625B72FAF9F"
+			tasks: [{
+				id: "33DA954622539A29"
+				type: "item"
+				item: "potionsmaster:diamond_powder"
+			}]
+			rewards: [{
+				id: "690226E645E99409"
+				type: "xp"
+				xp: 5
+			}]
+		}
+		{
+			x: 4.0d
+			y: -5.5d
+			description: ["Cook the powder in a furnace to get a Calcinated Coal Powder."]
+			dependencies: ["20DDD4B03E27DB35"]
+			id: "4C8913A645D832A6"
+			tasks: [{
+				id: "12595EA2996DBBB6"
+				type: "item"
+				item: "potionsmaster:calcinatedcoal_powder"
+			}]
+			rewards: [{
+				id: "0A2002CB2F7E0EFE"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 12.0d
+			y: 0.0d
+			description: ["Cook the powder in a furnace to get a Calcinated Diamond Powder."]
+			dependencies: ["47E4A625B72FAF9F"]
+			id: "069760FF757E1392"
+			tasks: [{
+				id: "64B82775A14F0D9E"
+				type: "item"
+				item: "potionsmaster:calcinateddiamond_powder"
+			}]
+			rewards: [{
+				id: "41814CB83EBC3EC8"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 6.0d
+			y: -4.5d
+			description: ["Cook the powder in a furnace to get a Calcinated Emerald Powder."]
+			dependencies: ["044EF0F4A40856C6"]
+			id: "18B2180A7F80C4AA"
+			tasks: [{
+				id: "2BB6C4B03E4F5571"
+				type: "item"
+				item: "potionsmaster:calcinatedemerald_powder"
+			}]
+			rewards: [{
+				id: "1ADC2982730B4E20"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 7.0d
+			y: -4.0d
+			description: ["Cook the powder in a furnace to get a Calcinated Gold Powder."]
+			dependencies: ["42F89294E36AC466"]
+			id: "137E31D2940A5CFA"
+			tasks: [{
+				id: "7B9B2EB216D198DC"
+				type: "item"
+				item: "potionsmaster:calcinatedgold_powder"
+			}]
+			rewards: [{
+				id: "46F063B2F28DFBBF"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 8.0d
+			y: -3.5d
+			description: ["Cook the powder in a furnace to get a Calcinated Iron Powder."]
+			dependencies: ["652AC6C2B07F2581"]
+			id: "29D19D0EBC96E29F"
+			tasks: [{
+				id: "579F19BC0E57A3AA"
+				type: "item"
+				item: "potionsmaster:calcinatediron_powder"
+			}]
+			rewards: [{
+				id: "3F0D8D91517C0D95"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 9.0d
+			y: -3.0d
+			description: ["Cook the powder in a furnace to get a Calcinated Lapis Lazuli Powder."]
+			dependencies: ["0AFD3CA094EF7767"]
+			id: "7F0D31A2BB730654"
+			tasks: [{
+				id: "3DF5F0F508C95F55"
+				type: "item"
+				item: "potionsmaster:calcinatedlapis_powder"
+			}]
+			rewards: [{
+				id: "4D72D28D1AECE2C3"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 10.0d
+			y: -2.5d
+			description: ["Cook the powder in a furnace to get a Calcinated Redstone Powder."]
+			dependencies: ["193769ACB35D9F50"]
+			id: "4FC62CD11DB4FEAD"
+			tasks: [{
+				id: "480A685F64E409C4"
+				type: "item"
+				item: "potionsmaster:calcinatedredstone_powder"
+			}]
+			rewards: [{
+				id: "60730FDC788494EF"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 11.0d
+			y: -2.0d
+			description: ["Cook the powder in a furnace to get a Calcinated Aluminium Powder."]
+			dependencies: ["49F12A6BF02663CF"]
+			id: "7AD8BF832ADABE02"
+			tasks: [{
+				id: "6E47643CDE388246"
+				type: "item"
+				item: "potionsmaster:calcinatedaluminium_powder"
+			}]
+			rewards: [{
+				id: "1E60244330760412"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 5.0d
+			y: -5.0d
+			description: ["Cook the powder in a furnace to get a Calcinated Copper Powder."]
+			dependencies: ["6B6553A402A37A81"]
+			id: "450D9C57ED06646D"
+			tasks: [{
+				id: "01DE9B2B52CDE151"
+				type: "item"
+				item: "potionsmaster:calcinatedcopper_powder"
+			}]
+			rewards: [{
+				id: "22ACEC9EBA6D6A93"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 11.0d
+			y: 2.0d
+			description: ["Cook the powder in a furnace to get a Calcinated Tin Powder."]
+			dependencies: ["26DB33702E8528A1"]
+			id: "6A4C6A121D1DB4E9"
+			tasks: [{
+				id: "3269FA5BE9390DF5"
+				type: "item"
+				item: "potionsmaster:calcinatedtin_powder"
+			}]
+			rewards: [{
+				id: "3FEA2813EC161B82"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 10.0d
+			y: 2.5d
+			description: ["Cook the powder in a furnace to get a Calcinated Nickel Powder."]
+			dependencies: ["402F2EB886F52B11"]
+			id: "6B5C9A017F0F8272"
+			tasks: [{
+				id: "79FC42816D52A43C"
+				type: "item"
+				item: "potionsmaster:calcinatednickel_powder"
+			}]
+			rewards: [{
+				id: "5A022B888B1E365D"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 9.0d
+			y: 3.0d
+			description: ["Cook the powder in a furnace to get a Calcinated Uranium Powder."]
+			dependencies: ["3578885673416E2D"]
+			id: "3444359A4E8D14BE"
+			tasks: [{
+				id: "2B444F59A43E0799"
+				type: "item"
+				item: "potionsmaster:calcinateduranium_powder"
+			}]
+			rewards: [{
+				id: "4B74CF8CA1D7C6BC"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 8.0d
+			y: 3.5d
+			description: ["Cook the powder in a furnace to get a Calcinated Lead Powder."]
+			dependencies: ["5AE055FCBB670B2A"]
+			id: "4647A5FDFE47413A"
+			tasks: [{
+				id: "3E964D6AD9687B77"
+				type: "item"
+				item: "potionsmaster:calcinatedlead_powder"
+			}]
+			rewards: [{
+				id: "1CE0D429F9E2E75A"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 7.0d
+			y: 4.0d
+			description: ["Cook the powder in a furnace to get a Calcinated Silver Powder."]
+			dependencies: ["21C2D821CC727E4E"]
+			id: "3EC8A54E0E8BCCFC"
+			tasks: [{
+				id: "09F48A4F17459EFA"
+				type: "item"
+				item: "potionsmaster:calcinatedsilver_powder"
+			}]
+			rewards: [{
+				id: "375587773D927216"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 6.0d
+			y: 4.5d
+			description: ["Cook the powder in a furnace to get a Calcinated Zinc Powder."]
+			dependencies: ["7DF23536E660B12A"]
+			id: "7A1BD9FA2A2F7194"
+			tasks: [{
+				id: "762DDAF7C3BC7CE5"
+				type: "item"
+				item: "potionsmaster:calcinatedzinc_powder"
+			}]
+			rewards: [{
+				id: "6CCBB98F5215B660"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 5.0d
+			y: 5.0d
+			description: ["Cook the powder in a furnace to get a Calcinated Osmium Powder."]
+			dependencies: ["34772166E277C304"]
+			id: "43683C7850F89EE2"
+			tasks: [{
+				id: "0BBE9A2D07937BAF"
+				type: "item"
+				item: "potionsmaster:calcinatedosmium_powder"
+			}]
+			rewards: [{
+				id: "744C655A75C58155"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 4.0d
+			y: 5.5d
+			description: ["Cook the powder in a furnace to get a Calcinated Quartz Powder."]
+			dependencies: ["2188B940D80082F8"]
+			id: "02BE307C70D5C7FA"
+			tasks: [{
+				id: "7E1E999D66199439"
+				type: "item"
+				item: "potionsmaster:calcinatedquartz_powder"
+			}]
+			rewards: [{
+				id: "1EB17D24933E1D14"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 5.0d
+			y: -6.5d
+			description: ["Use the Calcinated Coal Powder in a brewing stand with Mundane potions to get the X-Ray Potion for Coal Ores."]
+			dependencies: ["4C8913A645D832A6"]
+			id: "1EDD6ABFFA27EF69"
+			tasks: [{
+				id: "7A7D4832F91D93C0"
+				type: "item"
+				item: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						Potion: "potionsmaster:coal_sight"
+					}
+				}
+			}]
+			rewards: [{
+				id: "3B90A045EC854327"
+				type: "item"
+				item: "minecraft:coal"
+				count: 2
+				random_bonus: 3
+			}]
+		}
+		{
+			x: 13.5d
+			y: 0.0d
+			description: ["Use the Calcinated Diamond Powder in a brewing stand with Mundane potions to get the X-Ray Potion for Diamond Ores."]
+			dependencies: ["069760FF757E1392"]
+			id: "116BE742FF9B12F3"
+			tasks: [{
+				id: "586549A1E9B1904F"
+				type: "item"
+				item: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						Potion: "potionsmaster:diamond_sight"
+					}
+				}
+			}]
+			rewards: [{
+				id: "01A0438F5AB34930"
+				type: "item"
+				item: "minecraft:diamond"
+			}]
+		}
+		{
+			x: 7.0d
+			y: -5.5d
+			description: ["Use the Calcinated Emerald Powder in a brewing stand with Mundane potions to get the X-Ray Potion for Emerald Ores."]
+			dependencies: ["18B2180A7F80C4AA"]
+			id: "2CF7AC50468FC80D"
+			tasks: [{
+				id: "6D482F007D72F3AD"
+				type: "item"
+				item: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						Potion: "potionsmaster:emerald_sight"
+					}
+				}
+			}]
+			rewards: [{
+				id: "35676A1B54E7201B"
+				type: "item"
+				item: "minecraft:emerald"
+				count: 2
+				random_bonus: 3
+			}]
+		}
+		{
+			x: 8.0d
+			y: -5.0d
+			description: ["Use the Calcinated Gold Powder in a brewing stand with Mundane potions to get the X-Ray Potion for Gold Ores."]
+			dependencies: ["137E31D2940A5CFA"]
+			id: "465B1854672EAC4F"
+			tasks: [{
+				id: "658C65758E38FB86"
+				type: "item"
+				item: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						Potion: "potionsmaster:gold_sight"
+					}
+				}
+			}]
+			rewards: [{
+				id: "5FC15EFAE2F2D2B5"
+				type: "item"
+				item: "minecraft:gold_ingot"
+				count: 2
+				random_bonus: 3
+			}]
+		}
+		{
+			x: 9.0d
+			y: -4.5d
+			description: ["Use the Calcinated Iron Powder in a brewing stand with Mundane potions to get the X-Ray Potion for Iron Ores."]
+			dependencies: ["29D19D0EBC96E29F"]
+			id: "647161ADB36B9985"
+			tasks: [{
+				id: "24D3CBDE80964D16"
+				type: "item"
+				item: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						Potion: "potionsmaster:iron_sight"
+					}
+				}
+			}]
+			rewards: [{
+				id: "55FE51DE5160AEEF"
+				type: "item"
+				item: "minecraft:iron_ingot"
+				count: 2
+				random_bonus: 3
+			}]
+		}
+		{
+			x: 10.0d
+			y: -4.0d
+			description: ["Use the Calcinated Lapis Lazuli Powder in a brewing stand with Mundane potions to get the X-Ray Potion for Lapis Lazuli Ores."]
+			dependencies: ["7F0D31A2BB730654"]
+			id: "743AFF2415879605"
+			tasks: [{
+				id: "66D4DD028915615E"
+				type: "item"
+				item: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						Potion: "potionsmaster:lapis_sight"
+					}
+				}
+			}]
+			rewards: [{
+				id: "73941FC80E27609A"
+				type: "item"
+				item: "minecraft:lapis_lazuli"
+				count: 2
+				random_bonus: 3
+			}]
+		}
+		{
+			x: 11.0d
+			y: -3.5d
+			description: ["Use the Calcinated Redstone Powder in a brewing stand with Mundane potions to get the X-Ray Potion for Redstone Ores."]
+			dependencies: ["4FC62CD11DB4FEAD"]
+			id: "2D73DD94B6B355B9"
+			tasks: [{
+				id: "04590EC59FBAA5A3"
+				type: "item"
+				item: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						Potion: "potionsmaster:redstone_sight"
+					}
+				}
+			}]
+			rewards: [{
+				id: "70C328FCF9184FDC"
+				type: "item"
+				item: "minecraft:redstone"
+				count: 2
+				random_bonus: 3
+			}]
+		}
+		{
+			x: 12.0d
+			y: -3.0d
+			description: ["Use the Calcinated Aluminium Powder in a brewing stand with Mundane potions to get the X-Ray Potion for Aluminium Ores."]
+			dependencies: ["7AD8BF832ADABE02"]
+			id: "74EDD13861C8954D"
+			tasks: [{
+				id: "5E5F8458023D3A67"
+				type: "item"
+				item: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						Potion: "potionsmaster:aluminium_sight"
+					}
+				}
+			}]
+			rewards: [{
+				id: "293D2C64BCFB4656"
+				type: "item"
+				item: "emendatusenigmatica:aluminum_ingot"
+				count: 2
+				random_bonus: 3
+			}]
+		}
+		{
+			x: 6.0d
+			y: -6.0d
+			description: ["Use the Calcinated Copper Powder in a brewing stand with Mundane potions to get the X-Ray Potion for Copper Ores."]
+			dependencies: ["450D9C57ED06646D"]
+			id: "4850043BF4959213"
+			tasks: [{
+				id: "7BFF5A444D0B8CDD"
+				type: "item"
+				item: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						Potion: "potionsmaster:copper_sight"
+					}
+				}
+			}]
+			rewards: [{
+				id: "3196E6EC9559135B"
+				type: "item"
+				item: "emendatusenigmatica:copper_ingot"
+				count: 2
+				random_bonus: 3
+			}]
+		}
+		{
+			x: 12.0d
+			y: 3.0d
+			description: ["Use the Calcinated Tin Powder in a brewing stand with Mundane potions to get the X-Ray Potion for Tin Ores."]
+			dependencies: ["6A4C6A121D1DB4E9"]
+			id: "2B490AB059268984"
+			tasks: [{
+				id: "7DE2E4D20027787A"
+				type: "item"
+				item: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						Potion: "potionsmaster:tin_sight"
+					}
+				}
+			}]
+			rewards: [{
+				id: "29C8F97A3CAE29FA"
+				type: "item"
+				item: "emendatusenigmatica:tin_ingot"
+				count: 2
+				random_bonus: 3
+			}]
+		}
+		{
+			x: 11.0d
+			y: 3.5d
+			description: ["Use the Calcinated Nickel Powder in a brewing stand with Mundane potions to get the X-Ray Potion for Nickel Ores."]
+			dependencies: ["6B5C9A017F0F8272"]
+			id: "1435BDE3ED7B7D28"
+			tasks: [{
+				id: "59788F86C25A12B1"
+				type: "item"
+				item: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						Potion: "potionsmaster:nickel_sight"
+					}
+				}
+			}]
+			rewards: [{
+				id: "163E6FBF8F88BC7C"
+				type: "item"
+				item: "emendatusenigmatica:nickel_ingot"
+				count: 2
+				random_bonus: 3
+			}]
+		}
+		{
+			x: 10.0d
+			y: 4.0d
+			description: ["Use the Calcinated Uranium Powder in a brewing stand with Mundane potions to get the X-Ray Potion for Uranium Ores."]
+			dependencies: ["3444359A4E8D14BE"]
+			id: "272D42991A317B5A"
+			tasks: [{
+				id: "2A9445FE4D1B8CA5"
+				type: "item"
+				item: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						Potion: "potionsmaster:uranium_sight"
+					}
+				}
+			}]
+			rewards: [{
+				id: "26987E5493D27080"
+				type: "item"
+				item: "emendatusenigmatica:uranium_ingot"
+				count: 2
+				random_bonus: 3
+			}]
+		}
+		{
+			x: 9.0d
+			y: 4.5d
+			description: ["Use the Calcinated Lead Powder in a brewing stand with Mundane potions to get the X-Ray Potion for Lead Ores."]
+			dependencies: ["4647A5FDFE47413A"]
+			id: "4AE50416CCCD9C56"
+			tasks: [{
+				id: "2968BE701EC639E2"
+				type: "item"
+				item: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						Potion: "potionsmaster:lead_sight"
+					}
+				}
+			}]
+			rewards: [{
+				id: "266D31A0621C4E25"
+				type: "item"
+				item: "emendatusenigmatica:lead_ingot"
+				count: 2
+				random_bonus: 3
+			}]
+		}
+		{
+			x: 8.0d
+			y: 5.0d
+			description: ["Use the Calcinated Silver Powder in a brewing stand with Mundane potions to get the X-Ray Potion for Silver Ores."]
+			dependencies: ["3EC8A54E0E8BCCFC"]
+			id: "53DD759A88731F82"
+			tasks: [{
+				id: "58673533E8D62CFE"
+				type: "item"
+				item: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						Potion: "potionsmaster:silver_sight"
+					}
+				}
+			}]
+			rewards: [{
+				id: "00DCEF3A8389F7BE"
+				type: "item"
+				item: "emendatusenigmatica:silver_ingot"
+				count: 2
+				random_bonus: 3
+			}]
+		}
+		{
+			x: 7.0d
+			y: 5.5d
+			description: ["Use the Calcinated Zinc Powder in a brewing stand with Mundane potions to get the X-Ray Potion for Zinc Ores."]
+			dependencies: ["7A1BD9FA2A2F7194"]
+			id: "0E6BBCE7AB7DE68B"
+			tasks: [{
+				id: "21AF8FE7F61C3348"
+				type: "item"
+				item: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						Potion: "potionsmaster:zinc_sight"
+					}
+				}
+			}]
+			rewards: [{
+				id: "5584280B793D00BA"
+				type: "item"
+				item: "emendatusenigmatica:zinc_ingot"
+				count: 2
+				random_bonus: 3
+			}]
+		}
+		{
+			x: 6.0d
+			y: 6.0d
+			description: ["Use the Calcinated Osmium Powder in a brewing stand with Mundane potions to get the X-Ray Potion for Osmium Ores."]
+			dependencies: ["43683C7850F89EE2"]
+			id: "07EE192205E9F3FD"
+			tasks: [{
+				id: "1B213BF5E5C77F1A"
+				type: "item"
+				item: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						Potion: "potionsmaster:osmium_sight"
+					}
+				}
+			}]
+			rewards: [{
+				id: "4786B473D0B8180E"
+				type: "item"
+				item: "emendatusenigmatica:osmium_ingot"
+				count: 2
+				random_bonus: 3
+			}]
+		}
+		{
+			x: 5.0d
+			y: 6.5d
+			description: ["Use the Calcinated Quartz Powder in a brewing stand with Mundane potions to get the X-Ray Potion for Quartz Ores."]
+			dependencies: ["02BE307C70D5C7FA"]
+			id: "2C79C61A9736B46A"
+			tasks: [{
+				id: "6CFB697B2F56B57B"
+				type: "item"
+				item: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						Potion: "potionsmaster:quartz_sight"
+					}
+				}
+			}]
+			rewards: [{
+				id: "714642855A74F7E7"
+				type: "item"
+				item: "minecraft:quartz"
+				count: 2
+				random_bonus: 3
+			}]
+		}
+	]
+}
