@@ -263,6 +263,7 @@
 - [ponderjs-1.16.5-1.0.3d.jar](https://www.curseforge.com/minecraft/mc-mods/ponderjs/files/3540229) (by [kotakotik22](https://www.curseforge.com/members/kotakotik22/projects))
 - [portable_stonecutter-1.16.5-1.3.5.jar](https://www.curseforge.com/minecraft/mc-mods/portable-stonecutter/files/3512385) (by [weirdbrackets](https://www.curseforge.com/members/weirdbrackets/projects))
 - [portality-1.16.5-3.2.5.jar](https://www.curseforge.com/minecraft/mc-mods/portality/files/3524478) (by [Buuz135](https://www.curseforge.com/members/buuz135/projects))
+- [potionsmaster-0.2.2-1.16.5-36.1.0.jar](https://www.curseforge.com/minecraft/mc-mods/potionsmaster/files/3393230) (by [thevortexFoxTopia](https://www.curseforge.com/members/thevortexfoxtopia/projects))
 - [Powah-1.16.5-2.3.16.jar](https://www.curseforge.com/minecraft/mc-mods/powah/files/3232535) (by [owmii](https://www.curseforge.com/members/owmii/projects))
 - [PrettyPipes-1.9.8.jar](https://www.curseforge.com/minecraft/mc-mods/pretty-pipes/files/3724799) (by [Ellpeck](https://www.curseforge.com/members/ellpeck/projects))
 - [PrettyPipesFluids-1.16.5-0.4.2.jar](https://www.curseforge.com/minecraft/mc-mods/pretty-pipes-fluids/files/3800584) (by [Quarris](https://www.curseforge.com/members/quarris/projects))
