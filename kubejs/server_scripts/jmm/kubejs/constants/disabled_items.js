@@ -86,6 +86,18 @@ const disabledItems = [
     'ironjetpacks:nitro_cell',
     'ironjetpacks:nitro_capacitor',
 
+    'losttrinkets:magical_herbs',
+    'losttrinkets:octopick',
+    'losttrinkets:tea_leaf',
+    'losttrinkets:book_o_enchanting',
+    'losttrinkets:blaze_heart',
+    'losttrinkets:turtle_shell',
+    'losttrinkets:tha_cloud',
+    'losttrinkets:rock_candy',
+    'losttrinkets:mad_aura',
+
+    /materialis:psimetal/,
+
     'mekanism:sawdust',
     'mekanism:dust_lapis_lazuli',
     'mekanism:dust_lithium',
@@ -115,9 +127,27 @@ const disabledItems = [
     'thermal:potato_block',
     'thermal:sugar_cane_block',
     'thermal:apple_block',
+
     'simplefarming:raw_bacon',
     'simplefarming:cooked_bacon',
     'simplefarming:cooked_egg',
     'simplefarming:noodles',
-    'simplefarming:chocolate'
+    'simplefarming:chocolate',
+
+    'storagedrawers:conversion_upgrade'
 ];
+
+let uselessOreSightPotions = ['allthemodium', 'bismuth', 'crimsoniron', 'platinum', 'unobtainium', 'vibranium', 'netherite']
+uselessOreSightPotions.forEach(uselessPotion => {
+    disabledItems.push(
+        `potionsmaster:${uselessPotion}_powder`,
+        `potionsmaster:calcinated${uselessPotion}_powder`,
+        Item.of('minecraft:potion', `{Potion:"potionsmaster:${uselessPotion}_sight"}`),
+        Item.of('minecraft:splash_potion', `{Potion:"potionsmaster:${uselessPotion}_sight"}`),
+        Item.of('minecraft:tipped_arrow', `{Potion:"potionsmaster:${uselessPotion}_sight"}`),
+        Item.of('minecraft:lingering_potion', `{Potion:"potionsmaster:${uselessPotion}_sight"}`),
+        Item.of('apotheosis:potion_charm', `{Damage:0,Potion:"potionsmaster:${uselessPotion}_sight"}`),
+        Item.of('immersiveengineering:potion_bucket', `{Potion:"potionsmaster:${uselessPotion}_sight"}`),
+        Item.of('supplementaries:bamboo_spikes_tipped', `{Damage:0,Potion:"potionsmaster:${uselessPotion}_sight"}`)
+    )
+})

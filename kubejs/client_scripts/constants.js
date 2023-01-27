@@ -569,6 +569,21 @@ const disabledItems = [
     'storagedrawers:conversion_upgrade'
 ];
 
+let uselessOreSightPotions = ['allthemodium', 'bismuth', 'crimsoniron', 'platinum', 'unobtainium', 'vibranium', 'netherite']
+uselessOreSightPotions.forEach(uselessPotion => {
+    disabledItems.push(
+        `potionsmaster:${uselessPotion}_powder`,
+        `potionsmaster:calcinated${uselessPotion}_powder`,
+        Item.of('minecraft:potion', `{Potion:"potionsmaster:${uselessPotion}_sight"}`),
+        Item.of('minecraft:splash_potion', `{Potion:"potionsmaster:${uselessPotion}_sight"}`),
+        Item.of('minecraft:tipped_arrow', `{Potion:"potionsmaster:${uselessPotion}_sight"}`),
+        Item.of('minecraft:lingering_potion', `{Potion:"potionsmaster:${uselessPotion}_sight"}`),
+        Item.of('apotheosis:potion_charm', `{Damage:0,Potion:"potionsmaster:${uselessPotion}_sight"}`),
+        Item.of('immersiveengineering:potion_bucket', `{Potion:"potionsmaster:${uselessPotion}_sight"}`),
+        Item.of('supplementaries:bamboo_spikes_tipped', `{Damage:0,Potion:"potionsmaster:${uselessPotion}_sight"}`)
+    )
+})
+
 const materialsToUnify = [
     'iron',
     'gold',
