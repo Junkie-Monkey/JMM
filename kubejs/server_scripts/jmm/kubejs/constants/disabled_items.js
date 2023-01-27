@@ -137,8 +137,16 @@ const disabledItems = [
     'storagedrawers:conversion_upgrade'
 ];
 
-let uselessOreSightPotions = ['allthemodium', 'bismuth', 'crimsoniron', 'platinum', 'unobtainium', 'vibranium', 'netherite']
-uselessOreSightPotions.forEach(uselessPotion => {
+let uselessOreSightPotions = [
+    'allthemodium',
+    'bismuth',
+    'crimsoniron',
+    'platinum',
+    'unobtainium',
+    'vibranium',
+    'netherite'
+];
+uselessOreSightPotions.forEach((uselessPotion) => {
     disabledItems.push(
         `potionsmaster:${uselessPotion}_powder`,
         `potionsmaster:calcinated${uselessPotion}_powder`,
@@ -149,5 +157,5 @@ uselessOreSightPotions.forEach(uselessPotion => {
         Item.of('apotheosis:potion_charm', `{Damage:0,Potion:"potionsmaster:${uselessPotion}_sight"}`),
         Item.of('immersiveengineering:potion_bucket', `{Potion:"potionsmaster:${uselessPotion}_sight"}`),
         Item.of('supplementaries:bamboo_spikes_tipped', `{Damage:0,Potion:"potionsmaster:${uselessPotion}_sight"}`)
-    )
-})
+    );
+});
