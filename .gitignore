@@ -20,6 +20,7 @@ screenshots/
 /world_backup/
 /data/
 /notes/
+/woot/
 /kubejs/exported
 **/*.log
 /.mixin.out
