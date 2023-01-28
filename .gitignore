@@ -155,6 +155,7 @@ config/inventoryhud-client.toml
 config/ftbchunks-client.toml
 config/immersiveengineering-client.toml
 config/hats-client.toml
+config/carryon-client.toml
 
 # GDLauncher
 config.json

@@ -170,7 +170,8 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"Mekanism/tools-client.toml",
     "brandon3055/DraconicEvolution.cfg",
     "brandon3055/hud_settings.json",
-    "hats-client.toml"
+    "hats-client.toml",
+    "carryon-client.toml"
 )
 
 $FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @(
