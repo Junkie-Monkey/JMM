@@ -912,7 +912,6 @@
 			x: -1.0d
 			y: -8.5d
 			subtitle: "The Cost Of Progress"
-			description: [""]
 			dependencies: [
 				"0000000000000437"
 				"000000000000043B"
@@ -976,7 +975,7 @@
 			x: -3.5d
 			y: -8.5d
 			subtitle: "Don't Leave That Plasma Cutter Running"
-			description: ["A basic multi-tool with built in vein mining and excellent attack damage."]
+			description: ["A basic multi-tool with built in vein mining, different speed settings and excellent attack damage."]
 			dependencies: ["00000000000006C5"]
 			id: "000000000000044F"
 			tasks: [{
@@ -2782,7 +2781,7 @@
 			}]
 		}
 		{
-			x: -9.5d
+			x: -9.0d
 			y: -12.0d
 			subtitle: "Head in the Clouds"
 			description: [
@@ -2892,6 +2891,11 @@
 					item: "ars_nouveau:wand"
 				}
 			]
+			rewards: [{
+				id: "14F311320516902E"
+				type: "xp"
+				xp: 100
+			}]
 		}
 		{
 			x: -10.0d
@@ -2919,7 +2923,7 @@
 			}]
 		}
 		{
-			x: -10.5d
+			x: -11.0d
 			y: -12.0d
 			subtitle: "Pym Powered"
 			description: [
@@ -3272,6 +3276,34 @@
 				id: "6376A02CB9EF886D"
 				type: "xp"
 				xp: 100
+			}]
+		}
+		{
+			x: -10.0d
+			y: -11.5d
+			subtitle: "Now you can let your anger out"
+			description: [
+				"Did you ever want to punch something? Just for punching it, no specific reason, you're just angry and need to smack something?"
+				""
+				"Now today is your lucky day! By making a Target Dummy you can do just that!"
+				""
+				"Jokes aside, the Target Dummy is a really useful item to test your equipment DPS (Damage per Second)"
+				""
+				"By placing down the Dummy and punching (or shooting) at it, it will show you how much damage you dealt and also show your DPS above your hotbar"
+			]
+			id: "7194E459E70DAF99"
+			tasks: [{
+				id: "79B8034996C4F33B"
+				type: "item"
+				item: "dummmmmmy:target_dummy_placer"
+			}]
+			rewards: [{
+				id: "0A81EEEB84C00366"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot jmm:chests/quest_scavengers_delight"
+				player_command: false
 			}]
 		}
 	]
