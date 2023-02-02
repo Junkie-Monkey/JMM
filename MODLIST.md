@@ -275,6 +275,7 @@
 - [quickstack-1.16.5-4.0.3.jar](https://www.curseforge.com/minecraft/mc-mods/quickstack/files/3898545) (by [tfarecnim](https://www.curseforge.com/members/tfarecnim/projects))
 - [randompatches-2.4.4-forge.jar](https://www.curseforge.com/minecraft/mc-mods/randompatches-forge/files/3211323) (by [TheRandomLabs](https://www.curseforge.com/members/therandomlabs/projects))
 - [rangedpumps-0.8.2.jar](https://www.curseforge.com/minecraft/mc-mods/ranged-pumps/files/3065697) (by [raoulvdberge](https://www.curseforge.com/members/raoulvdberge/projects))
+- [redstone_arsenal-1.16.5-0.9.2b.5.jar](https://www.curseforge.com/minecraft/mc-mods/redstone-arsenal/files/3788888) (by [TeamCoFH](https://www.curseforge.com/members/teamcofh/projects))
 - [redstonepen-1.16.5-1.0.11.jar](https://www.curseforge.com/minecraft/mc-mods/redstone-pen/files/4329194) (by [wilechaote](https://www.curseforge.com/members/wilechaote/projects))
 - [refinedcooking-1.0.2.jar](https://www.curseforge.com/minecraft/mc-mods/refined-cooking/files/3885461) (by [ItsSebastrn](https://www.curseforge.com/members/itssebastrn/projects))
 - [refinedstorage-1.9.18.jar](https://www.curseforge.com/minecraft/mc-mods/refined-storage/files/3807951) (by [raoulvdberge](https://www.curseforge.com/members/raoulvdberge/projects))
