@@ -1,0 +1,873 @@
+{
+	id: "45AA071456BC8B91"
+	group: "74B3CF67FCEAB20F"
+	order_index: 3
+	filename: "redstone_arsenal"
+	title: "Redstone Arsenal"
+	icon: {
+		id: "redstone_arsenal:flux_axe"
+		Count: 1b
+		tag: { }
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			icon: {
+				id: "redstone_arsenal:flux_axe"
+				Count: 1b
+				tag: { }
+			}
+			x: 0.0d
+			y: 0.0d
+			shape: "gear"
+			description: [
+				"Redstone Arsenal is a mod that adds different tools and weapons that utilize RF. "
+				""
+				"All these tools can be charged with energy using an Energetic Infuser, Flux Capacitor or equivalent from other mods, such as the Energy Cube from Mekanism, wireless charging from Flux Networks or the Capacitor from Draconic Evolution."
+				""
+				"They can also be enchanted."
+				""
+				"These tools can be empowered and quelled at will. When empowered the RF cost goes up but it also gives you strong effects."
+			]
+			size: 1.5d
+			optional: true
+			id: "05F4D3A8AF1D59B7"
+			tasks: [{
+				id: "7AAC78889AF5883C"
+				type: "checkmark"
+				title: "Redstone Arsenal"
+			}]
+			rewards: [{
+				id: "4E6B396135F0302D"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Base Materials"
+			x: 2.0d
+			y: 0.0d
+			description: ["These are the two resources that are going to be used in most crafting recipes for Redstone Arsenal."]
+			dependencies: ["05F4D3A8AF1D59B7"]
+			id: "110D8F250C4F9CA6"
+			tasks: [
+				{
+					id: "23AEB39107F30652"
+					type: "item"
+					item: "redstone_arsenal:flux_ingot"
+				}
+				{
+					id: "735F63078451547D"
+					type: "item"
+					item: "redstone_arsenal:flux_gem"
+				}
+			]
+			rewards: [
+				{
+					id: "20AC3E8CC6B1DB9D"
+					type: "item"
+					item: "redstone_arsenal:flux_ingot"
+					count: 2
+					random_bonus: 3
+				}
+				{
+					id: "17B6D755F0DDAEE5"
+					type: "item"
+					item: "redstone_arsenal:flux_gem"
+					random_bonus: 1
+				}
+			]
+		}
+		{
+			title: "Base Items"
+			x: 3.5d
+			y: 0.0d
+			description: ["This are the base items that are going to be used to create the Redstone Arsenal Equipment."]
+			dependencies: ["110D8F250C4F9CA6"]
+			id: "12938F156F9891CB"
+			tasks: [
+				{
+					id: "11A8FA8660AFF3D9"
+					type: "item"
+					item: "redstone_arsenal:flux_obsidian_rod"
+				}
+				{
+					id: "3F6736156434607C"
+					type: "item"
+					item: "redstone_arsenal:flux_gear"
+				}
+				{
+					id: "5D671B1DDC1CD810"
+					type: "item"
+					item: "redstone_arsenal:flux_plating"
+				}
+			]
+			rewards: [
+				{
+					id: "2B2AE52423987D9D"
+					type: "item"
+					item: "redstone_arsenal:flux_ingot"
+					count: 2
+					random_bonus: 3
+				}
+				{
+					id: "6E4E5E5F0D294DA4"
+					type: "item"
+					item: "redstone_arsenal:flux_gem"
+					random_bonus: 1
+				}
+			]
+		}
+		{
+			x: 5.0d
+			y: -1.5d
+			description: [
+				"An uncharged flux-infused helmet is useless."
+				""
+				"When charged, it grants the same protection as a diamond helmet, with less toughness and consumes 500 RF per hit taken."
+				""
+				"Each piece of the armor grants a single charge of flux shielding."
+				""
+				"A charge can be used to negate a single instance of damage, up to 500 damage points, and consumes 2kRF per use."
+				""
+				"Charges regenerate after 30 seconds."
+				""
+				"&o&7This item doesn't have Empowered Skills."
+			]
+			hide_dependency_lines: true
+			dependencies: ["12938F156F9891CB"]
+			id: "2AFC2D123322270C"
+			tasks: [{
+				id: "605A773872A1463E"
+				type: "item"
+				item: {
+					id: "redstone_arsenal:flux_helmet"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "431534FE035A1288"
+					type: "item"
+					item: "redstone_arsenal:flux_ingot"
+					count: 2
+					random_bonus: 3
+				}
+				{
+					id: "49964CCB6421D0B1"
+					type: "item"
+					item: "redstone_arsenal:flux_gem"
+					random_bonus: 1
+				}
+			]
+		}
+		{
+			x: 5.0d
+			y: -0.5d
+			description: [
+				"An uncharged flux-infused chestplate is useless."
+				""
+				"When charged, it grants the same protection as a diamond chestplate, with less toughness and consumes 500 RF per hit taken."
+				""
+				"Each piece of the armor grants a single charge of flux shielding."
+				""
+				"A charge can be used to negate a single instance of damage, up to 500 damage points, and consumes 2kRF per use."
+				""
+				"Charges regenerate after 30 seconds."
+				""
+				"&o&7This item doesn't have Empowered Skills."
+			]
+			hide_dependency_lines: true
+			dependencies: ["12938F156F9891CB"]
+			id: "13EBD66616666A0D"
+			tasks: [{
+				id: "7C17DA0B0013F4E6"
+				type: "item"
+				item: {
+					id: "redstone_arsenal:flux_chestplate"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "553DA8E4040F0CD7"
+					type: "item"
+					item: "redstone_arsenal:flux_ingot"
+					count: 2
+					random_bonus: 3
+				}
+				{
+					id: "5E79915B6C2F8E7A"
+					type: "item"
+					item: "redstone_arsenal:flux_gem"
+					random_bonus: 1
+				}
+			]
+		}
+		{
+			x: 5.0d
+			y: 0.5d
+			description: [
+				"An uncharged flux-infused leggings is useless."
+				""
+				"When charged, it grants the same protection as a diamond leggings, with less toughness and consumes 500 RF per hit taken."
+				""
+				"Each piece of the armor grants a single charge of flux shielding."
+				""
+				"A charge can be used to negate a single instance of damage, up to 500 damage points, and consumes 2kRF per use."
+				""
+				"Charges regenerate after 30 seconds."
+				""
+				"&o&7This item doesn't have Empowered Skills."
+			]
+			hide_dependency_lines: true
+			dependencies: ["12938F156F9891CB"]
+			id: "68935FFB54563617"
+			tasks: [{
+				id: "2C200566F3501C53"
+				type: "item"
+				item: {
+					id: "redstone_arsenal:flux_leggings"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "6042E71FD8FC0559"
+					type: "item"
+					item: "redstone_arsenal:flux_ingot"
+					count: 2
+					random_bonus: 3
+				}
+				{
+					id: "5E18BED044E57869"
+					type: "item"
+					item: "redstone_arsenal:flux_gem"
+					random_bonus: 1
+				}
+			]
+		}
+		{
+			x: 5.0d
+			y: 1.5d
+			description: [
+				"An uncharged flux-infused boots is useless."
+				""
+				"When charged, it grants the same protection as a diamond boots, with less toughness and consumes 500 RF per hit taken."
+				""
+				"Each piece of the armor grants a single charge of flux shielding."
+				""
+				"A charge can be used to negate a single instance of damage, up to 500 damage points, and consumes 2kRF per use."
+				""
+				"Charges regenerate after 30 seconds."
+				""
+				"&o&7This item doesn't have Empowered Skills."
+			]
+			hide_dependency_lines: true
+			dependencies: ["12938F156F9891CB"]
+			id: "78B05C231C370086"
+			tasks: [{
+				id: "3D233FDEA14FEE50"
+				type: "item"
+				item: {
+					id: "redstone_arsenal:flux_boots"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "3DA188786E10CC5E"
+					type: "item"
+					item: "redstone_arsenal:flux_ingot"
+					count: 2
+					random_bonus: 3
+				}
+				{
+					id: "691151C3626E4179"
+					type: "item"
+					item: "redstone_arsenal:flux_gem"
+					random_bonus: 1
+				}
+			]
+		}
+		{
+			x: 6.5d
+			y: -1.0d
+			description: [
+				"An uncharged flux-infused sword has an attack speed of 1.6 and deals 1 attack damage."
+				""
+				"When charged, it deals 8 attack damage with the same attack speed and consumes 500 RF per use."
+				""
+				"When empowered, it coalesces flux energy on the blade, releasing it as a piercing projectile when swung and consumes 2kRF per use."
+			]
+			hide_dependency_lines: true
+			dependencies: ["12938F156F9891CB"]
+			id: "012B8EE983EB77AA"
+			tasks: [{
+				id: "0CE43AA1146C3C7C"
+				type: "item"
+				item: {
+					id: "redstone_arsenal:flux_sword"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "35B7134C2F234551"
+					type: "item"
+					item: "redstone_arsenal:flux_ingot"
+					count: 2
+					random_bonus: 3
+				}
+				{
+					id: "047D1AAA8150392C"
+					type: "item"
+					item: "redstone_arsenal:flux_gem"
+					random_bonus: 1
+				}
+			]
+		}
+		{
+			x: 6.5d
+			y: 0.0d
+			description: [
+				"An uncharged flux-infused axe has an attack speed of 1, deals 1 attack damage and break blocks as fast as a wooden axe."
+				""
+				"When charged, it deals 10 attack damage with the same attack speed, break blocks as fast as a diamond axe and consumes 500 RF per use."
+				""
+				"When empowered, critical damage is doubled and dealt as armor-piercing damage (flux damage) and consumes 2.5kRF per critical strike."
+			]
+			hide_dependency_lines: true
+			dependencies: ["12938F156F9891CB"]
+			id: "1C145D449500594C"
+			tasks: [{
+				id: "1ADB8901AECCF610"
+				type: "item"
+				item: {
+					id: "redstone_arsenal:flux_axe"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "0A9DAEEEA4F40E26"
+					type: "item"
+					item: "redstone_arsenal:flux_ingot"
+					count: 2
+					random_bonus: 3
+				}
+				{
+					id: "3E679628CA742457"
+					type: "item"
+					item: "redstone_arsenal:flux_gem"
+					random_bonus: 1
+				}
+			]
+		}
+		{
+			x: 7.5d
+			y: 0.0d
+			description: [
+				"An uncharged flux-infused pickaxe has an attack speed of 1.2, deals 1 attack damage and break blocks as fast as a wooden pickaxe."
+				""
+				"When charged, it deals 5 attack damage with the same attack speed, break blocks as fast as a diamond pickaxe and consumes 500 RF per use."
+				""
+				"Can be used to charge the air with flux, producing a permanent light source. Using it on fluxed air will remove the effect. Using it while crouching will remove all fluxed air blocks in a large radius and consumes 2kRF per light placed and 500 RF per light removed."
+				""
+				"When empowered, it automatically creates fluxed air when the user is in dark locations and consumes 2kRF per use."
+			]
+			hide_dependency_lines: true
+			dependencies: ["12938F156F9891CB"]
+			id: "7AEA9A815B792A19"
+			tasks: [{
+				id: "02299982D2F7FB1E"
+				type: "item"
+				item: {
+					id: "redstone_arsenal:flux_pickaxe"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "5156B4D7FB7BDD44"
+					type: "item"
+					item: "redstone_arsenal:flux_ingot"
+					count: 2
+					random_bonus: 3
+				}
+				{
+					id: "3C653D3C92412D05"
+					type: "item"
+					item: "redstone_arsenal:flux_gem"
+					random_bonus: 1
+				}
+			]
+		}
+		{
+			x: 8.5d
+			y: 0.0d
+			description: [
+				"An uncharged flux-infused shovel has an attack speed of 1, deals 1 attack damage and break blocks as fast as a wooden shovel."
+				""
+				"When charged, it deals 5.5 attack damage with the same attack speed, break blocks as fast as a diamond shovel, it can also be used on farmland or grass paths to revert them to dirt and consumes 500 RF per use."
+				""
+				"When empowered, whenever used on grass-type blocks, creates a flux-infused path block that is faster to walk on and consumes 2kRF per use."
+			]
+			hide_dependency_lines: true
+			dependencies: ["12938F156F9891CB"]
+			id: "6C9E08C67CB37405"
+			tasks: [{
+				id: "6DF787D6213BFE66"
+				type: "item"
+				item: {
+					id: "redstone_arsenal:flux_shovel"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "5E500E7845C6C804"
+					type: "item"
+					item: "redstone_arsenal:flux_ingot"
+					count: 2
+					random_bonus: 3
+				}
+				{
+					id: "7DE8E8567E1D1CEE"
+					type: "item"
+					item: "redstone_arsenal:flux_gem"
+					random_bonus: 1
+				}
+			]
+		}
+		{
+			x: 8.5d
+			y: -1.0d
+			description: [
+				"An uncharged flux-infused trident has an attack speed of 1.1 and deals 1 attack damage but it can't be thrown."
+				""
+				"When charged, it deals 10 attack damage with the same attack speed and, just like a regular trident, it can be thrown, and consumes 500 RF per use."
+				""
+				"When empowered, whenever the user is off the ground, the trident can be swung to launch them downwards in the direction they are looking. Upon landing, the kinetic energy is used to deal armor-piercing damage (flux damage) to nearby mobs, and consumes 2kRF per use. Synergizes with the riptide enchantment. "
+			]
+			hide_dependency_lines: true
+			dependencies: ["12938F156F9891CB"]
+			id: "083F6A108F9367AA"
+			tasks: [{
+				id: "1BBFEFA68ED081A1"
+				type: "item"
+				item: {
+					id: "redstone_arsenal:flux_trident"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "334779135B7FE15D"
+					type: "item"
+					item: "redstone_arsenal:flux_ingot"
+					count: 2
+					random_bonus: 3
+				}
+				{
+					id: "0EA251FBB1449E40"
+					type: "item"
+					item: "redstone_arsenal:flux_gem"
+					random_bonus: 1
+				}
+			]
+		}
+		{
+			x: 6.5d
+			y: 1.0d
+			description: [
+				"An uncharged flux-infused hammer has an attack speed of 0.6, deals 1 attack damage, deals 1 attack knockback and break blocks as fast as a wooden hammer."
+				""
+				"When charged, it deals 9 attack damage with the same attack speed and same attack knockback, break blocks as fast as a diamond hammer and consumes 500 RF per block broken or hit dealt."
+				""
+				"When empowered, its mining speed is greatly reduced, damage and attack speed are increased to 11 and 1.4, respectively. "
+				""
+				"Hitting a mob while empowered grants the user 2s of speed and consumes 2kRF per hit. "
+				""
+				"Using it on the ground while empowered creates a shockwave, which knocks affected mobs back, inflicts the sundered debuff on affected mobs, and grants the user a 2.5s strength buff. Hitting a mob while this buff is active will extend its duration by 0.5s and consumes 4kRF per use."
+			]
+			hide_dependency_lines: true
+			dependencies: ["12938F156F9891CB"]
+			id: "02FC0103F975C37F"
+			tasks: [{
+				id: "72F0256B1266F918"
+				type: "item"
+				item: {
+					id: "redstone_arsenal:flux_hammer"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "2C9D481CB2638E33"
+					type: "item"
+					item: "redstone_arsenal:flux_ingot"
+					count: 2
+					random_bonus: 3
+				}
+				{
+					id: "7F92FC42744E1ABA"
+					type: "item"
+					item: "redstone_arsenal:flux_gem"
+					random_bonus: 1
+				}
+			]
+		}
+		{
+			x: 8.5d
+			y: 1.0d
+			description: [
+				"An uncharged flux-infused excavator has an attack speed of 1, deals 1 attack damage and break blocks as fast as a wooden excavator."
+				""
+				"When charged, it deals 6 attack damage with the same attack speed, break blocks as fast as a diamond excavator, can also be used to place matching dirt-type blocks in its area of effect and consumes 500 RF per block broken/placed."
+				""
+				"When empowered, it has its area of effect increased to 5x5 and consumes 500 RF per block broken/placed."
+			]
+			hide_dependency_lines: true
+			dependencies: ["12938F156F9891CB"]
+			id: "0BA6F9C6B66EB3E9"
+			tasks: [{
+				id: "1E07EF24DFE6AABF"
+				type: "item"
+				item: {
+					id: "redstone_arsenal:flux_excavator"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "1D812463E64EB30C"
+					type: "item"
+					item: "redstone_arsenal:flux_ingot"
+					count: 2
+					random_bonus: 3
+				}
+				{
+					id: "6721DBA3E356FF59"
+					type: "item"
+					item: "redstone_arsenal:flux_gem"
+					random_bonus: 1
+				}
+			]
+		}
+		{
+			x: 7.5d
+			y: -1.0d
+			description: [
+				"An uncharged flux-infused shield is useless."
+				""
+				"When charged, just like a regular shield, it can be used to block an incoming attack, it also blocks instances of armor-piercing damage (flux damage), and consumes 1.5kRF per use."
+				""
+				"When empowered, whenever initially raised or upon blocking damage, it releases a dispersion field that knocks nearby mobs and projectiles back and consumes 2kRF per use."
+			]
+			hide_dependency_lines: true
+			dependencies: ["12938F156F9891CB"]
+			id: "59105EE6B8CF9BC4"
+			tasks: [{
+				id: "1F62AE8ABA9D48A6"
+				type: "item"
+				item: {
+					id: "redstone_arsenal:flux_shield"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "1B5FBD63BD97ACF7"
+					type: "item"
+					item: "redstone_arsenal:flux_ingot"
+					count: 2
+					random_bonus: 3
+				}
+				{
+					id: "4F0C1728A7053C93"
+					type: "item"
+					item: "redstone_arsenal:flux_gem"
+					random_bonus: 1
+				}
+			]
+		}
+		{
+			x: 8.5d
+			y: 2.0d
+			description: [
+				"An uncharged flux-infused fishing rod is useless."
+				""
+				"When charged, just like a regular fishing rod, it can be used to catch fishes and treasures and consumes 500 RF per use."
+				""
+				"When powered, it can be used to reel in hooked mobs with much greater control. The mob is unhooked if the user attacks it or uses the rod when crouching and consumes 5kRF per second."
+			]
+			hide_dependency_lines: true
+			dependencies: ["12938F156F9891CB"]
+			id: "4DE22CCDB839620F"
+			tasks: [{
+				id: "4681A558B55B51DF"
+				type: "item"
+				item: {
+					id: "redstone_arsenal:flux_fishing_rod"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "36E8B9766B42853E"
+					type: "item"
+					item: "redstone_arsenal:flux_ingot"
+					count: 2
+					random_bonus: 3
+				}
+				{
+					id: "51E84691220CFCEB"
+					type: "item"
+					item: "redstone_arsenal:flux_gem"
+					random_bonus: 1
+				}
+			]
+		}
+		{
+			x: 7.5d
+			y: 1.0d
+			description: [
+				"An uncharged flux-infused battle wrench has an attack speed of 2 and deals 1 attack damage."
+				""
+				"When charged, it deals 6 attack damage with the same attack speed and consumes 500 RF per use."
+				""
+				"It can also be thrown, dealing damage to mobs and rotating blocks in its path. Returns after hitting something or when it is 16 blocks away from the user and consumes 500 RF if rotates a block or hit a mob."
+				""
+				"&o&7This item doesn't have Empowered Skills."
+			]
+			hide_dependency_lines: true
+			dependencies: ["12938F156F9891CB"]
+			id: "4D162F558D621422"
+			tasks: [{
+				id: "27B8059A34041774"
+				type: "item"
+				item: {
+					id: "redstone_arsenal:flux_wrench"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "1F30BDA395E82BB2"
+					type: "item"
+					item: "redstone_arsenal:flux_ingot"
+					count: 2
+					random_bonus: 3
+				}
+				{
+					id: "4E669EAB35635077"
+					type: "item"
+					item: "redstone_arsenal:flux_gem"
+					random_bonus: 1
+				}
+			]
+		}
+		{
+			x: 6.5d
+			y: -2.0d
+			description: [
+				"An uncharged flux-infused bow is useless."
+				""
+				"When charged, just like a regular bow, it can be used to fire arrows and consumes 500 RF per use."
+				""
+				"When empowered, it propels fired arrows at hyperspeed, often allowing them to reach their destinations instantly and consumes 2kRF per use."
+			]
+			hide_dependency_lines: true
+			dependencies: ["12938F156F9891CB"]
+			id: "0756D5C846541EF5"
+			tasks: [{
+				id: "2FAEBDDB421B6365"
+				type: "item"
+				item: {
+					id: "redstone_arsenal:flux_bow"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "788154A2C5D55997"
+					type: "item"
+					item: "redstone_arsenal:flux_ingot"
+					count: 2
+					random_bonus: 3
+				}
+				{
+					id: "693302F590195B23"
+					type: "item"
+					item: "redstone_arsenal:flux_gem"
+					random_bonus: 1
+				}
+			]
+		}
+		{
+			x: 8.5d
+			y: -2.0d
+			description: [
+				"An uncharged flux-infused crossbow is useless."
+				""
+				"When charged, just like a regular crossbow, it can be used to fire arrows, it can also be reloaded with up to 3 shots (Left click to fire), and consumes 500 RF per arrow shot."
+				""
+				"When empowered, it fires all 3 shots at once, vertically offset from each other, and consumes 500 RF per arrow shot."
+			]
+			hide_dependency_lines: true
+			dependencies: ["12938F156F9891CB"]
+			id: "36501F18F0295CBC"
+			tasks: [{
+				id: "27AD6369E79BC628"
+				type: "item"
+				item: {
+					id: "redstone_arsenal:flux_crossbow"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "7280BD94AE4D5E42"
+					type: "item"
+					item: "redstone_arsenal:flux_ingot"
+					count: 2
+					random_bonus: 3
+				}
+				{
+					id: "75BE80CEBA98CC34"
+					type: "item"
+					item: "redstone_arsenal:flux_gem"
+					random_bonus: 1
+				}
+			]
+		}
+		{
+			x: 7.5d
+			y: -2.0d
+			description: [
+				"An uncharged flux-infused quiver is useless."
+				""
+				"When charged, it produces flux arrows that can be used by any bow, deal armor-piercing damage (flux damage) and consumes 1kRF per use."
+				""
+				"When empowered, it produces gravity-defying arrows when shot from a bow or arrows that explode on contact when shot from a crossbow and consumes 4kRF per use."
+			]
+			hide_dependency_lines: true
+			dependencies: ["12938F156F9891CB"]
+			id: "11D28F5FC54148BA"
+			tasks: [{
+				id: "6CB89B91E6EE72BE"
+				type: "item"
+				item: {
+					id: "redstone_arsenal:flux_quiver"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "3539B6B6E7E18B8B"
+					type: "item"
+					item: "redstone_arsenal:flux_ingot"
+					count: 2
+					random_bonus: 3
+				}
+				{
+					id: "3F56C082E9986803"
+					type: "item"
+					item: "redstone_arsenal:flux_gem"
+					random_bonus: 1
+				}
+			]
+		}
+		{
+			x: 7.5d
+			y: 2.0d
+			description: [
+				"An uncharged flux-infused elytra controller is useless."
+				""
+				"When charged, using the controller will boost the user, similar to using a single firework rocket. If the user is on the ground, using the controller will allow them to easily take off in the direction they are looking and consumes 8kRF per use, with a 1.6s cooldown."
+				""
+				"When powered, the controller will also empower the equipped elytra, Unempowering the controller will also unempower the equipped elytra."
+			]
+			hide_dependency_lines: true
+			dependencies: ["12938F156F9891CB"]
+			id: "2A0F92D2EDE84DAA"
+			tasks: [{
+				id: "1055DC12D1A22959"
+				type: "item"
+				item: "redstone_arsenal:flux_controller"
+			}]
+			rewards: [
+				{
+					id: "196396AD048B2722"
+					type: "item"
+					item: "redstone_arsenal:flux_ingot"
+					count: 2
+					random_bonus: 3
+				}
+				{
+					id: "2DEEC3D8AD963E30"
+					type: "item"
+					item: "redstone_arsenal:flux_gem"
+					random_bonus: 1
+				}
+			]
+		}
+		{
+			x: 6.5d
+			y: 2.0d
+			description: [
+				"An uncharged flux-infused elytra is useless."
+				""
+				"When charged, just like a regular elytra, it can be used to glide through the air, it also grants 5 armor points and 1 armor toughness, brakes when the user crouches in the air and consumes 1.25kRF per second."
+				""
+				"When empowered, during flight, it constantly propel the user, similar to continuously using firework rockets and consumes 5kRF per second."
+			]
+			hide_dependency_lines: true
+			dependencies: ["12938F156F9891CB"]
+			id: "3C5924B6ADF4441B"
+			tasks: [{
+				id: "39F6769CD57D6557"
+				type: "item"
+				item: {
+					id: "redstone_arsenal:flux_elytra"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "02BBC69CC1BD3D4D"
+					type: "item"
+					item: "redstone_arsenal:flux_ingot"
+					count: 2
+					random_bonus: 3
+				}
+				{
+					id: "46C42313E0BA6AF3"
+					type: "item"
+					item: "redstone_arsenal:flux_gem"
+					random_bonus: 1
+				}
+			]
+		}
+	]
+}
