@@ -396,7 +396,7 @@
 		#Override default xp for a mob
 		xp = ["minecraft:iron_golem,20", "minecraft:bat,1", "minecraft:snow_golem,1", "minecraft:villager,2", "minecraft:wandering_villager,2", "minecraft:ender_dragon,500", "botania:doppleganger,100"]
 		#Override default tier for a mob
-		tier = ["minecraft:wither_skeleton,4", "minecraft:villager,4", "minecraft:magma_cube,3", "minecraft:enderman,4", "minecraft:villager_golem,4", "minecraft:guardian,4", "minecraft:blaze,3", "minecraft:witch,3", "minecraft:ghast,3", "minecraft:zombie_pigman,3", "minecraft:ender_dragon,5", "minecraft:wither,5", "botania:doppleganger,5"]
+		tier = ["minecraft:wither_skeleton,4", "minecraft:villager,4", "minecraft:magma_cube,3", "minecraft:enderman,4", "minecraft:villager_golem,4", "minecraft:guardian,4", "minecraft:blaze,3", "minecraft:witch,3", "minecraft:ghast,3", "minecraft:zombified_piglin,3", "minecraft:ender_dragon,5", "minecraft:wither,5", "botania:doppleganger,5"]
 		#Override default shard kills for a mob
 		shardKills = []
 		#Set a fixed cost for a mob
