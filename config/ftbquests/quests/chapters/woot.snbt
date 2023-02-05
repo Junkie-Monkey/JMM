@@ -1,0 +1,1183 @@
+{
+	id: "621BCED9CD4FC8E9"
+	group: "72A9465344128AF9"
+	order_index: 9
+	filename: "woot"
+	title: "Woot"
+	icon: "woot:hammer"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			icon: "woot:hammer"
+			x: 0.0d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "Mob Farm Simulator"
+			description: [
+				"&eWoot&r adds &6mob farms&r that &cdon't&r spawn mobs&r."
+				""
+				"Instead, mob spawns and kills are &6simulated&r. Supply it with power and it will gives you items. (XP as well if you use the correct perk)"
+			]
+			optional: true
+			id: "7A058F9213523A91"
+			tasks: [{
+				id: "363D0C8A6AE62DF3"
+				type: "checkmark"
+				title: "Woot"
+			}]
+			rewards: [{
+				id: "5A874E3E3EAF9082"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 5.0d
+			y: -2.0d
+			subtitle: "Hmm... so that's how big it is!! :hehe:"
+			description: [
+				"The &bLayout Guide&r will &6show a hologram of what the Factory looks like&r."
+				""
+				"Right-click it to choose what tier Factory is shown; sneak right-click it to show each y-level."
+				""
+				"You don't &oreally&r need this, since the Intern can build it for you. It's nice to see how big each tier is, though."
+			]
+			hide_dependency_lines: true
+			dependencies: ["57C85C62D0BC87D6"]
+			id: "49BE08DBD7B00793"
+			tasks: [{
+				id: "2152108AD81B091C"
+				type: "item"
+				item: "woot:layout"
+			}]
+			rewards: [{
+				id: "369F76F1B24C57E6"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 6.0d
+			y: -2.0d
+			subtitle: "This is easy!"
+			description: [
+				"The &bIntern&r is the needed tool to use when you want to &6automatically build/upgrade the Factory&r."
+				""
+				"By sneak-right-clicking you can set what tier you want to build, then by &6right-clicking the Heart&r, with the needed items in your inventory, it will begin to place the blocks."
+			]
+			dependencies: ["57C85C62D0BC87D6"]
+			id: "7AAD2AD12E6C7D0F"
+			tasks: [{
+				id: "386A2CEEB2A79094"
+				type: "item"
+				item: {
+					id: "woot:intern"
+					Count: 1b
+					tag: {
+						mode: "BUILD_1"
+					}
+				}
+			}]
+			rewards: [{
+				id: "576C55A4E2C7B9F8"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			icon: "woot:anvil"
+			x: 2.0d
+			y: 0.0d
+			description: [
+				"&6Stygian Iron&r is the base resource used by Woot, you can use JEI to see the recipe."
+				""
+				"To use the &bStygian Anvil&r, place it on top of a Magma Block. Right-click the main ingredient on it to add it, then add the secondary ingredients."
+				""
+				"Finally, use the &bYA Hammer&r on the Anvil to complete the craft."
+			]
+			dependencies: ["7A058F9213523A91"]
+			id: "57739B931704A641"
+			tasks: [
+				{
+					id: "1EEAADE795080BEA"
+					type: "item"
+					item: "woot:anvil"
+				}
+				{
+					id: "26F982B12E801139"
+					type: "item"
+					item: "woot:hammer"
+				}
+			]
+			rewards: [{
+				id: "0D61DBD938290393"
+				type: "item"
+				item: "woot:si_ingot"
+				count: 16
+			}]
+		}
+		{
+			title: "Soul Shards"
+			icon: {
+				id: "woot:mobshard"
+				Count: 1b
+				tag: { }
+			}
+			x: 4.0d
+			y: 0.0d
+			description: [
+				"In order to choose what mob your factory will be simulating, you need a &bMob Controller&r."
+				""
+				"With a &bMob Shard&r in your hand, &6hit a mob with it&r to bind it. Then, you wll need to &6kill a specific amount of that mob&r while the Shard is in your inventory."
+				""
+				"Once it's full (check its tooltip), you can craft it into a Mob Controller in the Stygian Anvil. Use JEI to see the recipe."
+			]
+			dependencies: ["57739B931704A641"]
+			id: "05FB8E22FA71809F"
+			tasks: [
+				{
+					id: "69F330280A24AB36"
+					type: "item"
+					item: {
+						id: "woot:mobshard"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "59590B6F6C5E4565"
+					type: "item"
+					item: "woot:controller"
+				}
+			]
+			rewards: [{
+				id: "75BAD37AD9238C4E"
+				type: "item"
+				item: "woot:xpshard"
+				count: 16
+			}]
+		}
+		{
+			icon: "woot:infuser"
+			x: 6.0d
+			y: 1.5d
+			description: [
+				"The &bInjection Press&r uses Energy to combine an item and a fluid into another item."
+				""
+				"The &bDye Liquifier&r melts dyes into &6Pure Dye Fluid&r, which is needed for a few specific items."
+				""
+				"To make Pure Dye Fluid, it has to have liquified 72mB of white, blue, red, and yellow dye."
+			]
+			hide_dependency_lines: true
+			dependencies: ["57739B931704A641"]
+			id: "729DDE7199D88C7F"
+			tasks: [
+				{
+					id: "0B74134DAA93C7CE"
+					type: "item"
+					item: "woot:infuser"
+				}
+				{
+					id: "65FDAE99DA255205"
+					type: "item"
+					item: "woot:squeezer"
+				}
+			]
+			rewards: [{
+				id: "6D68B6BEC5F5FE2F"
+				type: "item"
+				item: "woot:puredye_fluid_bucket"
+				count: 4
+			}]
+		}
+		{
+			title: "Tier 1 Factory"
+			icon: "woot:heart"
+			x: 6.0d
+			y: 0.0d
+			subtitle: "Let's get farming"
+			description: [
+				"The Factory itself is a multiblock structure. most of the blocks are simply filler, these blocks are just needed for balance reasons. As for how it's built, see the &6Intern&r and &6Layout Guide&r quests."
+				""
+				"The &bHeart&r is where you open the Factory's UI."
+				""
+				"You can insert &6Perks&r in &bPerk Slot&r blocks; see the Perks quest for more information."
+				""
+				"As its quest said, the mob in the &bMob Controller&r decides what mob is farmed."
+				""
+				"Some mobs &6may need ingredients&r to be farmed. These are pulled from inventories adjacent to an &bIngredient Importer&r. If any mob needs ingredients and doesn't have access to them, all mobs will fail to be farmed."
+				""
+				"Drops are inserted into inventories adjacent to the &bLoot Exporter&r."
+				""
+				"&bConatus Cells&r store Conatus Fluid. You can use any tier, higher tiers store more fluid."
+			]
+			dependencies: [
+				"729DDE7199D88C7F"
+				"05FB8E22FA71809F"
+				"240B13872994E3CB"
+			]
+			min_width: 350
+			id: "57C85C62D0BC87D6"
+			tasks: [
+				{
+					id: "50CFF658A3C28999"
+					type: "item"
+					item: "woot:heart"
+				}
+				{
+					id: "35D627EBA78EA76B"
+					type: "item"
+					item: "woot:factory_upgrade"
+				}
+				{
+					id: "5676CD3CFCEA14BE"
+					type: "item"
+					item: "woot:factory_a"
+					count: 2L
+				}
+				{
+					id: "347B021E62C94056"
+					type: "item"
+					item: "woot:factory_connect"
+					count: 2L
+				}
+				{
+					id: "72CEA37F8062931F"
+					type: "item"
+					item: "woot:import"
+				}
+				{
+					id: "575281B3C1553EE4"
+					type: "item"
+					item: "woot:export"
+				}
+				{
+					id: "6EE036ECEC327658"
+					type: "item"
+					title: "Conatus Cells"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "woot:cell_1"
+									Count: 1b
+								}
+								{
+									id: "woot:cell_2"
+									Count: 1b
+								}
+								{
+									id: "woot:cell_3"
+									Count: 1b
+								}
+								{
+									id: "woot:cell_4"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "514D9E2301035405"
+					type: "item"
+					item: "woot:factory_ctr_base_pri"
+				}
+				{
+					id: "18614407484DE704"
+					type: "item"
+					item: "woot:controller"
+				}
+			]
+			rewards: [{
+				id: "64E8216DA6EB2B5D"
+				type: "item"
+				item: "woot:xpshard"
+				count: 16
+			}]
+		}
+		{
+			icon: "woot:fluidconvertor"
+			x: 4.0d
+			y: 1.5d
+			description: [
+				"Rather than Energy, Woot factories need &6Conatus Fluid&r to function."
+				""
+				"Conatus Fluid is made in the &bFluid Vat&r. The Fluid Vat uses Energy to combine a fluid and an item to make another fluid."
+				""
+				"Use JEI to see all the recipes."
+			]
+			dependencies: ["57739B931704A641"]
+			id: "240B13872994E3CB"
+			tasks: [{
+				id: "6FA920A6633790BD"
+				type: "item"
+				item: "woot:fluidconvertor"
+			}]
+			rewards: [{
+				id: "6BB5C1D617DE7F79"
+				type: "item"
+				item: "woot:conatus_fluid_bucket"
+				count: 4
+			}]
+		}
+		{
+			x: 5.0d
+			y: -3.0d
+			subtitle: "&m&8Dee's Nuts"
+			description: [
+				"The &bDee's Oracle&r allows you to &6see what drops from each mob&r, you can also see what drops at each level of the Looting Perk."
+				""
+				"A note: &cthe Oracle will show nothing if nobody on the server has ever simulated that mob.&r "
+				""
+				"Every time a Factory simulates a mob for the first time, it rapidly spawns and kills that mob to find out what it drops. Before that, the Oracle will show nothing."
+			]
+			hide_dependency_lines: true
+			dependencies: ["57C85C62D0BC87D6"]
+			id: "0C7AE544B6F33A07"
+			tasks: [{
+				id: "179E2AFC75EB8C7D"
+				type: "item"
+				item: "woot:oracle"
+			}]
+			rewards: [{
+				id: "71357746B35755CE"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 5.0d
+			y: 2.0d
+			description: [
+				"The &bEnchant Liquifier&r is used to make &6Liquid Enchant&r using Enchanted Books. The more powerful the enchanted book is, the more liquid it makes."
+				""
+				"Liquid Enchant is another thing that can be used to make &6Conatus Fluid&r, but it can also be used to &6create random enchantments&r in the Injection Press."
+			]
+			hide_dependency_lines: true
+			dependencies: ["57739B931704A641"]
+			id: "2D4040F1B14BB54D"
+			tasks: [{
+				id: "02B214341EE71A83"
+				type: "item"
+				item: "woot:enchsqueezer"
+			}]
+			rewards: [{
+				id: "5273B5E502FD6C80"
+				type: "item"
+				item: "woot:enchant_fluid_bucket"
+				count: 4
+			}]
+		}
+		{
+			title: "Perks"
+			icon: "woot:factory_upgrade"
+			x: 6.0d
+			y: -3.0d
+			subtitle: "So many possibilities!"
+			description: [
+				"&bPerks&r can be added to the Factory to make them work differently."
+				""
+				"To apply a Perk, right-click a &6Perk Slot&r in your Factory with the Perk item."
+				""
+				"You &6must install the lower tiers before you can install the higher ones&r. Start with Tier 1, then Tier 2 and then finally Tier 3."
+				""
+				"The &6Woot Guide&r has a list of all Perks and what they do."
+				""
+				"Lower-tier Factories can only handle certain tiers of Perks:\n● Tier 1-2 Factories can handle Tier 1 Perks.\n● Tier 3 Factories can handle Tier 2 Perks.\n● Tier 4-5 Factories can handle Tier 3 Perks."
+			]
+			hide_dependency_lines: true
+			dependencies: ["57C85C62D0BC87D6"]
+			min_width: 250
+			id: "63BF2180445C6D87"
+			tasks: [{
+				id: "2C2F12330359DD1E"
+				type: "item"
+				title: "Perks"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "woot:efficiency_1"
+								Count: 1b
+							}
+							{
+								id: "woot:efficiency_2"
+								Count: 1b
+							}
+							{
+								id: "woot:efficiency_3"
+								Count: 1b
+							}
+							{
+								id: "woot:looting_1"
+								Count: 1b
+							}
+							{
+								id: "woot:looting_2"
+								Count: 1b
+							}
+							{
+								id: "woot:looting_3"
+								Count: 1b
+							}
+							{
+								id: "woot:mass_1"
+								Count: 1b
+							}
+							{
+								id: "woot:mass_2"
+								Count: 1b
+							}
+							{
+								id: "woot:mass_3"
+								Count: 1b
+							}
+							{
+								id: "woot:rate_1"
+								Count: 1b
+							}
+							{
+								id: "woot:rate_2"
+								Count: 1b
+							}
+							{
+								id: "woot:rate_3"
+								Count: 1b
+							}
+							{
+								id: "woot:tier_shard_1"
+								Count: 1b
+							}
+							{
+								id: "woot:tier_shard_2"
+								Count: 1b
+							}
+							{
+								id: "woot:tier_shard_3"
+								Count: 1b
+							}
+							{
+								id: "woot:xp_1"
+								Count: 1b
+							}
+							{
+								id: "woot:xp_2"
+								Count: 1b
+							}
+							{
+								id: "woot:xp_3"
+								Count: 1b
+							}
+							{
+								id: "woot:headless_1"
+								Count: 1b
+							}
+							{
+								id: "woot:headless_2"
+								Count: 1b
+							}
+							{
+								id: "woot:headless_3"
+								Count: 1b
+							}
+							{
+								id: "woot:flayed_1"
+								Count: 1b
+							}
+							{
+								id: "woot:flayed_2"
+								Count: 1b
+							}
+							{
+								id: "woot:flayed_3"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "70C836F08ED12D7B"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Tier 2 Factory"
+			icon: "woot:cap_a"
+			x: 8.0d
+			y: 0.0d
+			description: [
+				"Higher tier Factories are built by simply adding blocks to the lower tier. However, the quests will still need all the blocks that are used in the multiblock."
+				""
+				"At tier 2 and above, you can &6simulate multiple mobs at a time&r. you need a Mob Controller on the Primary Base, but you don't necessarily need any on the &bSecondary Bases&r, unless you want to simulate other mobs."
+				""
+				"Higher tier factories can &6support mobs with higher health&r. A tier 1 Factory can only handle mobs with up to 20 health points, while tier 2 can handle mobs with up to 40 health points."
+				""
+				"Other than that, the tier 2 Factory works in exactly the same way as tier 1."
+			]
+			dependencies: ["57C85C62D0BC87D6"]
+			min_width: 250
+			id: "5884BC8C16C61E34"
+			tasks: [
+				{
+					id: "2497DD2B1CD9ABF0"
+					type: "item"
+					item: "woot:factory_b"
+					count: 17L
+				}
+				{
+					id: "2C4AB600DA9E5B51"
+					type: "item"
+					item: "woot:factory_connect"
+					count: 11L
+				}
+				{
+					id: "5897D6866ADB6987"
+					type: "item"
+					item: "woot:factory_a"
+					count: 10L
+				}
+				{
+					id: "42E66088B648E3EC"
+					type: "item"
+					item: "woot:cap_a"
+					count: 4L
+				}
+				{
+					id: "79A8AA35F0907B89"
+					type: "item"
+					item: {
+						id: "woot:controller"
+						Count: 1b
+						tag: {
+							BlockEntityTag: {
+								Mob: {
+									keyTag: ""
+									keyEntity: "minecraft:sheep"
+								}
+							}
+						}
+					}
+				}
+				{
+					id: "0D3AC3F959743BBE"
+					type: "item"
+					item: "woot:factory_upgrade"
+					count: 4L
+				}
+				{
+					id: "5B9DFE35515E59C8"
+					type: "item"
+					item: "woot:factory_ctr_base_sec"
+					count: 3L
+				}
+				{
+					id: "6F382C4F2FE4324E"
+					type: "item"
+					item: "woot:import"
+				}
+				{
+					id: "1EE064A432B3FF92"
+					type: "item"
+					item: "woot:heart"
+				}
+				{
+					id: "340A96A3C5A195FB"
+					type: "item"
+					item: "woot:export"
+				}
+				{
+					id: "3862CC3776B49E48"
+					type: "item"
+					item: "woot:factory_ctr_base_pri"
+				}
+				{
+					id: "553ECFCAD1275EDF"
+					type: "item"
+					title: "Conatus Cells"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "woot:cell_1"
+									Count: 1b
+								}
+								{
+									id: "woot:cell_2"
+									Count: 1b
+								}
+								{
+									id: "woot:cell_3"
+									Count: 1b
+								}
+								{
+									id: "woot:cell_4"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "7403F8E1492E837D"
+				type: "item"
+				item: "woot:xpshard"
+				count: 16
+			}]
+		}
+		{
+			title: "Tier 3 Factory"
+			icon: "woot:cap_b"
+			x: 10.0d
+			y: 0.0d
+			description: [
+				"The &bthird tier Factory&r can handle &6Tier 2 Perks&r, as well as mobs with &6up to 60 health points&r."
+				""
+				"Additionally, this tier or higher is required for the following mobs:\n● Blaze\n● Ghast\n● Magma Cube\n● Witch\n● Zombified Piglin"
+			]
+			dependencies: ["5884BC8C16C61E34"]
+			id: "252BED3108BD9AD3"
+			tasks: [
+				{
+					id: "6E25C660C6BCA45F"
+					type: "item"
+					item: "woot:factory_c"
+					count: 24L
+				}
+				{
+					id: "377B619829B28D81"
+					type: "item"
+					item: "woot:factory_b"
+					count: 17L
+				}
+				{
+					id: "5FA56384E5208EC4"
+					type: "item"
+					item: "woot:factory_connect"
+					count: 11L
+				}
+				{
+					id: "456DDFCB2607BE35"
+					type: "item"
+					item: "woot:factory_a"
+					count: 10L
+				}
+				{
+					id: "234B20FD6B654487"
+					type: "item"
+					item: "woot:cap_b"
+					count: 8L
+				}
+				{
+					id: "419619F7ED9BD483"
+					type: "item"
+					item: "woot:cap_a"
+					count: 4L
+				}
+				{
+					id: "4968DC0BC1142CD1"
+					type: "item"
+					item: "woot:factory_upgrade"
+					count: 4L
+				}
+				{
+					id: "40D45DF7790DC9B6"
+					type: "item"
+					item: "woot:factory_ctr_base_sec"
+					count: 3L
+				}
+				{
+					id: "6350CF80B26CECF3"
+					type: "item"
+					item: "woot:import"
+				}
+				{
+					id: "143D4FC45035A99E"
+					type: "item"
+					item: "woot:export"
+				}
+				{
+					id: "484E066F9F946C12"
+					type: "item"
+					item: "woot:factory_ctr_base_pri"
+				}
+				{
+					id: "1C41935D2CF45688"
+					type: "item"
+					item: {
+						id: "woot:controller"
+						Count: 1b
+						tag: {
+							BlockEntityTag: {
+								Mob: {
+									keyTag: ""
+									keyEntity: "minecraft:sheep"
+								}
+							}
+						}
+					}
+				}
+				{
+					id: "30F610DDDB0D0DE1"
+					type: "item"
+					item: "woot:heart"
+				}
+				{
+					id: "0682BE8C3C6726E3"
+					type: "item"
+					title: "Conatus Cells"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "woot:cell_1"
+									Count: 1b
+								}
+								{
+									id: "woot:cell_2"
+									Count: 1b
+								}
+								{
+									id: "woot:cell_3"
+									Count: 1b
+								}
+								{
+									id: "woot:cell_4"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "522BD3CE00601A6C"
+				type: "item"
+				item: "woot:xpshard"
+				count: 16
+			}]
+		}
+		{
+			title: "Tier 4 Factory"
+			icon: { id: "woot:cap_c", Count: 4b }
+			x: 12.0d
+			y: 0.0d
+			description: [
+				"The &bfourth tier Factory&r can handle &6Tier 3 Perks&r, as well as &6mobs with any total health points&r."
+				""
+				"Additionally, this tier or higher is required for the following mobs:\n● Enderman\n● Guardian\n● Iron Golem\n● Villager\n● Wither Skeleton"
+			]
+			dependencies: ["252BED3108BD9AD3"]
+			id: "33956B3A2AE965BA"
+			tasks: [
+				{
+					id: "3EDF61B0A131C24E"
+					type: "item"
+					item: "woot:factory_c"
+					count: 24L
+				}
+				{
+					id: "6E53329EF4BD7AB3"
+					type: "item"
+					item: "woot:factory_b"
+					count: 17L
+				}
+				{
+					id: "6CD62F62E3C635CC"
+					type: "item"
+					item: "woot:factory_connect"
+					count: 11L
+				}
+				{
+					id: "61ECC5583E0FBDA1"
+					type: "item"
+					item: "woot:factory_a"
+					count: 10L
+				}
+				{
+					id: "52E0DC226365090A"
+					type: "item"
+					item: "woot:cap_b"
+					count: 8L
+				}
+				{
+					id: "5213BAEA0EA0E94E"
+					type: "item"
+					item: "woot:factory_d"
+					count: 8L
+				}
+				{
+					id: "36D2B693464F8F78"
+					type: "item"
+					item: "woot:cap_c"
+					count: 4L
+				}
+				{
+					id: "3BC0D9B1B8E61F03"
+					type: "item"
+					item: "woot:cap_a"
+					count: 4L
+				}
+				{
+					id: "71F22F4750AE6D12"
+					type: "item"
+					item: "woot:factory_upgrade"
+					count: 4L
+				}
+				{
+					id: "07A9BDB38945837D"
+					type: "item"
+					item: "woot:factory_ctr_base_sec"
+					count: 3L
+				}
+				{
+					id: "3AE765CDA103125B"
+					type: "item"
+					item: "woot:import"
+				}
+				{
+					id: "014BD6487B9C7E7D"
+					type: "item"
+					item: "woot:export"
+				}
+				{
+					id: "16BC9E161216D2A2"
+					type: "item"
+					item: "woot:factory_ctr_base_pri"
+				}
+				{
+					id: "77B2FAD18B2EE287"
+					type: "item"
+					item: {
+						id: "woot:controller"
+						Count: 1b
+						tag: {
+							BlockEntityTag: {
+								Mob: {
+									keyTag: ""
+									keyEntity: "minecraft:sheep"
+								}
+							}
+						}
+					}
+				}
+				{
+					id: "0DB3EAC89A4BAE0E"
+					type: "item"
+					item: "woot:heart"
+				}
+				{
+					id: "0F1DEC54B161A876"
+					type: "item"
+					title: "Conatus Cells"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "woot:cell_1"
+									Count: 1b
+								}
+								{
+									id: "woot:cell_2"
+									Count: 1b
+								}
+								{
+									id: "woot:cell_3"
+									Count: 1b
+								}
+								{
+									id: "woot:cell_4"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "024E14394F18264F"
+				type: "item"
+				item: "woot:xpshard"
+				count: 16
+			}]
+		}
+		{
+			title: "Tier 5 Factory"
+			icon: { id: "woot:cap_d", Count: 8b }
+			x: 14.0d
+			y: 0.0d
+			description: [
+				"The &bfifth tier Factory&r can handle &6all perks&r, as well as &6all mobs&r."
+				""
+				"This is the only tier that can use &6Exotics&r, which are explained in an upcoming quest."
+				""
+				"Additionally, this tier is required for the following mobs:\n● Ender Dragon\n● Wither\n● Guardian of Gaia"
+			]
+			dependencies: ["33956B3A2AE965BA"]
+			id: "005D2B3656C82F17"
+			tasks: [
+				{
+					id: "40F8FBACE5EA8EEC"
+					type: "item"
+					item: "woot:factory_c"
+					count: 24L
+				}
+				{
+					id: "205976A47078AAC5"
+					type: "item"
+					item: "woot:factory_b"
+					count: 17L
+				}
+				{
+					id: "5803FF2DB5BDC9DA"
+					type: "item"
+					item: "woot:factory_connect"
+					count: 11L
+				}
+				{
+					id: "39ADAA838736D5A5"
+					type: "item"
+					item: "woot:factory_a"
+					count: 10L
+				}
+				{
+					id: "552B3852035DED9F"
+					type: "item"
+					item: "woot:cap_d"
+					count: 8L
+				}
+				{
+					id: "37EFF842A97705AB"
+					type: "item"
+					item: "woot:cap_b"
+					count: 8L
+				}
+				{
+					id: "14CD0D7B1C1DC569"
+					type: "item"
+					item: "woot:factory_e"
+					count: 8L
+				}
+				{
+					id: "594D205BABA23FEB"
+					type: "item"
+					item: "woot:factory_d"
+					count: 8L
+				}
+				{
+					id: "39C3F88E35474065"
+					type: "item"
+					item: "woot:cap_c"
+					count: 4L
+				}
+				{
+					id: "4E4602D925830D6A"
+					type: "item"
+					item: "woot:cap_a"
+					count: 4L
+				}
+				{
+					id: "0D1110C00819E8E9"
+					type: "item"
+					item: "woot:factory_upgrade"
+					count: 4L
+				}
+				{
+					id: "085AF54C0B929AF0"
+					type: "item"
+					item: "woot:factory_ctr_base_sec"
+					count: 3L
+				}
+				{
+					id: "49FCEE5BC6CFF711"
+					type: "item"
+					item: "woot:import"
+				}
+				{
+					id: "529E4D6566B800A0"
+					type: "item"
+					item: "woot:export"
+				}
+				{
+					id: "45A5FEE97902B2E0"
+					type: "item"
+					item: "woot:factory_ctr_base_pri"
+				}
+				{
+					id: "3477E23214050639"
+					type: "item"
+					item: {
+						id: "woot:controller"
+						Count: 1b
+						tag: {
+							BlockEntityTag: {
+								Mob: {
+									keyTag: ""
+									keyEntity: "minecraft:sheep"
+								}
+							}
+						}
+					}
+				}
+				{
+					id: "41E0B6BFB1FC55E0"
+					type: "item"
+					item: "woot:heart"
+				}
+				{
+					id: "01C5ED2E3A840CDE"
+					type: "item"
+					title: "Conatus Cells"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "woot:cell_1"
+									Count: 1b
+								}
+								{
+									id: "woot:cell_2"
+									Count: 1b
+								}
+								{
+									id: "woot:cell_3"
+									Count: 1b
+								}
+								{
+									id: "woot:cell_4"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "6C92C185C9EAD9F5"
+				type: "item"
+				item: "woot:xpshard"
+				count: 16
+			}]
+		}
+		{
+			title: "Exotics"
+			icon: "woot:exotic_a"
+			x: 14.0d
+			y: -2.0d
+			description: [
+				"&bExotics&r are pretty much &6more-powerful Perks&r that &ccan only be found in End City chests&r, rarely."
+				""
+				"Each one has an explanation about what it does, as well as a page in the &6Woot Guide&r."
+			]
+			dependencies: ["005D2B3656C82F17"]
+			id: "4C431B0C410E6B1B"
+			tasks: [{
+				id: "1979DBEAC399F6AC"
+				type: "item"
+				title: "Exotics"
+				item: {
+					id: "itemfilters:id_regex"
+					Count: 1b
+					tag: {
+						value: "woot.*exotic"
+					}
+				}
+			}]
+			rewards: [{
+				id: "6AD034376A12E022"
+				type: "item"
+				item: "woot:xpshard"
+				count: 16
+			}]
+		}
+		{
+			title: "Ender Dragon Factory"
+			icon: "minecraft:dragon_head"
+			x: 15.5d
+			y: -0.5d
+			description: [
+				"By making an &bEnder Dragon Factory&r you can get some special drops that will help you &6automate some recipes for end-game mods&r, such as the &bDragon Heart&r for &bDraconic Evolution&r."
+				""
+				"It requires a &bTier V Factory&r, and four &bEnd Crystal&r per spawn."
+			]
+			dependencies: ["005D2B3656C82F17"]
+			id: "245AE48B8E836031"
+			tasks: [{
+				id: "5D948D77272EDBC4"
+				type: "item"
+				title: "Fully Programmed Mob Shard: Ender Dragon"
+				item: {
+					id: "woot:mobshard"
+					Count: 1b
+					tag: {
+						Mob: {
+							keyTag: ""
+							keyEntity: "minecraft:ender_dragon"
+						}
+						Kills: 5
+					}
+				}
+				match_nbt: true
+			}]
+			rewards: [{
+				id: "3EE2BCB86937E850"
+				type: "item"
+				item: "minecraft:end_crystal"
+				count: 4
+			}]
+		}
+		{
+			title: "Guardian of Gaia Factory"
+			icon: "botania:gaia_ingot"
+			x: 15.5d
+			y: 0.5d
+			description: [
+				"Normally, you &ccan't&r automate the &bGuardian of Gaia."
+				""
+				"In this modpack this is different. &6We've fixed that!&r You can now use Woot!"
+				""
+				"It requires a &bTier V Factory&r, and one &bGaia Spirit Ingot&r per spawn."
+			]
+			dependencies: ["005D2B3656C82F17"]
+			id: "156728800EC187FF"
+			tasks: [{
+				id: "6FE48511C627D456"
+				type: "item"
+				title: "Fully Programmed Mob Shard: Guardian of Gaia"
+				item: {
+					id: "woot:mobshard"
+					Count: 1b
+					tag: {
+						Mob: {
+							keyTag: ""
+							keyEntity: "botania:doppleganger"
+						}
+						Kills: 5
+					}
+				}
+				match_nbt: true
+			}]
+			rewards: [{
+				id: "6E6F1AF38A9916B7"
+				type: "item"
+				item: "botania:gaia_ingot"
+			}]
+		}
+	]
+}
