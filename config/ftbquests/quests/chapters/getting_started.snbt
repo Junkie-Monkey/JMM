@@ -197,176 +197,7 @@
 				icon: {
 					id: "akashictome:tome"
 					Count: 1b
-					tag: {
-						"akashictome:data": {
-							industrialforegoing: {
-								id: "patchouli:guide_book"
-								Count: 1.0d
-								tag: {
-									"patchouli:book": "industrialforegoing:industrial_foregoing"
-								}
-							}
-							tetra: {
-								id: "tetra:holo"
-								Count: 1.0d
-								tag: {
-									"holo/core_material": "frame/dim"
-									"holo/frame": "holo/frame"
-									"holo/core": "holo/core"
-									"holo/frame_material": "core/ancient"
-								}
-							}
-							resourcefulbees: {
-								id: "patchouli:guide_book"
-								Count: 1.0d
-								tag: {
-									"patchouli:book": "resourcefulbees:fifty_shades_of_bees"
-								}
-							}
-							theoneprobe: {
-								id: "theoneprobe:probenote"
-								Count: 1.0d
-							}
-							astralsorcery: {
-								id: "astralsorcery:tome"
-								Count: 1.0d
-							}
-							ftbquests: {
-								id: "ftbquests:book"
-								Count: 1.0d
-							}
-							alexsmobs: {
-								id: "alexsmobs:animal_dictionary"
-								Count: 1.0d
-							}
-							immersiveengineering: {
-								id: "immersiveengineering:manual"
-								Count: 1.0d
-							}
-							eidolon: {
-								id: "eidolon:codex"
-								Count: 1.0d
-							}
-							botania: {
-								id: "botania:lexicon"
-								Count: 1.0d
-								tag: { }
-							}
-							thermal: {
-								id: "patchouli:guide_book"
-								Count: 1.0d
-								tag: {
-									"patchouli:book": "thermal:guidebook"
-								}
-							}
-							patchouli: {
-								id: "patchouli:guide_book"
-								Count: 1.0d
-								tag: {
-									"patchouli:book": "patchouli:modded_for_dummies"
-								}
-							}
-							rftoolsbase: {
-								id: "rftoolsbase:manual"
-								Count: 1.0d
-							}
-							integrateddynamics: {
-								id: "integrateddynamics:on_the_dynamics_of_integration"
-								Count: 1.0d
-							}
-							cookingforblockheads: {
-								id: "cookingforblockheads:crafting_book"
-								Count: 1.0d
-							}
-							securitycraft: {
-								id: "securitycraft:sc_manual"
-								Count: 1.0d
-							}
-							storagenetwork: {
-								id: "patchouli:guide_book"
-								Count: 1.0d
-								tag: {
-									"patchouli:book": "storagenetwork:network_book"
-								}
-							}
-							powah: {
-								id: "powah:book"
-								Count: 1.0d
-							}
-							pneumaticcraft: {
-								id: "patchouli:guide_book"
-								Count: 1.0d
-								tag: {
-									"patchouli:book": "pneumaticcraft:book"
-								}
-							}
-							naturesaura: {
-								id: "patchouli:guide_book"
-								Count: 1.0d
-								tag: {
-									"patchouli:book": "naturesaura:book"
-								}
-							}
-							apotheosis: {
-								id: "patchouli:guide_book"
-								Count: 1.0d
-								tag: {
-									"patchouli:book": "apotheosis:apoth_chronicle"
-								}
-							}
-							pedestals: {
-								id: "patchouli:guide_book"
-								Count: 1.0d
-								tag: {
-									"patchouli:book": "pedestals:manual"
-								}
-							}
-							transport: {
-								id: "patchouli:guide_book"
-								Count: 1.0d
-								tag: {
-									"patchouli:book": "transport:guide"
-								}
-							}
-							engineersdecor: {
-								id: "patchouli:guide_book"
-								Count: 1.0d
-								tag: {
-									"patchouli:book": "engineersdecor:engineersdecor_manual"
-								}
-							}
-							occultism: {
-								id: "occultism:dictionary_of_spirits"
-								Count: 1.0d
-							}
-							solcarrot: {
-								id: "solcarrot:food_book"
-								Count: 1.0d
-							}
-							modularrouters: {
-								id: "patchouli:guide_book"
-								Count: 1.0d
-								tag: {
-									"patchouli:book": "modularrouters:book"
-								}
-							}
-							ars_nouveau: {
-								id: "ars_nouveau:worn_notebook"
-								Count: 1.0d
-							}
-							bloodmagic: {
-								id: "patchouli:guide_book"
-								Count: 1.0d
-								tag: {
-									"patchouli:book": "bloodmagic:guide"
-								}
-							}
-							betterendforge: {
-								id: "betterendforge:guidebook"
-								Count: 1.0d
-							}
-						}
-					}
+					tag: { }
 				}
 				item: {
 					id: "akashictome:tome"
@@ -497,6 +328,19 @@
 									"patchouli:book": "advancedperipherals:manual"
 									display: {
 										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Advanced Peripherals\"}]}"
+									}
+								}
+							}
+							woot: {
+								id: "patchouli:guide_book"
+								Count: 1
+								tag: {
+									"akashictome:displayName": {
+										text: "Woot Guide"
+									}
+									"patchouli:book": "woot:wootguide"
+									display: {
+										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Woot Guide\"}]}"
 									}
 								}
 							}
