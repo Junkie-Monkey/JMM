@@ -180,7 +180,8 @@ $FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @(
     "local/ftbultimine",
     "local/ftbultimine-client.snbt",
     "resourcepacks",
-    "packmenu/resources/assets/jmm/buttons/reload.json"
+    "packmenu/resources/assets/jmm/buttons/reload.json",
+    "kubejs/server_scripts/jmm/kubejs/jmm_server_only"
 )
 
 #=====================================================================//
