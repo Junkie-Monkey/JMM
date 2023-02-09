@@ -1,7 +1,7 @@
 //priority: 1100
 
 let runAR = true;
-const minutes = 1440; // One Day
+let minutes = 1440; // One Day
 
 const restartLoop = (server) => {
     server.tell([Text.lightPurple('[AutoRestart]'), ` Timer started!`]);

@@ -1,8 +1,8 @@
 //priority: 1100
 
 let runCL = true;
-const minutes = 30;
-const allowlist = Ingredient.matchAny([
+let minutes = 30;
+let allowlist = Ingredient.matchAny([
     `minecraft:diamond`,
     `minecraft:gold_ingot`,
     `minecraft:netherite_scrap`,
@@ -14,7 +14,7 @@ const allowlist = Ingredient.matchAny([
     `@mekanism`
 ]);
 
-const lastClearResult = Utils.newCountingMap();
+let lastClearResult = Utils.newCountingMap();
 
 /**
  * Clears the items that are dropped on the ground (that are not in the allowlist)
