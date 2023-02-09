@@ -12,20 +12,21 @@ const restartLoop = (server) => {
         server.schedule(MINUTE * 4, () => {
             server.tell([Text.lightPurple('[AutoRestart]'), ' Server will automatically restart in 1 minute!']);
             server.schedule(SECOND * 50, () => {
-                server.tell([
-                    Text.lightPurple('[AutoRestart]'), ' Server will automatically restart in 10 seconds!'
-                ]);
+                server.tell([Text.lightPurple('[AutoRestart]'), ' Server will automatically restart in 10 seconds!']);
                 server.schedule(SECOND * 7, () => {
                     server.tell([
-                        Text.lightPurple('[AutoRestart]'), ' Server will automatically restart in 3 seconds!'
+                        Text.lightPurple('[AutoRestart]'),
+                        ' Server will automatically restart in 3 seconds!'
                     ]);
                     server.schedule(SECOND * 1, () => {
                         server.tell([
-                            Text.lightPurple('[AutoRestart]'), ' Server will automatically restart in 2 seconds!'
+                            Text.lightPurple('[AutoRestart]'),
+                            ' Server will automatically restart in 2 seconds!'
                         ]);
                         server.schedule(SECOND * 1, () => {
                             server.tell([
-                                Text.lightPurple('[AutoRestart]'), ' Server will automatically restart in 1 second!'
+                                Text.lightPurple('[AutoRestart]'),
+                                ' Server will automatically restart in 1 second!'
                             ]);
                             server.schedule(SECOND * 1, () => server.runCommand('stop'));
                         });
@@ -33,12 +34,12 @@ const restartLoop = (server) => {
                 });
             });
         });
-    })
-}
+    });
+};
 
 onEvent('server.load', function (event) {
     if (!runAR) return;
     event.server.schedule(SECOND * 5, () => {
         restartLoop(event.server);
     });
-})
+});
