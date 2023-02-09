@@ -1,16 +1,16 @@
 //priority: 1100
 
 let runAR = true;
-let minutes = 1440; // One Day
+let minutesAR = 1440; // One Day
 
 const restartLoop = (server) => {
     server.tell([Text.lightPurple('[AutoRestart]'), ` Timer started!`]);
-    server.tell([Text.lightPurple('[AutoRestart]'), ` Server will automatically restart in ${minutes} minutes`]);
+    server.tell([Text.lightPurple('[AutoRestart]'), ` Server will automatically restart in ${minutesAR} minutes!`]);
 
-    server.schedule(MINUTE * (minutes - 6), () => {
+    server.schedule(MINUTE * (minutesAR - 6), () => {
         server.tell([Text.lightPurple('[AutoRestart]'), ' Server will automatically restart in 5 minutes!']);
         server.schedule(MINUTE * 4, () => {
-            server.tell([Text.lightPurple('[AutoRestart]'), ' Server will automatically restart in 1 minute!']);
+            server.runCommand(`say ${Text.lightPurple('[AutoRestart]')} Server will automatically restart in 1 minute!`);
             server.schedule(SECOND * 50, () => {
                 server.tell([Text.lightPurple('[AutoRestart]'), ' Server will automatically restart in 10 seconds!']);
                 server.schedule(SECOND * 7, () => {
