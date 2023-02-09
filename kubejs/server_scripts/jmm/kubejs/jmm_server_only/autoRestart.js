@@ -11,7 +11,7 @@ const restartLoop = (server) => {
         server.tell([Text.lightPurple('[AutoRestart]'), ' Server will automatically restart in 5 minutes!']);
         server.schedule(MINUTE * 4, () => {
             server.runCommand(
-                `say ${Text.lightPurple('[AutoRestart]')} Server will automatically restart in 1 minute!`
+                `tellraw @a "§d[AutoRestart]§r Server will automatically restart in 1 minute!"`
             );
             server.schedule(SECOND * 50, () => {
                 server.tell([Text.lightPurple('[AutoRestart]'), ' Server will automatically restart in 10 seconds!']);

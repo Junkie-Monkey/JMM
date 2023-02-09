@@ -49,7 +49,7 @@ const clearLagLoop = (server) => {
             server.schedule(MINUTE * 4, () => {
                 if (runCL) {
                     server.runCommand(
-                        `say ${Text.lightPurple('[ClearLag]')} Removing all items on ground in 1 minute!`
+                        `tellraw @a "§d[ClearLag]§r Removing all items on ground in 1 minute!"`
                     );
                     server.schedule(SECOND * 50, () => {
                         if (runCL) {
