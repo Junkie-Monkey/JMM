@@ -1,3 +1,20 @@
+### Junkie Monkey v0.1.1
+
+_Using Forge-1.16.5-36.2.39_ | _[Mod Updates](https://github.com/Junkie-Monkey/JMM/blob/master/changelogs/changelog_mods_0.1.1.md)_ | _[Modlist](https://github.com/Junkie-Monkey/JMM/blob/master/changelogs/modlist_0.1.1.md)_
+
+**Changes/Improvements**
+
+-   Add new Emoji Sets (NekoCat & Wolfy) [175 New Emojis!!]
+-   Update Redstone Arsenal Questline
+-   Add Farmer's Delight rice to Market [Enigmatica6 \#5327](https://github.com/EnigmaticaModpacks/Enigmatica6/issues/5327)
+
+**Bug Fixes**
+
+-   Fix Server Lag Spike whenever a new player joins
+-   Fix Loot Table Reward - Create Quest Chapter
+
+---
+
 ### Junkie Monkey v0.1.0
 
 _Using Forge-1.16.5-36.2.39_ | _[Mod Updates](https://github.com/Junkie-Monkey/JMM/blob/master/changelogs/changelog_mods_0.1.0.md)_ | _[Modlist](https://github.com/Junkie-Monkey/JMM/blob/master/changelogs/modlist_0.1.0.md)_
