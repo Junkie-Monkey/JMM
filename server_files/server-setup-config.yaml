@@ -88,6 +88,7 @@ install:
         - config/*-client.toml
         - defaultconfigs/*-client.toml
         - local/**
+        - shaderpacks/**
 
     # often a server needs more files, which are nearly useless on the client, such as tickprofiler
     # This is a list of files, each ' - ' is a new file:
