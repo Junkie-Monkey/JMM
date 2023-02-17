@@ -14,6 +14,12 @@
   hasCosmetic = true
   
 [[curiosSettings]]
+  identifier = "curio"
+  size = 4
+  override = false
+  hasCosmetic = false
+
+[[curiosSettings]]
   identifier = "necklace"
   override = false
   hasCosmetic = true
