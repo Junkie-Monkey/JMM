@@ -104,7 +104,6 @@
 - [DrawersTooltip-1.16.2-2.1.1.jar](https://www.curseforge.com/minecraft/mc-mods/drawers-tooltip/files/3491850) (by [Snownee_](https://www.curseforge.com/members/snownee_/projects))
 - [DungeonCrawl-1.16.5-2.3.9.jar](https://www.curseforge.com/minecraft/mc-mods/dungeon-crawl/files/3833867) (by [xiroc_](https://www.curseforge.com/members/xiroc_/projects))
 - [dungeons_plus-1.16.5-1.1.5.jar](https://www.curseforge.com/minecraft/mc-mods/dungeons-plus/files/3318948) (by [ModdingLegacy](https://www.curseforge.com/members/moddinglegacy/projects))
-- [dynviewdist-2.0.jar](https://www.curseforge.com/minecraft/mc-mods/dynamic-view/files/3358883) (by [someaddon](https://www.curseforge.com/members/someaddon/projects))
 - [eidolon-0.2.7.jar](https://www.curseforge.com/minecraft/mc-mods/eidolon/files/3157832) (by [elucent_](https://www.curseforge.com/members/elucent_/projects))
 - [curiouselytra-forge-1.16.5-4.0.2.4.jar](https://www.curseforge.com/minecraft/mc-mods/elytra-slot/files/3522097) (by [TheIllusiveC4](https://www.curseforge.com/members/theillusivec4/projects))
 - [EmendatusEnigmatica-1.2.16-build.46+mc1.16.5.jar](https://www.curseforge.com/minecraft/mc-mods/emendatus-enigmatica/files/4174294) (by [Ridanisaurus](https://www.curseforge.com/members/ridanisaurus/projects))
