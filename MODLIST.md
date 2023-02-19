@@ -1,4 +1,4 @@
-## Junkie-Monkey - 0.2.0
+## Junkie-Monkey  - 0.2.0
 
   * [abnormals_delight-1.16.5-1.2.1.jar](https://www.curseforge.com/minecraft/mc-mods/abnormals-delight/files/3549585) (by [TeamAbnormals](https://www.curseforge.com/members/TeamAbnormals/projects))
   * [actuallycompatible-0.1.2.jar](https://www.curseforge.com/minecraft/mc-mods/actually-compatible/files/3651579) (by [starmun](https://www.curseforge.com/members/starmun/projects))
