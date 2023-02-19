@@ -1,3 +1,18 @@
+### Junkie Monkey v0.2.0
+
+_Using Forge-1.16.5-36.2.39_ | _[Mod Updates](https://github.com/Junkie-Monkey/JMM/blob/master/changelogs/changelog_mods_0.2.0.md)_ | _[Modlist](https://github.com/Junkie-Monkey/JMM/blob/master/changelogs/modlist_0.2.0.md)_
+
+**Changes/Improvements**
+
+-   Update Default Keybinds
+-   Add Flux Infused (RSA) in the materials to unify
+-   Update ServerConfigUpdater to ensure all changed serverconfigs will be applied
+-   Update Forbidden Tiles for CarryOn
+-   Add more Curio Slots
+-   Fix a Typo in Seared Melter Quest (Tinker's Construct Chapter)
+
+---
+
 ### Junkie Monkey v0.1.1
 
 _Using Forge-1.16.5-36.2.39_ | _[Mod Updates](https://github.com/Junkie-Monkey/JMM/blob/master/changelogs/changelog_mods_0.1.1.md)_ | _[Modlist](https://github.com/Junkie-Monkey/JMM/blob/master/changelogs/modlist_0.1.1.md)_
