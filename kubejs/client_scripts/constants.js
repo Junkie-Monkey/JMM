@@ -669,7 +669,8 @@ const materialsToUnify = [
     'blazing',
     'niotic',
     'spirited',
-    'nitro'
+    'nitro',
+    'flux_infused'
 ];
 
 const craftedBees = [

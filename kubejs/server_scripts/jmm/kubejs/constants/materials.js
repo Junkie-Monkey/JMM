@@ -78,7 +78,8 @@ const materialsToUnify = [
     'blazing',
     'niotic',
     'spirited',
-    'nitro'
+    'nitro',
+    'flux_infused'
 ];
 
 // Used to determine which material types to unify
