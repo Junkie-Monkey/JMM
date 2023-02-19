@@ -41,7 +41,6 @@ function Close-FixedIssues {
     }
 
 }
-
 function Merge-DevelopIntoMasterPrompt {
     Write-Host "Please Merge Develop into Master, and then Master into Develop"
 }
@@ -50,4 +49,4 @@ Validate-SecretsFile
 Close-FixedIssues
 Merge-DevelopIntoMasterPrompt
 
-# Closes all `Status: Fixed In Next Release` issues
+# just closes all `Status: Fixed In Next Release` issues
